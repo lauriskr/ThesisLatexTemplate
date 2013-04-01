@@ -5,7 +5,6 @@
 %---------------------------------------------------------------
 
 
-
 %-------------------------- identification ---------------------
 %\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Latex/Classes/PhDthesisPSnPDF}[2007/09/06 v2 PhD thesis class]
@@ -16,7 +15,7 @@
 %If you want to use a Report style document then uncomment the following 3 lines and comment the below 8 book style lines:
 %\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 %\ProcessOptions\relax
-%%\LoadClass[a4paper]{report}
+%\LoadClass[a4paper]{report}
 %\ifx\pdfoutput\undefined
 %   \LoadClass[dvips, a4paper]{report}
 %\else
@@ -168,23 +167,8 @@
 
 %: Uncomment this secion for two-sided printing
 % ------------------------------
-\setlength{\oddsidemargin}{1.5cm}
-\setlength{\evensidemargin}{0cm}
-\setlength{\topmargin}{1mm}
-\setlength{\headheight}{1.36cm}
-\setlength{\headsep}{1.00cm}
-\setlength{\textheight}{20.84cm}
-\setlength{\textwidth}{14.5cm}
-\setlength{\marginparsep}{1mm}
-\setlength{\marginparwidth}{3cm}
-\setlength{\footskip}{2.36cm}
-
-
-%: Uncomment this secion for one-sided printing
-% taken from the original file, but with the first two lanes modified
-% ------------------------------
-%\setlength{\evensidemargin}{1.9cm} % was 1.96cm in original
-%\setlength{\oddsidemargin}{-0.001cm} % was -0.54cm in original file
+%\setlength{\oddsidemargin}{1.5cm}
+%\setlength{\evensidemargin}{0cm}
 %\setlength{\topmargin}{1mm}
 %\setlength{\headheight}{1.36cm}
 %\setlength{\headsep}{1.00cm}
@@ -193,6 +177,21 @@
 %\setlength{\marginparsep}{1mm}
 %\setlength{\marginparwidth}{3cm}
 %\setlength{\footskip}{2.36cm}
+
+
+%: Uncomment this secion for one-sided printing
+% taken from the original file, but with the first two lanes modified
+% ------------------------------
+\setlength{\evensidemargin}{1.9cm} % was 1.96cm in original
+\setlength{\oddsidemargin}{-0.001cm} % was -0.54cm in original file
+\setlength{\topmargin}{1mm}
+\setlength{\headheight}{1.36cm}
+\setlength{\headsep}{1.00cm}
+\setlength{\textheight}{20.84cm}
+\setlength{\textwidth}{14.5cm}
+\setlength{\marginparsep}{1mm}
+\setlength{\marginparwidth}{3cm}
+\setlength{\footskip}{2.36cm}
 
 
 %: section below defines fancy page layout options

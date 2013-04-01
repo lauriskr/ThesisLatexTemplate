@@ -12,8 +12,7 @@
 %: Style file for Latex
 % Most style definitions are in the external file PhDthesisPSnPDF.
 % In this template package, it can be found in ./Latex/Classes/
-\documentclass[twoside,11pt]{Latex/Classes/PhDthesisPSnPDF}
-
+\documentclass[oneside,11pt]{Latex/Classes/PhDthesisPSnPDF}
 
 %: Macro file for Latex
 % Macros help you summarise frequently repeated Latex commands.
@@ -22,61 +21,6 @@
 \include{Latex/Macros/MacroFile1}
 
 
-
-%: ----------------------------------------------------------------------
-%:                  TITLE PAGE: name, degree,..
-% ----------------------------------------------------------------------
-% below is to generate the title page with crest and author name
-
-%if output to PDF then put the following in PDF header
-%DONT FORGET TO PUT THIS DATA
-\ifpdf  
-    \pdfinfo { /Title  (Title of your Thesis)
-               /Creator (TeX)
-               /Producer (pdfTeX)
-               /Author (YourName your@email.net)
-               /CreationDate (D:YYYYMMDDhhmmss)  %format D:YYYYMMDDhhmmss
-               /ModDate (D:YYYYMMDDhhmm)
-               /Subject (xyz)
-               /Keywords (add, your, keywords, here) }
-    \pdfcatalog { /PageMode (/UseOutlines)
-                  /OpenAction (fitbh)  }
-\fi
-
-
-\title{UNIVERSITY OF TARTU \\
-	FACULTY OF MATHEMATICS AND COMPUTER SCIENCE \\
-	Institute of Computer Science}
-
-
-
-% ----------------------------------------------------------------------
-% The section below defines www links/email for author and institutions
-% They will appear on the title page of the PDF and can be clicked
-\ifpdf
-  \author{\href{mailto:email@ut.ee}{Your Name}}
-%  \cityofbirth{born in XYZ} % uncomment this if your university requires this
-%  % If city of birth is required, also uncomment 2 sections in PhDthesisPSnPDF
-%  % Just search for the "city" and you'll find them.
-  \collegeordept{\href{http://www.something.net}{CollegeOrDepartment}}
-  \university{\href{http://www.something.net}{University}}
-
-  % The crest is a graphics file of the logo of your research institution.
-  % Place it in ./0_frontmatter/figures and specify the width
-  \crest{\includegraphics[width=4cm]{logo}}
-  
-% If you are not creating a PDF then use the following. The default is PDF.
-\else
-  \author{YourName}
-%  \cityofbirth{born in XYZ}
-  \collegeordept{CollegeOrDept}
-  \university{University}
-  \crest{\includegraphics[width=4cm]{logo}}
-\fi
-
-%\renewcommand{\submittedtext}{change the default text here if needed}
-\degree{Philosophi\ae Doctor (PhD), DPhil,..}
-\degreedate{year month}
 
 
 % ----------------------------------------------------------------------
@@ -96,7 +40,6 @@
 % --------------------------------------------------------------
 
 \begin{document}
-
 
 
 
@@ -163,7 +106,7 @@
 
 %: ----------------------- list of figures/tables ------------------------
 
-\listoffigures	% print list of figures
+%\listoffigures	% print list of figures
 
 %\listoftables  % print list of tables
 
@@ -192,7 +135,7 @@
 % the main text starts here with the introduction, 1st chapter,...
 \mainmatter
 
-\renewcommand{\chaptername}{} % uncomment to print only "1" not "Chapter 1"
+\renewcommand{\chaptername}{}
 
 
 %: ----------------------- subdocuments ------------------------
@@ -200,12 +143,12 @@
 % Parts of the thesis are included below. Rename the files as required.
 % But take care that the paths match. You can also change the order of appearance by moving the include commands.
 
-\include{0_frontmatter/acknowledgement} % optional
+%\include{0_frontmatter/acknowledgement} % optional
 \include{1_introduction/introduction}	% background information
 \include{2/stateofart}	        	% state of the art
 \include{3/researchquestion}		% problem statement
 \include{3/contributions}		% how the solution solved the problem - your solution
-\include{4/casestudies}			% functional scenario
+%\include{4/casestudies}			% functional scenario
 \include{5/conclusions}			% final conclusions
 \include{6/relatedwork}	                % related work
 \include{6/futureresearch}		% future research directions

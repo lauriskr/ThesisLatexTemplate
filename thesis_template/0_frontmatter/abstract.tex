@@ -4,11 +4,33 @@
 
 %\begin{abstractslong}    %uncommenting this line, gives a different abstract heading
 \begin{abstracts}        %this creates the heading for the abstract page
-150 words explaining your work
 
-%Both cloud computing and mobile computing domains have advanced rapidly and are the promising technologies for the near future. ...
+Nowadays, mobile applications are becoming more context aware due to technological
+achievements which enable the applications to anticipate users’ intentions. This is
+achieved through using the device’s own micromechanical artifacts that can be used to
+perceive the environment. However, this is constrained to the hardware limitations of
+devices.
 
+A proposed solution for this has been made in the thesis “Context Sensor Data on
+Demand for Mobile Users Supported by XMPP” by Kaarel Hanson. The solution is
+to use XMPP for transporting sensor data from Arduino microcontroller to the cloud.
+Arduino provides low-cost hardware, while the cloud offers the reliable and high-
+availability means for storing and processing sensor data.
 
+This solution shows that running on a 9V battery the microcontroller lasts for 101
+minutes when using an Ethernet module for communications, and 161,5 minutes with a
+WiFi module. These results are not good enough for remote data collection with limited
+access to the microcontroller.
+
+This thesis proposes an optimisation for the system so that instead of reading and
+sending sensor data every 10 seconds, the cloud server would notify the controller
+when to start sending data and when to stop. This means implementing an algorithm
+for detecting similar sensor data readings and notifying the microcontroller of needed
+operations. With similar readings, the microcontroller could be put to an idle state for
+limiting power consumption, which would prolong battery life.
+
+The aim is to optimise the sensor reading process enough to prolong the Arduino
+microcontroller’s battery life on a 9V battery.
 
 \end{abstracts}
 %\end{abstractlongs}
