@@ -1,0 +1,10 @@
+\contentsline {todos}{{1. }add an image of the IDE here... }{2}{todos.0.1}
+\contentsline {todos}{{2. }format the text a bit, remove describe what is EEPROM, add an image}{3}{todos.0.2}
+\contentsline {todos}{{3. }Add an image of the wireless shield and rn-xv wifi module}{4}{todos.0.3}
+\contentsline {todos}{{4. }Add a figure of the mega sensor shield}{4}{todos.0.4}
+\contentsline {todos}{{5. }Thermistor Module, Light Dependent Resistor Module,Hall Sensor Module}{4}{todos.0.5}
+\contentsline {todos}{{6. }describe the current code}{6}{todos.0.6}
+\contentsline {todos}{{7. }describe the communication between arduino and xmpp server}{7}{todos.0.7}
+\contentsline {todos}{{8. }xmpp initialization time}{7}{todos.0.8}
+\contentsline {todos}{{9. }problems with the wifly module, etc}{7}{todos.0.9}
+\contentsline {todos}{{10. }graphs with power consumption with different configurations}{7}{todos.0.10}

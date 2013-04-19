@@ -18,13 +18,34 @@
 
 \section{Current Solution}
 
+The current solutions uses three main components:
+\begin{enumerate}
+\item Arduino sensor module
+\item OpenFire XMPP server
+\item Data collection web server in the cloud
+\end{enumerate}
+
+Both the data collection server and Arduino module are XMPP clients. The XMPP OpenFire server runs in the cloud and provides XMPP communications to both clients. Clients connect to the same chat where the server listens for messages from the sensor module. When a message is received by the server, sensor data is parsed from it and saved in a database.
+
 \subsection{Arduino}
-Current Arduino implementation
+
+\todo{describe the current code}
+The current Arduino implementation initializes the connection to the OpenFire server and XMPP connection in the $setup()$ function. In the $loop()$ function, connections are checked (and reconnected if dropped). The implementation checks if 10 seconds has passed since the last transmission and send the data again if needed.
+
+The problem with this implementation is that $loop()$ is continuously called and the amount of time since last transmission is checked to determine when a new message should be sent. Since the transmission interval is 10 seconds, the sensor module consumes needless power for that time period. 
 
 \subsection{XMPP Communication}
+
+\todo{describe the communication between arduino and xmpp server}
 Description of the communication between the Arduino board, XMPP server and data collection server.
 
+\todo{xmpp initialization time}
+
+\todo{problems with the wifly module, etc}
+
 \subsection{Power Consumption}
+
+\todo{graphs with power consumption with different configurations}
 Show how much power is consumed with the current implementation. 
 
 %one paragraph at the end that describes how to overcome the problem. The aim of the paragraph is to help in the transition between chapters

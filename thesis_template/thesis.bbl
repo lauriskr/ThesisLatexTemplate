@@ -5,10 +5,26 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
-\bibitem{paper:mcm}
-H.~Flores, S.~N. Srirama, C.~Paniagua, {A Generic Middleware Framework for
-  Handling Process Intensive Hybrid Cloud Services from Mobiles}, in: The 9th
-  International Conference on Advances in Mobile Computing \& Multimedia
-  (MoMM-2011), ACM, 2011, pp. 87--95.
+\bibitem{arduinoHome}
+\href{http://www.arduino.cc/}{Arduino - {HomePage}}, http://www.arduino.cc/.
+\newline\urlprefix\url{http://www.arduino.cc/}
+
+\bibitem{megaAdk}
+\href{http://arduino.cc/en/Main/ArduinoBoardADK}{Arduino - {ArduinoBoardADK}},
+  {http://arduino.cc/en/Main/ArduinoBoardADK}.
+\newline\urlprefix\url{http://arduino.cc/en/Main/ArduinoBoardADK}
+
+\bibitem{arduino_wireless}
+\href{http://arduino.cc/en/Main/ArduinoWirelessShield}{Arduino -
+  {ArduinoWirelessShield}}, {http://arduino.cc/en/Main/ArduinoWirelessShield}.
+\newline\urlprefix\url{http://arduino.cc/en/Main/ArduinoWirelessShield}
+
+\bibitem{rn_xv_module}
+\href{https://www.sparkfun.com/products/10822}{{RN-XV} {WiFly} module - wire
+  antenna - {SparkFun} electronics}, https://www.sparkfun.com/products/10822.
+\newline\urlprefix\url{https://www.sparkfun.com/products/10822}
+
+\bibitem{tinkerkit_introduction}
+
 
 \end{thebibliography}

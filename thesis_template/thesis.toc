@@ -1,4 +1,4 @@
-\select@language {english}
+\select@language {estonian}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Motivation}{1}{subsection.1.1.1}
@@ -6,28 +6,31 @@
 \contentsline {subsection}{\numberline {1.1.3}Outline}{1}{subsection.1.1.3}
 \contentsline {chapter}{\numberline {2}State of the Art}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Jabber and XMPP}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}Arduino}{2}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Arduino Mega ADK}{2}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}TinkerKit}{2}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Modules}{2}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Fuzzy Logic}{2}{section.2.3}
-\contentsline {section}{\numberline {2.4}Power supply}{3}{section.2.4}
-\contentsline {chapter}{\numberline {3}Problem Statement}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}Current Solution}{4}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Arduino}{4}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}XMPP Communication}{4}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Power Consumption}{4}{subsection.3.1.3}
-\contentsline {chapter}{\numberline {4}Problem Solution}{5}{chapter.4}
-\contentsline {section}{\numberline {4.1}Arduino Improvements}{5}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Software}{5}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Hardware}{5}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Communication}{5}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Fuzzy Logic Implementation}{5}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Communication Interval}{6}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{7}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{7}{section.5.1}
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{7}{section.5.2}
-\contentsline {chapter}{\numberline {6}Related Work}{8}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Research Directions}{9}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{10}{chapter.8}
-\contentsline {chapter}{Bibliography}{11}{chapter*.2}
+\contentsline {section}{\numberline {2.2}XMPP to Cloud}{2}{section.2.2}
+\contentsline {section}{\numberline {2.3}Arduino}{2}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Arduino Mega ADK}{3}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Wireless SD Shield}{3}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}RN-XV WiFly Module}{4}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}TinkerKit}{4}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Fuzzy Logic}{5}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Fuzzy Set}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Fuzzy Control Systems}{5}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}Problem Statement}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Current Solution}{6}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Arduino}{6}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}XMPP Communication}{7}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Power Consumption}{7}{subsection.3.1.3}
+\contentsline {chapter}{\numberline {4}Problem Solution}{8}{chapter.4}
+\contentsline {section}{\numberline {4.1}Arduino Improvements}{8}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Software}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Hardware}{8}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Communication}{8}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Fuzzy Logic Implementation}{8}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Communication Interval}{9}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Conclusions}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{10}{section.5.2}
+\contentsline {chapter}{\numberline {6}Related Work}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Research Directions}{12}{chapter.7}
+\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{13}{chapter.8}
+\contentsline {chapter}{Kirjandus}{14}{chapter*.1}

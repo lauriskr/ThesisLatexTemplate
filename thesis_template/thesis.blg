@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.6)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: title_page/stardard_page.aux
 A level-1 auxiliary file: 0_frontmatter/abstract.aux
@@ -6,51 +7,56 @@ A level-1 auxiliary file: 1_introduction/introduction.aux
 A level-1 auxiliary file: 2/stateofart.aux
 A level-1 auxiliary file: 3/researchquestion.aux
 A level-1 auxiliary file: 3/contributions.aux
-A level-1 auxiliary file: 4/casestudies.aux
 A level-1 auxiliary file: 5/conclusions.aux
 A level-1 auxiliary file: 6/relatedwork.aux
 A level-1 auxiliary file: 6/futureresearch.aux
 A level-1 auxiliary file: 7/eestiabstract.aux
 The style file: elsarticle-num.bst
 Database file #1: thesis.bib
-You've used 1 entry,
+I was expecting a `,' or a `}'---line 34 of file thesis.bib
+ : @misc{tinkerkit_introduction 
+ :                              = {TinkerKit Introduction},
+I'm skipping whatever remains of this entry
+Warning--all relevant fields are empty in tinkerkit_introduction
+You've used 5 entries,
             2937 wiz_defined-function locations,
-            685 strings with 5551 characters,
-and the built_in function-call counts, 453 in all, are:
-= -- 36
-> -- 10
-< -- 1
-+ -- 4
-- -- 3
-* -- 24
-:= -- 71
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 1
+            694 strings with 5751 characters,
+and the built_in function-call counts, 835 in all, are:
+= -- 58
+> -- 5
+< -- 0
++ -- 5
+- -- 0
+* -- 31
+:= -- 94
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 19
-empty$ -- 54
-format.name$ -- 4
-if$ -- 116
+cite$ -- 6
+duplicate$ -- 38
+empty$ -- 140
+format.name$ -- 0
+if$ -- 242
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 11
-num.names$ -- 1
-pop$ -- 12
+int.to.str$ -- 5
+missing$ -- 0
+newline$ -- 27
+num.names$ -- 0
+pop$ -- 44
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 31
+skip$ -- 75
 stack$ -- 0
-substring$ -- 20
-swap$ -- 7
-text.length$ -- 1
+substring$ -- 0
+swap$ -- 4
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 16
+warning$ -- 1
+while$ -- 0
+width$ -- 6
+write$ -- 39
+(There was 1 error message)

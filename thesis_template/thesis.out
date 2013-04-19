@@ -5,28 +5,31 @@
 \BOOKMARK [2][]{subsection.1.1.3}{1.1.3 Outline}{section.1.1}% 5
 \BOOKMARK [0][]{chapter.2}{2 State of the Art}{}% 6
 \BOOKMARK [1][]{section.2.1}{2.1 Jabber and XMPP}{chapter.2}% 7
-\BOOKMARK [1][]{section.2.2}{2.2 Arduino}{chapter.2}% 8
-\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Arduino Mega ADK}{section.2.2}% 9
-\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 TinkerKit}{section.2.2}% 10
-\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Modules}{section.2.2}% 11
-\BOOKMARK [1][]{section.2.3}{2.3 Fuzzy Logic}{chapter.2}% 12
-\BOOKMARK [1][]{section.2.4}{2.4 Power supply}{chapter.2}% 13
-\BOOKMARK [0][]{chapter.3}{3 Problem Statement}{}% 14
-\BOOKMARK [1][]{section.3.1}{3.1 Current Solution}{chapter.3}% 15
-\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Arduino}{section.3.1}% 16
-\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 XMPP Communication}{section.3.1}% 17
-\BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Power Consumption}{section.3.1}% 18
-\BOOKMARK [0][]{chapter.4}{4 Problem Solution}{}% 19
-\BOOKMARK [1][]{section.4.1}{4.1 Arduino Improvements}{chapter.4}% 20
-\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 Software}{section.4.1}% 21
-\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Hardware}{section.4.1}% 22
-\BOOKMARK [1][]{section.4.2}{4.2 Communication}{chapter.4}% 23
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Fuzzy Logic Implementation}{section.4.2}% 24
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Communication Interval}{section.4.2}% 25
-\BOOKMARK [0][]{chapter.5}{5 Conclusions}{}% 26
-\BOOKMARK [1][]{section.5.1}{5.1 Conclusions}{chapter.5}% 27
-\BOOKMARK [1][]{section.5.2}{5.2 Summary of Contributions}{chapter.5}% 28
-\BOOKMARK [0][]{chapter.6}{6 Related Work}{}% 29
-\BOOKMARK [0][]{chapter.7}{7 Future Research Directions}{}% 30
-\BOOKMARK [0][]{chapter.8}{8 Sisukokkuv\365te}{}% 31
-\BOOKMARK [0][]{chapter*.2}{Bibliography}{}% 32
+\BOOKMARK [1][]{section.2.2}{2.2 XMPP to Cloud}{chapter.2}% 8
+\BOOKMARK [1][]{section.2.3}{2.3 Arduino}{chapter.2}% 9
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Arduino Mega ADK}{section.2.3}% 10
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Wireless SD Shield}{section.2.3}% 11
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 RN-XV WiFly Module}{section.2.3}% 12
+\BOOKMARK [2][]{subsection.2.3.4}{2.3.4 TinkerKit}{section.2.3}% 13
+\BOOKMARK [1][]{section.2.4}{2.4 Fuzzy Logic}{chapter.2}% 14
+\BOOKMARK [2][]{subsection.2.4.1}{2.4.1 Fuzzy Set}{section.2.4}% 15
+\BOOKMARK [2][]{subsection.2.4.2}{2.4.2 Fuzzy Control Systems}{section.2.4}% 16
+\BOOKMARK [0][]{chapter.3}{3 Problem Statement}{}% 17
+\BOOKMARK [1][]{section.3.1}{3.1 Current Solution}{chapter.3}% 18
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Arduino}{section.3.1}% 19
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 XMPP Communication}{section.3.1}% 20
+\BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Power Consumption}{section.3.1}% 21
+\BOOKMARK [0][]{chapter.4}{4 Problem Solution}{}% 22
+\BOOKMARK [1][]{section.4.1}{4.1 Arduino Improvements}{chapter.4}% 23
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 Software}{section.4.1}% 24
+\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Hardware}{section.4.1}% 25
+\BOOKMARK [1][]{section.4.2}{4.2 Communication}{chapter.4}% 26
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Fuzzy Logic Implementation}{section.4.2}% 27
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Communication Interval}{section.4.2}% 28
+\BOOKMARK [0][]{chapter.5}{5 Conclusions}{}% 29
+\BOOKMARK [1][]{section.5.1}{5.1 Conclusions}{chapter.5}% 30
+\BOOKMARK [1][]{section.5.2}{5.2 Summary of Contributions}{chapter.5}% 31
+\BOOKMARK [0][]{chapter.6}{6 Related Work}{}% 32
+\BOOKMARK [0][]{chapter.7}{7 Future Research Directions}{}% 33
+\BOOKMARK [0][]{chapter.8}{8 Sisukokkuv\365te}{}% 34
+\BOOKMARK [0][]{chapter*.1}{Kirjandus}{}% 35

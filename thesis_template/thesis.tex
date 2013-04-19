@@ -12,8 +12,10 @@
 %: Style file for Latex
 % Most style definitions are in the external file PhDthesisPSnPDF.
 % In this template package, it can be found in ./Latex/Classes/
-\documentclass[oneside,11pt]{Latex/Classes/PhDthesisPSnPDF}
-
+\documentclass[oneside,12pt]{Latex/Classes/PhDthesisPSnPDF}
+\usepackage[utf8]{inputenc} %sisendfaili koodilehekylg UTF-8
+\usepackage[T1]{fontenc} %täpitäht ühe sümbolina
+\usepackage{easy-todo}
 %: Macro file for Latex
 % Macros help you summarise frequently repeated Latex commands.
 % Here, they are placed in an external file /Latex/Macros/MacroFile1.tex
@@ -74,7 +76,6 @@
 
 
 %: ----------------------- Here comes the UT first page ------------------------
-
 \include{title_page/stardard_page}
 
 %: ----------------------- abstract ------------------------
@@ -136,7 +137,6 @@
 \mainmatter
 
 \renewcommand{\chaptername}{}
-
 
 %: ----------------------- subdocuments ------------------------
 
@@ -211,6 +211,6 @@
 %: Declaration of originality
 %\include{9_backmatter/declaration}
 
-
+\listoftodos
 
 \end{document}

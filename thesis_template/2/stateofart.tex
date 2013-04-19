@@ -42,19 +42,59 @@ Description of Jabber and XMPP protocol and its usage.
 %if there are configuration we will put them in the appendix
 %or we can put a footnote with a link to your github account
 \section{Arduino}
-Introduction to Arduino.
+
+Arduino \cite{arduinoHome} is an open-source electronics prototyping platform based on a simple microcontroller board and a development environment for writing software for the board. It is intended for anyone interested in creating interactive solutions. Arduino can take inputs from a variety of sensors and control various actuators and lights. The microcontroller is programmed using the Arduino programming language (based on Wiring) and the Arduino development environment (based on Processing). Arduino IDE enables to choose between different board models, microcontroller programmers and communication ports. 
+
+\todo{add an image of the IDE here... }
+Programs (called sketches) are written and uploaded to the board using the Arduino IDE. Each sketch must have two functions- $setup()$ and $loop()$. $setup()$ is the first function called after Arduino is started or rebooted. It is called once and afterwards the function $loop()$ is called consecutively until the board is stopped, restarted or crashes. When a crash occurs, the program is restarted, which means calling $setup()$ again. 
+
+Since programs are written in C/C++, there are a lot of libraries available for use. 
 
 \subsection{Arduino Mega ADK}
-Overview of the Arduino Mega ADK board and its components.
+
+Arduino Mega ADK \cite{megaAdk} is one of the most capable boards available. 
+The Arduino ADK is a microcontroller board based on the ATmega2560. Similar to the Mega 2560 and Uno, it features an ATmega8U2 programmed as a USB-to-serial converter. It has a USB host interface to connect with Android based phones, 54 digital input/output pins, 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, USB B, micro B connections and a 2.1mm center-positive power jack. The ADK is designed to be compatible with most shields designed for the Uno, Diecimila or Duemilanove
+
+The ADK has 256 KB of flash memory for storing code (of which 8 KB is used for the bootloader), 8 KB of SRAM and 4 KB of EEPROM (which can be read and written with the EEPROM library).
+
+The Arduino ADK can be powered via the USB connection or with an external power supply. The power source is selected automatically. External (non-USB) power can come either from an AC-to-DC adapter or battery. The board can operate on an external supply of 5.5 to 16 volts. The recommended range is 7 to 12 volts.
+
+\todo{format the text a bit, remove describe what is EEPROM, add an image}
+
+\subsection{Wireless SD Shield}
+
+The Wireless SD shield \cite{arduino_wireless} allows an Arduino board to communicate using a wireless module. The module can communicate up to 100 feet indoors or up to 300 feet outdoors. 
+
+The shield has an on-board switch which allows to select between USB and Micro modes. In USB mode, the shield bypasses Arduino board's microcontroller and communicates directly to the USB-to-serial converter. In Micro mode, data sent from the microcontroller will be transmitted to the computer via USB as well as being sent wirelessly by the wireless module. The microcontroller will not be programmable via USB in Micro mode.
+
+\subsection{RN-XV WiFly Module}
+
+The RN-XV module \cite{rn_xv_module} by Roving Networks is a certified Wi-Fi solution especially designed for customer who want to migrate their existing 802.15.4 architecture to a standard TCP/IP based platform without having to redesign their existing hardware. In other words, if your project is set up for XBee and you want to move it to a standard WiFi network, you can drop this in the same socket without any other new hardware.
+
+The RN-XV module is based upon Roving Networks' robust RN-171 Wi-Fi module and incorporates 802.11 b/g radio, 32 bit processor, TCP/IP stack, real-time clock, crypto accelerator, power management unit and analog sensor interface.The module is pre-loaded with Roving firmware to simplify integration and minimize development time of your application. In the simplest configuration, the hardware only requires four connections (PWR, TX, RX and GND) to create a wireless data connection.
+
+\todo{Add an image of the wireless shield and rn-xv wifi module}	
 
 \subsection{TinkerKit}
-Overview of the TinkerKit module, components and sensors.
 
-\subsection{Modules}
-Overview of the Ethernet and Wireless Shields and WiFly wireless module.
+TinkerKit \cite{tinkerkit_introduction} is a tool used to build interactive products using Arduino boards. It consists of modules (sensors, actuators) and a sensor shield. The tool greatly simplifies product assembly, because instead of building circuits out of low level components, all the modules can be attached to the TinkerKit sensor shield with a snapping cable.
+
+Here is the mega sensor shield used in this project...
+\todo{Add a figure of the mega sensor shield}
+
+The modules are divided into sensors and actuators. 
+
+\todo{Thermistor Module, Light Dependent Resistor Module,Hall Sensor Module}
+
+
 
 %Fuzzy logic is the main contribution, therefore, you can write here up to 5 pages
 \section{Fuzzy Logic}
+
+\subsection{Fuzzy Set}
+
+\subsection{Fuzzy Control Systems}
+
 Description of fuzzy logic and its uses.
 
 %This one is not necessary, since we will just mention the tool and it will be cited in chapter 4

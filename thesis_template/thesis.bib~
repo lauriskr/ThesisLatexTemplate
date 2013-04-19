@@ -37,10 +37,3 @@
 	howpublished = {http://www.tinkerkit.com/introduction/},
 	file = {TinkerKit Introduction:/home/lauris/.mozilla/firefox/bqohy43l.default/zotero/storage/4H9QWX7I/introduction.html:text/html}
 }
-
-@techreport{fuzzy_control_introduction,
-	address = {1610 Illinois Street  Golden, Colorado 80401-1887  {USA}},
-	title = {Introduction to Fuzzy Control},
-	institution = {Colorado School of Mines, Engineering Division},
-	author = {{Marcelo Godoy Simoes}}
-}
