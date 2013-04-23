@@ -4,9 +4,11 @@
 %: ----------------------- name of chapter  -------------------------
 \chapter{Problem Solution} % top level followed by section, subsection
 
-%transition between chapters, usually no more than two parragraphs
-Transition - Several are the issues that were discussed in previous chapter, regarding the use of cloud services from the mobile...
+In this chapter improvements to the existing implementation are discussed. First, changes in the Arduino sensor module are described. Secondly, an overview of changes in the communication between the module and data collection server (the server from here on). Lastly, an overview of the fuzzy control and data prediction systems that were implemented to reduce communication overhead and power consumption.
 
+The main goal is to reduce the average power consumption measured by \todo{reference it somehow} the PeakTech power supply. 
+
+\todo{introduction}
 
 %: ----------------------- paths to graphics ------------------------
 
@@ -17,25 +19,102 @@ Transition - Several are the issues that were discussed in previous chapter, reg
     \graphicspath{{X/figures/EPS/}{X/figures/}}
 \fi
 
-%: ----------------------- Mobile Cloud Middleware ------------------------
 
-\section{Arduino Improvements}
-Description of improvements made to the current solution
+\section{Power Consumption}
 
-\subsection{Software}
-List of software improvements and their effects on power consumption
+The first problem addressed is power consumption. There are two main ideas behind reducing it - put the sensor module to sleep mode when not transmitting data and reduce the need for data transmission. For this, the server-side client was improved to predict sensor data when possible and notify the sensor module of the next data transmission time. This enables the module to enter sleep mode for the given time period and thus reduce power consumption. 
 
-\subsection{Hardware} 
-Might not include this...
+\subsection{Sleep}
 
-\section{Communication}
-Description of improvements made to the communication between the Arduino board and the server.
+Since the module consists of 3 components - Arduino Mega ADK, Wireless SD Shield with WiFly module and TinkerKit Sensor Shield. Fortunately, both the Mega ADK and WiFly module support sleep modes. 
 
-\subsection{Fuzzy Logic Implementation}
-Description of the fuzzy logic implementation used.
+\subsubsection{Watchdog timer}
+A watchdog timer \cite{watchdog_timer} is an electronic timer used to recover from computer malfunctions. They are found in automated systems where human interference is not possible and therefore the system must be able to recover from malfunctions on its own. 
+A watchdog timer essentially performs a timing function producing a delayed response to an input trigger. The most common implementation has a digital counter that counts from a specified value down to a terminal value. Usually the initial value is programmable. When the counter reaches the terminal value, the timer timeouts and triggers a timeout signal. Usually this means restarting the program from the start. A program can restart the watchdog timer at any time. The act of restarting is usually referred to as "kicking the dog". In this way, a program can be written witch never lets the counter reach the terminal value.
 
-\subsection{Communication Interval}
-Effects of the improvements on power consumption, etc
+In case of an Arduino board, when the watchdog timer timeouts, the sketch is restarted (new call to $setup()$). Furthermore, a watchdog timeout signal is sent and this signal can be captured by the sketch. In the Arduino sketch, this is implemented by the JeeLib library \cite{jeelib_general}. JeeLib is a library written for experimenting with JeeLabs products, however, some parts of the library are written for Arduino boards and can be used with them. Specifically, the Ports class \cite{jeelib_port} is the one used in this implementation to put the Arduino Mega ADK into sleep mode. \todo{Add a sample overview of the sketch here maybe?}
+\todo{Jeelib lib, how it handles sleep}
+
+\subsubsection{WiFly Sleep}
+
+The RN-XV WiFly module can be put to sleep in two ways - sleep timer or sleep command. With the sleep timer, the shield will enter sleep mode after a specified time period has passed since all TCP active connections have closed. With the sleep command the module will enter sleep mode immediatley, unless an active TCP connection exists. \cite{wifly_manual}. 
+
+This means that in order to put the WiFly module to sleep, all active connections must be closed. For the XMPP session, this means closing the active stream and the underlying TCP connection. Once this has been done, the module can successfully enter sleep mode. 
+
+The module can be waken up by either sending characters of the UART or by using the wake timer. In our implementation the activity on the UART wakes the module up when the sketch execution continues after the Mega ADK wakes up from sleep mode and establishes a new TCP connection in the start of $loop()$ method call. This effectively means going through the first 5 stages of XMPP session lifecycle on every wake up. 
+Since XMPP session initialization is quite verbose and the communication over Wi-Fi is unstable, the possibility of receiving scrambled or incomplete messages creates a problem. 
+
+\subsection{Communication}
+
+Because all TCP connections and therefore the XMPP session have to be closed after every data transmit, XMPP session lifecycle steps 1 - 5 shown in \autoref{xmpp_lifecycle} are executed multiple times. When testing the XMPP implementation with Arduino Mega ADK and WiFly module sleep modes enabled, a troubling fact was discovered - the XMPP session negotiation fails at least once for every 30 minute test. The reason for these connection failures are scrambled authentication or stream opening stanzas. 
+
+From the tests, it could be seen that the average XMPP session start up time was 15 seconds. \todo{show a graph here i guess? or whatever} Data needs to be transmitted every 10 seconds, which means that the module can never be put to sleep as it will not be able to go through the sleep and wake up cycle during the available time period. Moreover, data transmission took on average 1 second, meaning that 15 seconds spent on wake up would result in a second of actual work, which is not efficient. 
+
+During testing the sleep and wake up cycles with XMPP, it was found that XMPP session negotiation will hang approximately once in 15 minutes. As the maximum sleep time in our implementation is 65 seconds, this means that there are at least 13 separate session negotiations. Of course, this is the problem of the XMPP library in use and its lack of error handling. Problems with the library could be addressed with a better implementation, however, there was another factor discovered during the tests.
+
+As a result, XMPP as a means of communication was not viable when trying to minimize power consumption. As an alternative, \todo{look how to reference these} web sockets, raw sockets and HTTP was considered. Web sockets were left out because opening a web socket connection is opened with a HTTP request, making using that one request to actually send the data more efficient. Therefore, HTTP was preferred to web sockets. Raw socket implementation in Arduino would add needless complexity to the sketch and was therefore not implemented. 
+
+The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient. \todo{chart with power consumptions for both configurations}
+
+\todo{Switch to http instead of xmpp described here?}
+\todo{Jetty web server, http handler, sample messages}
+\todo{HTTP improvements over XMPP, lacks presence etc, describe pros and cons here}
+
+\section{Server-side Client}
+
+With the move from XMPP to HTTP, the server-side client's implementation changed. Instead of using XMPP Smack library, a web server was needed. Jetty was selected because of its simplicity and possibility to embed it into the application. A web server embedded in an application is useful when prototyping, because it saves time on configuration and deployment. 
+
+Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The new data model can be seen in \todo{add a figure here and describe it}
+
+The final web server consists of 4 modules:
+\begin{enumerate}
+\item Request handler
+\item Linear regression model
+\item Fuzzy control engine
+\item Data storage
+\end{enumerate}
+
+\subsection{Simple Linear Regression}
+
+A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. The idea and some implementation details were taken from a paper \todo{cite the paper here}. The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
+
+The model sample is taken from previous measurements during the last \todo{actual time} 5 minutes. The 5 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause regression model to become inaccurate. 
+
+To measure the accuracy of the model, an error threshold of 90\% was introduced. \todo{cite the paper, add the equation, explain the variables used etc}. 
+
+If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied.
+
+The library used \todo{cite apache page here}
+
+\todo{Describe methods used, error threshold etc}
+\todo{Error threshold taken for each sensor separately, model created for each sensor etc}
+
+\subsection{Fuzzy Logic Engine}
+
+The next step in predicting future sensor values is to calculate the time interval for the next measurement request. To calculate the time, a fuzzy control system was introduced to provide flexible decisions based on multiple input values. 
+
+The fuzzy logic includes the following sets:
+\todo{Describe labels, corresponding fuzzy sets}
+
+The rules are as follows:
+\todo{Overview of the rules}
+\todo{Interference, defuzzification method used}
+
+\section{Results}
+\todo{Describe tests carried out}
+\todo{Make a test with a 9V battery}
+\todo{Graphs with improved power consumption figures on it, description of what changed and how/why}
+
+\todo{Read this through carefully, written without care :)}
+Firstly, as normal, data transmission was thought to be the main source of power consumption. To test this, a power consumption test was carried out.
+\todo{Create a separate paragraph for an overview of the tool used} The test involved using a blabla power supply to measure power consumption with 1 second intervals. For this, a PeakTech 1890 power supply was used.
+
+The results of the test showed that the average power consumption during 10 second no transmission periods was \todo{look for the actual numbers}$n mA$ and $n mA$ when transmitting data. Since sending data did not consume significantly more power, there was nothing to do with it... \todo{Need the actual numbers and charts here to actually write something useful...}
+
+Secondly, the next area of improvement would be to reduce power consumption during the 10 second idle periods. With the existing implementation $loop()$ was called consecutively and time differences were checked to determine when 10 seconds had passed. To improve on this, the first idea was to stop the $loop()$ calls. For this, Arduino API has a function $delay()$, which stop the program for a given number of seconds. However, when measuring the power usage, it still remained the same during the delay periods. For this \todo{cite the page where i got the idea from} a JeeLib library was used to put the arduino to sleep.
+
+\todo{An overview of the watchdog timer, Jeelib library and how it puts the Arduino board to sleep...}
+\todo{Add a graph here to show the power consumption when just the Arduino board sleeps}
 
 
 % ---------------------------------------------------------------------------

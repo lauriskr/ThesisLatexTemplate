@@ -3,3 +3,11 @@
 \backcite {arduino_wireless}{{3}{2.3.2}{subsection.2.3.2}}
 \backcite {rn_xv_module}{{4}{2.3.3}{subsection.2.3.3}}
 \backcite {tinkerkit_introduction}{{4}{2.3.4}{subsection.2.3.4}}
+\backcite {prev_thesis}{{6}{3}{chapter.3}}
+\backcite {prev_thesis}{{6}{3.1}{section.3.1}}
+\backcite {prev_thesis}{{9}{3.2}{section.3.2}}
+\backcite {prev_thesis}{{9}{3.2.1}{subsection.3.2.1}}
+\backcite {prev_thesis}{{10}{3.2.3}{subsection.3.2.3}}
+\backcite {watchdog_timer}{{12}{4.1.1.1}{subsubsection.4.1.1.1}}
+\backcite {jeelib_general}{{12}{4.1.1.1}{subsubsection.4.1.1.1}}
+\backcite {jeelib_port}{{12}{4.1.1.1}{subsubsection.4.1.1.1}}

@@ -37,3 +37,48 @@
 	howpublished = {http://www.tinkerkit.com/introduction/},
 	file = {TinkerKit Introduction:/home/lauris/.mozilla/firefox/bqohy43l.default/zotero/storage/4H9QWX7I/introduction.html:text/html}
 }
+
+@techreport{fuzzy_control_introduction,
+	address = {1610 Illinois Street  Golden, Colorado 80401-1887  {USA}},
+	title = {Introduction to Fuzzy Control},
+	institution = {Colorado School of Mines, Engineering Division},
+	author = {{Marcelo Godoy Simoes}}
+}
+
+@techreport{prev_thesis,
+	address = {Tartu, Estonia},
+	title = {Context Sensor Data on Demand for Mobile Users Supported by XMPP},
+	institution = {University of Tartu, Faculty of Mathematics and Computer Science, Institute of Computer Science},
+	author = {{Kaarel Hanson}}
+}
+
+@misc{9v_battery_capacity,
+	title = {Discharge tests and capacity measurement of 9 volt transistor radio batteries},
+	url = {http://www.powerstream.com/9V-Alkaline-tests.htm},
+	urldate = {2013-04-23},
+	howpublished = {{http://www.powerstream.com/9V-Alkaline-tests.htm}},
+	file = {Discharge tests and capacity measurement of 9 volt transistor radio batteries:/home/lauris/.mozilla/firefox/bqohy43l.default/zotero/storage/5GWX7DHP/9V-Alkaline-tests.html:text/html}
+}
+
+@misc{watchdog_timer,
+	title = {Single and Multistage Watchdog Timers},
+	author = {{Jim Lamberson}},
+	institution = {Sensoray},
+	year = {2012}
+}
+
+@misc{jeelib_port,
+	title = {{JeeLib:} Port Class Reference},
+	url = {http://jeelabs.net/pub/docs/jeelib/classPort.html},
+	urldate = {2013-04-23},
+	howpublished = {{http://jeelabs.net/pub/docs/jeelib/classPort.html}},
+	file = {JeeLib: Port Class Reference:/home/lauris/.mozilla/firefox/bqohy43l.default/zotero/storage/NKZR9CND/classPort.html:text/html}
+}
+
+@misc{jeelib_general,
+	title = {{JeeLib:} Introduction},
+	url = {http://jeelabs.net/pub/docs/jeelib/},
+	urldate = {2013-04-23},
+	howpublished = {http://jeelabs.net/pub/docs/jeelib/},
+	file = {JeeLib: Introduction:/home/lauris/.mozilla/firefox/bqohy43l.default/zotero/storage/IH98FQXZ/jeelib.html:text/html}
+}

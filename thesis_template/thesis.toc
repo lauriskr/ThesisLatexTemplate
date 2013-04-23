@@ -1,4 +1,4 @@
-\select@language {estonian}
+\select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Motivation}{1}{subsection.1.1.1}
@@ -17,20 +17,27 @@
 \contentsline {subsection}{\numberline {2.4.2}Fuzzy Control Systems}{5}{subsection.2.4.2}
 \contentsline {chapter}{\numberline {3}Problem Statement}{6}{chapter.3}
 \contentsline {section}{\numberline {3.1}Current Solution}{6}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Arduino}{6}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Arduino}{7}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}XMPP Communication}{7}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Power Consumption}{7}{subsection.3.1.3}
-\contentsline {chapter}{\numberline {4}Problem Solution}{8}{chapter.4}
-\contentsline {section}{\numberline {4.1}Arduino Improvements}{8}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Software}{8}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Hardware}{8}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Communication}{8}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Fuzzy Logic Implementation}{8}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Communication Interval}{9}{subsection.4.2.2}
-\contentsline {chapter}{\numberline {5}Conclusions}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{10}{section.5.2}
-\contentsline {chapter}{\numberline {6}Related Work}{11}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Research Directions}{12}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{13}{chapter.8}
-\contentsline {chapter}{Kirjandus}{14}{chapter*.1}
+\contentsline {subsection}{\numberline {3.1.3}Data Collection Server}{8}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Problems}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Hardware}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Software}{10}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Power Consumption}{10}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Problem Solution}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Power Consumption}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Sleep}{12}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Watchdog timer}{12}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}WiFly Sleep}{12}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Communication}{13}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Server-side Client}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Simple Linear Regression}{15}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fuzzy Logic Engine}{16}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Results}{16}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusions}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{18}{section.5.2}
+\contentsline {chapter}{\numberline {6}Related Work}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Research Directions}{20}{chapter.7}
+\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{21}{chapter.8}
+\contentsline {chapter}{Bibliography}{22}{chapter*.3}

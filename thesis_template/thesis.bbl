@@ -27,4 +27,22 @@
 \bibitem{tinkerkit_introduction}
 
 
+\bibitem{prev_thesis}
+{Kaarel Hanson}, Context sensor data on demand for mobile users supported by
+  xmpp, Tech. rep., University of Tartu, Faculty of Mathematics and Computer
+  Science, Institute of Computer Science, Tartu, Estonia.
+
+\bibitem{watchdog_timer}
+{Jim Lamberson}, Single and multistage watchdog timers (2012).
+
+\bibitem{jeelib_general}
+\href{http://jeelabs.net/pub/docs/jeelib/}{{JeeLib:} introduction},
+  http://jeelabs.net/pub/docs/jeelib/.
+\newline\urlprefix\url{http://jeelabs.net/pub/docs/jeelib/}
+
+\bibitem{jeelib_port}
+\href{http://jeelabs.net/pub/docs/jeelib/classPort.html}{{JeeLib:} port class
+  reference}, {http://jeelabs.net/pub/docs/jeelib/classPort.html}.
+\newline\urlprefix\url{http://jeelabs.net/pub/docs/jeelib/classPort.html}
+
 \end{thebibliography}

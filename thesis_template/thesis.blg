@@ -18,45 +18,46 @@ I was expecting a `,' or a `}'---line 34 of file thesis.bib
  :                              = {TinkerKit Introduction},
 I'm skipping whatever remains of this entry
 Warning--all relevant fields are empty in tinkerkit_introduction
-You've used 5 entries,
+Warning--empty year in prev_thesis
+You've used 9 entries,
             2937 wiz_defined-function locations,
-            694 strings with 5751 characters,
-and the built_in function-call counts, 835 in all, are:
-= -- 58
-> -- 5
+            711 strings with 6240 characters,
+and the built_in function-call counts, 1545 in all, are:
+= -- 120
+> -- 15
 < -- 0
-+ -- 5
-- -- 0
-* -- 31
-:= -- 94
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 4
++ -- 11
+- -- 2
+* -- 55
+:= -- 176
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 38
-empty$ -- 140
-format.name$ -- 0
-if$ -- 242
+cite$ -- 11
+duplicate$ -- 67
+empty$ -- 249
+format.name$ -- 2
+if$ -- 451
 int.to.chr$ -- 0
-int.to.str$ -- 5
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 27
-num.names$ -- 0
-pop$ -- 44
+newline$ -- 41
+num.names$ -- 2
+pop$ -- 76
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 75
+skip$ -- 140
 stack$ -- 0
 substring$ -- 0
-swap$ -- 4
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 0
-width$ -- 6
-write$ -- 39
+warning$ -- 2
+while$ -- 2
+width$ -- 10
+write$ -- 69
 (There was 1 error message)

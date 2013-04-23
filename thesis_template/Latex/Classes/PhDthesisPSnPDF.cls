@@ -44,7 +44,7 @@
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption} % for improved layout of figure captions with extra margin, smaller font than text
 \usepackage{fancyhdr} % for better header layout
 \usepackage{eucal}
-\usepackage[english,estonian]{babel}
+\usepackage[estonian,english]{babel}
 \usepackage[usenames, dvipsnames]{color}
 \usepackage[perpage]{footmisc}
 \usepackage[round, sort, numbers]{natbib}
