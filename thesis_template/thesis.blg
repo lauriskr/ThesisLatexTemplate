@@ -19,45 +19,45 @@ I was expecting a `,' or a `}'---line 34 of file thesis.bib
 I'm skipping whatever remains of this entry
 Warning--all relevant fields are empty in tinkerkit_introduction
 Warning--empty year in prev_thesis
-You've used 9 entries,
+You've used 10 entries,
             2937 wiz_defined-function locations,
-            711 strings with 6240 characters,
-and the built_in function-call counts, 1545 in all, are:
-= -- 120
-> -- 15
+            715 strings with 6444 characters,
+and the built_in function-call counts, 1717 in all, are:
+= -- 134
+> -- 16
 < -- 0
-+ -- 11
++ -- 12
 - -- 2
-* -- 55
-:= -- 176
-add.period$ -- 9
-call.type$ -- 9
-change.case$ -- 9
+* -- 62
+:= -- 194
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 67
-empty$ -- 249
+cite$ -- 12
+duplicate$ -- 75
+empty$ -- 278
 format.name$ -- 2
-if$ -- 451
+if$ -- 503
 int.to.chr$ -- 0
-int.to.str$ -- 9
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 41
+newline$ -- 45
 num.names$ -- 2
-pop$ -- 76
+pop$ -- 85
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 140
+skip$ -- 154
 stack$ -- 0
 substring$ -- 0
-swap$ -- 7
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
 while$ -- 2
-width$ -- 10
-write$ -- 69
+width$ -- 12
+write$ -- 76
 (There was 1 error message)

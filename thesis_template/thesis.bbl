@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -44,5 +44,11 @@
 \href{http://jeelabs.net/pub/docs/jeelib/classPort.html}{{JeeLib:} port class
   reference}, {http://jeelabs.net/pub/docs/jeelib/classPort.html}.
 \newline\urlprefix\url{http://jeelabs.net/pub/docs/jeelib/classPort.html}
+
+\bibitem{wifly_manual}
+\href{http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}{{WiFly}
+  user guide - {WiFly-RN-UM.pdf}},
+  {http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}.
+\newline\urlprefix\url{http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}
 
 \end{thebibliography}

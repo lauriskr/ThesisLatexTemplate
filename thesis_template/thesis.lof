@@ -2,8 +2,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP Session Lifecycle\relax }}{8}{figure.caption.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Server-side Data Model\relax }}{9}{figure.caption.2}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Updated Server-side Data Model\relax }}{15}{figure.caption.3}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Regression Confidence Fuzzy Sets\relax }}{17}{figure.caption.4}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sensor Value Fuzzy Sets\relax }}{18}{figure.caption.5}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Idle Time Fuzzy Sets\relax }}{19}{figure.caption.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -19,7 +19,6 @@ The main goal is to reduce the average power consumption measured by \todo{refer
     \graphicspath{{X/figures/EPS/}{X/figures/}}
 \fi
 
-
 \section{Power Consumption}
 
 The first problem addressed is power consumption. There are two main ideas behind reducing it - put the sensor module to sleep mode when not transmitting data and reduce the need for data transmission. For this, the server-side client was improved to predict sensor data when possible and notify the sensor module of the next data transmission time. This enables the module to enter sleep mode for the given time period and thus reduce power consumption. 
@@ -37,7 +36,7 @@ In case of an Arduino board, when the watchdog timer timeouts, the sketch is res
 
 \subsubsection{WiFly Sleep}
 
-The RN-XV WiFly module can be put to sleep in two ways - sleep timer or sleep command. With the sleep timer, the shield will enter sleep mode after a specified time period has passed since all TCP active connections have closed. With the sleep command the module will enter sleep mode immediatley, unless an active TCP connection exists. \cite{wifly_manual}. 
+The RN-XV WiFly module can be put to sleep in two ways - sleep timer or sleep command. With the sleep timer, the shield will enter sleep mode after a specified time period has passed since all TCP active connections have closed. With the sleep command the module will enter sleep mode immediately, unless an active TCP connection exists. \cite{wifly_manual}. 
 
 This means that in order to put the WiFly module to sleep, all active connections must be closed. For the XMPP session, this means closing the active stream and the underlying TCP connection. Once this has been done, the module can successfully enter sleep mode. 
 
@@ -54,7 +53,7 @@ During testing the sleep and wake up cycles with XMPP, it was found that XMPP se
 
 As a result, XMPP as a means of communication was not viable when trying to minimize power consumption. As an alternative, \todo{look how to reference these} web sockets, raw sockets and HTTP was considered. Web sockets were left out because opening a web socket connection is opened with a HTTP request, making using that one request to actually send the data more efficient. Therefore, HTTP was preferred to web sockets. Raw socket implementation in Arduino would add needless complexity to the sketch and was therefore not implemented. 
 
-The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient. \todo{chart with power consumptions for both configurations}
+The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient. \todo{chart with power consumption for both configurations}
 
 \todo{Switch to http instead of xmpp described here?}
 \todo{Jetty web server, http handler, sample messages}
@@ -64,8 +63,9 @@ The main advantages of HTTP are connection initialization speed and simplicity. 
 
 With the move from XMPP to HTTP, the server-side client's implementation changed. Instead of using XMPP Smack library, a web server was needed. Jetty was selected because of its simplicity and possibility to embed it into the application. A web server embedded in an application is useful when prototyping, because it saves time on configuration and deployment. 
 
-Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The new data model can be seen in \todo{add a figure here and describe it}
+Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The new data model can be seen in \autoref{data_model_final}. $Data$ table now has $measured$ field, which indicates if the value has been measured or predicted. $SensorTypes$ table has two new fields - $regression\_error$ and $measure\_error$. $regression\_error$ is the acceptable regression model error for future predictions. $measure\_error$ indicates the acceptable variance for measured values. 
 
+\todo{Do i really need this here?}
 The final web server consists of 4 modules:
 \begin{enumerate}
 \item Request handler
@@ -74,48 +74,102 @@ The final web server consists of 4 modules:
 \item Data storage
 \end{enumerate}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{4/figures/data_model_final.jpg}
+\caption{Updated Server-side Data Model}
+\label{data_model_final}
+\end{figure}
+
 \subsection{Simple Linear Regression}
 
 A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. The idea and some implementation details were taken from a paper \todo{cite the paper here}. The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
 
-The model sample is taken from previous measurements during the last \todo{actual time} 5 minutes. The 5 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause regression model to become inaccurate. 
+The model sample is taken from previous measurements during the last \todo{actual time} 5 minutes. The 5 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
 
 To measure the accuracy of the model, an error threshold of 90\% was introduced. \todo{cite the paper, add the equation, explain the variables used etc}. 
 
-If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied.
+If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
 
-The library used \todo{cite apache page here}
+\begin{center}
+$\alpha = 2\Phi \left ( \frac{\epsilon}{RMSE}  \right ) - 1$.
+\end{center}
+
+Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error \todo{explain what it is} of our regression model.
 
 \todo{Describe methods used, error threshold etc}
 \todo{Error threshold taken for each sensor separately, model created for each sensor etc}
+Regression models are created separately for each sensor. Each model has a sample of previous measurements and the allowed error $\epsilon$ defined in the database. 
+The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected confidence threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 
 
 \subsection{Fuzzy Logic Engine}
 
-The next step in predicting future sensor values is to calculate the time interval for the next measurement request. To calculate the time, a fuzzy control system was introduced to provide flexible decisions based on multiple input values. 
+The next step in predicting future sensor values is to calculate the time interval for the next measurement request. To calculate the time, a fuzzy control system was introduced to provide flexible decisions based on multiple input variables. The input variables are: 
+\begin{enumerate}
+\item $temp$					
+\item $temp$ $predictability$	
+\item $light$					
+\item $light$ $predictability$	
+\item $hall$					
+\item $hall$ $predictability$
+\end{enumerate}
 
-The fuzzy logic includes the following sets:
-\todo{Describe labels, corresponding fuzzy sets}
+Here each sensor has a pair of input variables - measured sensor value and sensor value predictability (regression model confidence level $\alpha$). All these variables are mapped into fuzzy sets, a procedure call fuzzification. The predictability variables are mapped into sets which all have the same membership functions shown in figure \autoref{pred_sets}.
 
-The rules are as follows:
-\todo{Overview of the rules}
-\todo{Interference, defuzzification method used}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.58]{4/figures/pred_sets.pdf}
+\caption{Regression Confidence Fuzzy Sets}
+\label{pred_sets}
+\end{figure}
+
+The fuzzy control system is initialized with a previous measurement for each sensor. This effectively sets the bounds of each sensor's fuzzy sets as seen in \autoref{change_sets}. The $PREDICTABLE$ fuzzy set's DOM (degree of membership) reaches maximum at a confidence level of 0.95 or 95\% because for our prototype anything above that level is highly predictable. 
+
+The measured sensor values are fuzzified into sets, which each have different membership functions. The membership functions are calculated on the last measurement received as seen in \autoref{change_sets}. Here $X$ in set labels notes the sensor type currently used as the sets are the same relative to each sensor's previous measurement. The center point $O$ is the previously measured value. $||X_2X_3||$ is the predefined sensor measurement error  ($sensor\_error$ field in the data model). This means that if the new measurement is between the points $X_2$ and $X_3$, there is no change in the measurement for the fuzzy system. The lengths $||X_0X_2||$, $||X_1O||$, $||OX_4||$ and $||X_3X_5||$ are defined by the same variable $slope\_width$. \todo{maybe calculate this automatically somehow, atm predefined variable used}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.55]{4/figures/change_sets.pdf}
+\caption{Sensor Value Fuzzy Sets}
+\label{change_sets}
+\end{figure}
+
+The output variable is defuzzified from the idle time sets which have membership functions described in \autoref{idle_sets}. The sets $request$ and $predict$ are symmetrical to enable easy defuzzification. The maximum idle time is 65 seconds, which is the maximum length of one sleep cycle for the sensor module. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.58]{4/figures/result_sets.pdf}
+\caption{Idle Time Fuzzy Sets}
+\label{idle_sets}
+\end{figure}
+
+When all input variables have been fuzzified and degrees of membership calculated, then the next step is to fire all predefined rules. For each sensor, there is a collection of 3 rules, making a total of 9 rules (here $x \in \{hall, temp, light\}$):
+
+%	controller.addRule(new FuzzyAND(new FuzzyOR(tempChangedLeft, tempChangedRight), tempNotPredictable), new FuzzySet(requestData));
+%		controller.addRule(new FuzzyAND(new FuzzyOR(tempChangedLeft, tempChangedRight), tempPredictable), new FuzzySet(requestData));
+%		controller.addRule(new FuzzyAND(tempSame, tempNotPredictable), new FuzzySet(requestData));
+%		controller.addRule(new FuzzyAND(tempSame, tempPredictable), new FuzzySet(predictData));
+
+\begin{enumerate}
+\item IF $x$ IS $x\_changed\_left$ OR $x\_changed\_right$ AND $x\_predictability$ IS $not\_predictable$ OR $predictable$ THEN $request$
+\item IF $x$ IS $x\_same$ AND $x\_predictability$ IS $not\_predictable$ THEN $request$
+\item IF $x$ IS $x\_same$ AND $x\_predictability$ IS $predictable$ THEN $predict$
+\end{enumerate}
+
+The previously calculated degrees of membership are fed into these rules. For $AND$ relationship, the minimum value is selected, for $OR$ relationship, the maximum value is selected. For each rule, the output variable received a DOM equal to the DOM of the premise. When all rules have been evaluated, the results are defuzzified into a single crisp value, which is the idle time decision. This process is called defuzzification.
+
+During defuzzification the DOMs of result sets $request$ and $predict$ for each rule are combined into a single DOM for the specified set. For this, $request$ output has an $OR$ relationship (maximum value) and the $predict$ set has an $AND$ relationship (minimum value). These relationships mean that the most inaccurate sensors would be represented in the final result. For example if $hall$ has a DOM of 1.0 to $predict$, but $temp$ has a DOM of 0.5 to $predict$, then the outcome would be a DOM of 0.5, because we need the output for least accurate sensors. For $request$ this logic is reversed as the maximum DOM to $request$ represents the output for the least accurate sensor. 
+
+The next step is to get the crisp result value. For this process, the idle time values for $predict$ and $request$ set membership functions at the specified DOM are calculated. $x$ is found the equation $f(x) = DOM$, where $x$ is the idle time and $f$ is the membership function. $request$ and $predict$ membership functions are symmetric with the axis being in the point $x = 0$ as seen in \autoref{idle_sets}. The final defuzzified idle time is equal to $max\{x_{predict} - x_{request}, 10\}$. Meaning that if the DOM to $request$ was higher that to predict, then the default idle time of 10 seconds is returned. Otherwise the value at the center point of the two results is returned.
+
+When the crisp result is received from the fuzzy control system and idle time is longer than 10 seconds, future data is predicted for the idle period. This means that using the regression models, future values with 10 second intervals are inserted into the database for each sensor. 
+
+Finally, the idle time with a minimum value of 10 seconds is written as a JSON format string to the response body of the HTTP request. A sample response would look like: \todo{add a sample response here}
 
 \section{Results}
-\todo{Describe tests carried out}
-\todo{Make a test with a 9V battery}
+\todo{Describe tests carried out}\\
+\todo{Make a test with a 9V battery}\\
 \todo{Graphs with improved power consumption figures on it, description of what changed and how/why}
-
-\todo{Read this through carefully, written without care :)}
-Firstly, as normal, data transmission was thought to be the main source of power consumption. To test this, a power consumption test was carried out.
-\todo{Create a separate paragraph for an overview of the tool used} The test involved using a blabla power supply to measure power consumption with 1 second intervals. For this, a PeakTech 1890 power supply was used.
-
-The results of the test showed that the average power consumption during 10 second no transmission periods was \todo{look for the actual numbers}$n mA$ and $n mA$ when transmitting data. Since sending data did not consume significantly more power, there was nothing to do with it... \todo{Need the actual numbers and charts here to actually write something useful...}
-
-Secondly, the next area of improvement would be to reduce power consumption during the 10 second idle periods. With the existing implementation $loop()$ was called consecutively and time differences were checked to determine when 10 seconds had passed. To improve on this, the first idea was to stop the $loop()$ calls. For this, Arduino API has a function $delay()$, which stop the program for a given number of seconds. However, when measuring the power usage, it still remained the same during the delay periods. For this \todo{cite the page where i got the idea from} a JeeLib library was used to put the arduino to sleep.
-
-\todo{An overview of the watchdog timer, Jeelib library and how it puts the Arduino board to sleep...}
-\todo{Add a graph here to show the power consumption when just the Arduino board sleeps}
-
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------

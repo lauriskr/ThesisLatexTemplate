@@ -47,10 +47,10 @@ Both the data collection server and Arduino module are XMPP clients. The XMPP Op
 XMPP session lifecycle can be seen in \autoref{xmpp_lifecycle}. With the current implementation, steps 1 - 5 are done once when establishing the connection or when the connection drops. Data transmission step is done every 10 seconds and the last 2 steps are done when the connection is closed.
 
 \begin{figure}[H]
-\label{xmpp_lifecycle}
 \centering
 \includegraphics[scale=0.6]{3/figures/xmpp_session.png}
 \caption{XMPP Session Lifecycle}
+\label{xmpp_lifecycle}
 \end{figure}
 
 \subsection{Data Collection Server}
@@ -59,10 +59,10 @@ The data collection server is responsible for gathering sensor data and saving i
 The database has three main tables - sensors, data and locations. Locations table has different sensor module locations, sensors table has different types of sensors and data has data gathered from different locations and sensors. The data model can be seen in \autoref{data_model_initial}.
 
 \begin{figure}[H]
-\label{data_model_initial}
 \centering
 \includegraphics[scale=0.6]{3/figures/data_model_initial.jpg}
 \caption{Server-side Data Model}
+\label{data_model_initial}
 \end{figure}
 
 \section{Problems}
