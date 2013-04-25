@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.10)  25 APR 2013 00:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  25 APR 2013 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -661,14 +661,39 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box53
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count118
+\lst@gtempboxa=\box54
+\lst@token=\toks22
+\lst@length=\count119
+\lst@currlwidth=\dimen126
+\lst@column=\count120
+\lst@pos=\count121
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count122
+\lst@lineno=\count123
+\lst@maxwidth=\dimen129
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
 (/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks23
 )
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box56
 
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -684,26 +709,26 @@ Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
 
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks26
 ))
-\pgf@x=\dimen126
-\pgf@y=\dimen127
-\pgf@xa=\dimen128
-\pgf@ya=\dimen129
-\pgf@xb=\dimen130
-\pgf@yb=\dimen131
-\pgf@xc=\dimen132
-\pgf@yc=\dimen133
+\pgf@x=\dimen130
+\pgf@y=\dimen131
+\pgf@xa=\dimen132
+\pgf@ya=\dimen133
+\pgf@xb=\dimen134
+\pgf@yb=\dimen135
+\pgf@xc=\dimen136
+\pgf@yc=\dimen137
 \w@pgf@writea=\write4
 \r@pgf@reada=\read1
-\c@pgf@counta=\count118
-\c@pgf@countb=\count119
-\c@pgf@countc=\count120
-\c@pgf@countd=\count121
+\c@pgf@counta=\count126
+\c@pgf@countb=\count127
+\c@pgf@countc=\count128
+\c@pgf@countd=\count129
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -718,8 +743,8 @@ File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count122
-\pgfsyssoftpath@bigbuffer@items=\count123
+\pgfsyssoftpath@smallbuffer@items=\count130
+\pgfsyssoftpath@bigbuffer@items=\count131
 )
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -749,12 +774,12 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen134
-\pgfmath@count=\count124
-\pgfmath@box=\box55
-\pgfmath@toks=\toks26
-\pgfmath@stack@operand=\toks27
-\pgfmath@stack@operation=\toks28
+\pgfmath@dimen=\dimen138
+\pgfmath@count=\count132
+\pgfmath@box=\box57
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
 )
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -765,51 +790,51 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count125
+\c@pgfmathroundto@lastzeros=\count133
 ))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen135
-\pgf@picmaxx=\dimen136
-\pgf@picminy=\dimen137
-\pgf@picmaxy=\dimen138
-\pgf@pathminx=\dimen139
-\pgf@pathmaxx=\dimen140
-\pgf@pathminy=\dimen141
-\pgf@pathmaxy=\dimen142
-\pgf@xx=\dimen143
-\pgf@xy=\dimen144
-\pgf@yx=\dimen145
-\pgf@yy=\dimen146
-\pgf@zx=\dimen147
-\pgf@zy=\dimen148
+\pgf@picminx=\dimen139
+\pgf@picmaxx=\dimen140
+\pgf@picminy=\dimen141
+\pgf@picmaxy=\dimen142
+\pgf@pathminx=\dimen143
+\pgf@pathmaxx=\dimen144
+\pgf@pathminy=\dimen145
+\pgf@pathmaxy=\dimen146
+\pgf@xx=\dimen147
+\pgf@xy=\dimen148
+\pgf@yx=\dimen149
+\pgf@yy=\dimen150
+\pgf@zx=\dimen151
+\pgf@zy=\dimen152
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen149
-\pgf@path@lasty=\dimen150
+\pgf@path@lastx=\dimen153
+\pgf@path@lasty=\dimen154
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen151
-\pgf@shorten@start@additional=\dimen152
+\pgf@shorten@end@additional=\dimen155
+\pgf@shorten@start@additional=\dimen156
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count126
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count134
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen153
+\pgflinewidth=\dimen157
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen154
-\pgf@pt@y=\dimen155
-\pgf@pt@temp=\dimen156
+\pgf@pt@x=\dimen158
+\pgf@pt@y=\dimen159
+\pgf@pt@temp=\dimen160
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -825,15 +850,15 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen157
-\pgf@sys@shading@range@num=\count127
+\pgf@max=\dimen161
+\pgf@sys@shading@range@num=\count135
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box59
+\pgfexternal@startupbox=\box61
 ))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
@@ -846,15 +871,15 @@ File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box60
+\pgfnodeparttextbox=\box62
 )
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen158
-\pgf@nodesepend=\dimen159
+\pgf@nodesepstart=\dimen162
+\pgf@nodesepend=\dimen163
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
@@ -864,39 +889,39 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen160
-\pgffor@skip=\dimen161
-\pgffor@stack=\toks29
-\pgffor@toks=\toks30
+\pgffor@iter=\dimen164
+\pgffor@skip=\dimen165
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count128
-\pgfplotmarksize=\dimen162
+\pgf@plot@mark@count=\count136
+\pgfplotmarksize=\dimen166
 )
-\tikz@lastx=\dimen163
-\tikz@lasty=\dimen164
-\tikz@lastxsaved=\dimen165
-\tikz@lastysaved=\dimen166
-\tikzleveldistance=\dimen167
-\tikzsiblingdistance=\dimen168
-\tikz@figbox=\box61
-\tikz@tempbox=\box62
-\tikztreelevel=\count129
-\tikznumberofchildren=\count130
-\tikznumberofcurrentchild=\count131
-\tikz@fig@count=\count132
+\tikz@lastx=\dimen167
+\tikz@lasty=\dimen168
+\tikz@lastxsaved=\dimen169
+\tikz@lastysaved=\dimen170
+\tikzleveldistance=\dimen171
+\tikzsiblingdistance=\dimen172
+\tikz@figbox=\box63
+\tikz@tempbox=\box64
+\tikztreelevel=\count137
+\tikznumberofchildren=\count138
+\tikznumberofcurrentchild=\count139
+\tikz@fig@count=\count140
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count133
-\pgfmatrixcurrentcolumn=\count134
-\pgf@matrix@numberofcolumns=\count135
+\pgfmatrixcurrentrow=\count141
+\pgfmatrixcurrentcolumn=\count142
+\pgf@matrix@numberofcolumns=\count143
 )
-\tikz@expandcount=\count136
+\tikz@expandcount=\count144
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
@@ -908,7 +933,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
-\arrowsize=\dimen169
+\arrowsize=\dimen173
 ))
 \@input{Latex/Macros/MacroFile1.aux}
 \openout2 = `Latex/Macros/MacroFile1.aux'.
@@ -920,34 +945,34 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 (./7/eestiabstract.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
-\scratchdimen=\dimen170
-\scratchbox=\box63
-\nofMPsegments=\count138
-\nofMParguments=\count139
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count140
-\MPscratchDim=\dimen171
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count145
+\scratchdimen=\dimen174
+\scratchbox=\box65
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count148
+\MPscratchDim=\dimen175
+\MPnumerator=\count149
+\makeMPintoPDFobject=\count150
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -965,10 +990,11 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box64
-Package backref Info: ** backref set up for natbib ** on input line 49.
-Package hyperref Info: Link coloring OFF on input line 49.
+\AtBeginShipoutBox=\box66
+Package backref Info: ** backref set up for natbib ** on input line 50.
+Package hyperref Info: Link coloring OFF on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -976,16 +1002,17 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count143
+\c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
+\c@lstlisting=\count152
  ABD: EveryShipout initializing macros
 \openout2 = `title_page/stardard_page.aux'.
 
@@ -1029,108 +1056,132 @@ l.35 \end{abstracts}
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [4]
+ [4] (./thesis.lof)
+\tf@lof=\write7
+\openout7 = `thesis.lof'.
+
+ [5]
 \openout2 = `1_introduction/introduction.aux'.
 
  (./1_introduction/introduction.tex
  1.
-) [1
+[1
 
 
 
-]
+]) [2]
 \openout2 = `2/stateofart.aux'.
 
  (./2/stateofart.tex
  2.
-[2
+[3
 
 
 
-] [3]) [4] [5]
+] [4]) [5] [6]
 \openout2 = `3/researchquestion.aux'.
 
  (./3/researchquestion.tex
  3.
-[6
+[7
 
 
 
-] <3/figures/xmpp_session.png, id=304, 425.59pt x 781.92125pt>
+] <3/figures/xmpp_session.png, id=327, 425.59pt x 781.92125pt>
 File: 3/figures/xmpp_session.png Graphic file (type png)
 
 <use 3/figures/xmpp_session.png>
-Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 51.
+Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 55.
 (pdftex.def)             Requested size: 255.35596pt x 469.15637pt.
- [7] [8 <./3/figures/xmpp_session.png>]
-<3/figures/data_model_initial.jpg, id=322, 560.0925pt x 105.39375pt>
+ [8] [9 <./3/figures/xmpp_session.png>]
+<3/figures/data_model_initial.jpg, id=346, 560.0925pt x 105.39375pt>
 File: 3/figures/data_model_initial.jpg Graphic file (type jpg)
 
 <use 3/figures/data_model_initial.jpg>
-Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 63
+Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 67
 .
 (pdftex.def)             Requested size: 336.05809pt x 63.23672pt.
- [9 <./3/figures/data_model_initial.jpg>]) [10]
+ [10 <./3/figures/data_model_initial.jpg>]) [11]
 \openout2 = `3/contributions.aux'.
 
  (./3/contributions.tex
  4.
-[11
+[12
 
 
 
-] [12] [13] [14]
-<4/figures/data_model_final.jpg, id=373, 654.445pt x 120.45pt>
+] [13] [14]
+<4/figures/30s_xmpp_vs_http.pdf, id=386, 460.72125pt x 259.97125pt>
+File: 4/figures/30s_xmpp_vs_http.pdf Graphic file (type pdf)
+
+<use 4/figures/30s_xmpp_vs_http.pdf>
+Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 63.
+(pdftex.def)             Requested size: 414.6453pt x 233.97195pt.
+
+Overfull \hbox (2.08034pt too wide) in paragraph at lines 63--64
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16 <./4/figures/30s_xmpp_vs_http.pdf>]
+<4/figures/data_model_final.jpg, id=410, 654.445pt x 120.45pt>
 File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 
 <use 4/figures/data_model_final.jpg>
-Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 79.
+Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 85.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
- [15 <./4/figures/data_model_final.jpg>]
-[16] <4/figures/pred_sets.pdf, id=402, 756.8275pt x 392.46625pt>
+ [17 <./4/figures/data_model_final.jpg>]
+<4/figures/pred_sets.pdf, id=423, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
-Package pdftex.def Info: 4/figures/pred_sets.pdf used on input line 121.
+Package pdftex.def Info: 4/figures/pred_sets.pdf used on input line 123.
 (pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
 
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 121--122
- [][] 
- []
-
-[17 <./4/figures/pred_sets.pdf>]
-<4/figures/change_sets.pdf, id=414, 785.93625pt x 392.46625pt>
-File: 4/figures/change_sets.pdf Graphic file (type pdf)
-
-<use 4/figures/change_sets.pdf>
-Package pdftex.def Info: 4/figures/change_sets.pdf used on input line 132.
-(pdftex.def)             Requested size: 432.26627pt x 215.85709pt.
-
-Overfull \hbox (19.70131pt too wide) in paragraph at lines 132--133
- [][] 
- []
-
-<4/figures/result_sets.pdf, id=416, 756.8275pt x 392.46625pt>
-File: 4/figures/result_sets.pdf Graphic file (type pdf)
-
-<use 4/figures/result_sets.pdf>
-Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 141.
-(pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
-
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 141--142
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./4/figures/change_sets.pdf>] [19 <./4/figures/result_sets.pdf>]) [20]
+[18] <4/figures/change_sets.pdf, id=437, 785.93625pt x 392.46625pt>
+File: 4/figures/change_sets.pdf Graphic file (type pdf)
+
+<use 4/figures/change_sets.pdf>
+Package pdftex.def Info: 4/figures/change_sets.pdf used on input line 134.
+(pdftex.def)             Requested size: 432.26627pt x 215.85709pt.
+
+Overfull \hbox (19.70131pt too wide) in paragraph at lines 134--135
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<4/figures/result_sets.pdf, id=439, 756.8275pt x 392.46625pt>
+File: 4/figures/result_sets.pdf Graphic file (type pdf)
+
+<use 4/figures/result_sets.pdf>
+Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 143.
+(pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
+
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 143--144
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./4/figures/pred_sets.pdf>] [20 <./4/figures/change_sets.pdf> <./4/figures
+/result_sets.pdf>] [21]) [22]
 \openout2 = `5/conclusions.aux'.
 
-
-(./5/conclusions.tex
+ (./5/conclusions.tex
  5.
-) [21
+) [23
 
 
 
@@ -1139,7 +1190,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  (./6/relatedwork.tex
  6.
-) [22
+) [24
 
 
 
@@ -1148,7 +1199,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  (./6/futureresearch.tex
  7.
-) [23
+) [25
 
 
 
@@ -1157,15 +1208,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  (./7/eestiabstract.tex
  8.
-) [24
+) [26
 
 
-
-] (./thesis.lof)
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
-
- [25
 
 ] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write8
@@ -1215,16 +1260,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--53
  / datasheets /
  []
 
-) [26
+) [27
 
-] (./thesis.lod [27
+
+] (./thesis.lod [28
 
 ])
 \tf@lod=\write9
 \openout9 = `thesis.lod'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
- [28]
+ [29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./thesis.aux (./title_page/stardard_page.aux)
 (./0_frontmatter/abstract.aux) (./1_introduction/introduction.aux)
@@ -1234,42 +1280,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CA9273E6D4BD7DFE98CA3D4E93DF80CD;2820.
+(rerunfilecheck)             Checksum: 2A595109C3C2D877D83E1B9697FB8D68;2780.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 2E48DCAFFE9538BEE576F0F4F805BEE4;777.
+(rerunfilecheck)             Checksum: 0962C732A89125004A922AAA582A4FB7;833.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 17374 strings out of 495059
- 300865 string characters out of 3182030
- 384217 words of memory out of 3000000
- 19961 multiletter control sequences out of 15000+200000
- 21626 words of font info for 53 fonts, out of 3000000 for 9000
+ 18969 strings out of 495059
+ 321903 string characters out of 3182030
+ 403153 words of memory out of 3000000
+ 21533 multiletter control sequences out of 15000+200000
+ 22702 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,55p,940b,459s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,55p,940b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.450pk> </home/
 lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/lauris/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/lauris/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/lauris/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecbx0800.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecbx1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-1200.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk
-> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/l
-auris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.600pk> </home/lauris/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/lauris/.texmf-var/fon
-ts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/lauris/.texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/eccc1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ectt1200.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1
-200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (33 pages, 376774 bytes).
+our/jknappen/ec/ectt1000.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx0800.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/l
+auris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/lauris/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.600pk> </home/lauris/.texmf-var/fon
+ts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecbx2488.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappe
+n/ec/eccc1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1
+200.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on thesis.pdf (35 pages, 407417 bytes).
 PDF statistics:
- 1212 PDF objects out of 1440 (max. 8388607)
- 589 compressed objects within 6 object streams
- 139 named destinations out of 1000 (max. 500000)
- 387 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1293 PDF objects out of 1440 (max. 8388607)
+ 608 compressed objects within 7 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

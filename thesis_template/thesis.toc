@@ -1,44 +1,43 @@
 \select@language {english}
+\contentsline {chapter}{List of Figures}{v}{section*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Motivation}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Contributions}{1}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Outline}{1}{subsection.1.1.3}
-\contentsline {chapter}{\numberline {2}State of the Art}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Jabber and XMPP}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}XMPP to Cloud}{2}{section.2.2}
-\contentsline {section}{\numberline {2.3}Arduino}{2}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Arduino Mega ADK}{3}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Wireless SD Shield}{3}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}RN-XV WiFly Module}{4}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}TinkerKit}{4}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Fuzzy Logic}{5}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Fuzzy Set}{5}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Fuzzy Control Systems}{5}{subsection.2.4.2}
-\contentsline {chapter}{\numberline {3}Problem Statement}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Current Solution}{6}{section.3.1}
+\contentsline {subsection}{\numberline {1.1.3}Outline}{2}{subsection.1.1.3}
+\contentsline {chapter}{\numberline {2}State of the Art}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Arduino}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Arduino Mega ADK}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Wireless SD Shield}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}RN-XV WiFly Module}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}TinkerKit}{5}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Fuzzy Logic}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Fuzzy Set}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Fuzzy Control Systems}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Problem Statement}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Current Solution}{7}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Arduino}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}XMPP Communication}{7}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Data Collection Server}{8}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Problems}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Hardware}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Software}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Power Consumption}{10}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Problem Solution}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Power Consumption}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Sleep}{12}{subsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.1}Watchdog timer}{12}{subsubsection.4.1.1.1}
-\contentsline {subsubsection}{\numberline {4.1.1.2}WiFly Sleep}{12}{subsubsection.4.1.1.2}
-\contentsline {subsection}{\numberline {4.1.2}Communication}{13}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Server-side Client}{14}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Simple Linear Regression}{15}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Fuzzy Logic Engine}{16}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Results}{20}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusions}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{21}{section.5.2}
-\contentsline {chapter}{\numberline {6}Related Work}{22}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Research Directions}{23}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{24}{chapter.8}
-\contentsline {chapter}{List of Figures}{25}{section*.7}
-\contentsline {chapter}{Bibliography}{26}{chapter*.8}
+\contentsline {subsection}{\numberline {3.1.2}XMPP Communication}{8}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Data Collection Server}{9}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Problems}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Hardware}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Software}{11}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Power Consumption}{11}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Problem Solution}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Power Consumption}{12}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Sleep}{13}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Watchdog Timer}{13}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Arduino Mega ADK}{13}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}WiFly module}{14}{subsubsection.4.1.1.3}
+\contentsline {subsection}{\numberline {4.1.2}Communication}{14}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Server-side Client}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Simple Linear Regression}{17}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fuzzy Logic Engine}{18}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Results}{22}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusions}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{23}{section.5.2}
+\contentsline {chapter}{\numberline {6}Related Work}{24}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Research Directions}{25}{chapter.7}
+\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{26}{chapter.8}
+\contentsline {chapter}{Bibliography}{27}{chapter*.9}

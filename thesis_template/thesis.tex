@@ -19,6 +19,7 @@
 \usepackage{enumerate}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{listings}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 %\usepackage{indentfirst} %esimene lõik taandega
@@ -48,6 +49,8 @@
 
 \begin{document}
 
+
+\lstset{basicstyle=\footnotesize\ttfamily}
 
 
 %\language{english}
@@ -111,8 +114,8 @@
 
 
 %: ----------------------- list of figures/tables ------------------------
-
-%\listoffigures	% print list of figures
+\newpage
+\listoffigures	% print list of figures
 
 %\listoftables  % print list of tables
 
@@ -158,9 +161,6 @@
 \include{6/relatedwork}	                % related work
 \include{6/futureresearch}		% future research directions
 \include{7/eestiabstract}               % discussion of results
-
-\listoffigures
-\newpage
 
 % --------------------------------------------------------------
 %:                  BACK MATTER: appendices, refs,..

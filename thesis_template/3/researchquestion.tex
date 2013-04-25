@@ -16,7 +16,7 @@
 %: ----------------------- Mobile Cloud Middleware ------------------------
 
 In this chapter, the prototype developed in Context Sensor Data on Demand
-for Mobile Users Supported by XMPP \cite{prev_thesis} is described. The prototype was successful, but had some downsides. Secondly, an overview of the problems with the existing implementation is given. 
+for Mobile Users Supported by XMPP \cite{prev_thesis} is described. The prototype was successful, but had some areas of improvement. Secondly, an overview of these improvements is given. 
 \todo{Add a small introduction of who wrote the previous thesis etc}
 
 \section{Current Solution}
@@ -37,13 +37,17 @@ The first component is the Arduino sensor module. The hardware configuration is 
 
 On the software side, the implementation mainly relies on a XMPP library and WiFly module library called WiFlyHQ. The WiFlyHQ library is responsible for creating a TCP connection and communication over the network, the XMPP library handles all the XMPP implementation details. 
 
-The sketch itself is fairly straightforward - in $setup()$ a wireless network is joined, a TCP connection established and lastly a XMPP session is initialized. In $loop()$ all connections are checked and reestablished if needed. Then the last transmit time variable is compared to the current time and if the report step amount (currently 10 seconds) has passed, data is collected from the sensors, formatted to appropriate JSON string and sent to the server-side client. 
+The sketch itself is fairly straightforward - in $setup()$ a wireless network is joined, a TCP connection established and lastly a XMPP session is initialized. In $loop()$ all connections are checked and reestablished if needed. Then the last transmit time variable is compared to the current time and if the report step amount (currently 10 seconds) has passed, data is collected from the sensors, formatted to appropriate JSON format string and sent to the server-side client. 
+
+\begin{lstlisting}
+{"SensorData": {"location": 1, "data": [{"type": 1, value: 5.00}, 
+{"type": 2, "value": 500.00}, {"type": 3, "value": 312.00}]}
+\end{lstlisting}\todo{check if it really is like this}
 
 \subsection{XMPP Communication}
 
 Both the data collection server and Arduino module are XMPP clients. The XMPP OpenFire server runs in the cloud and provides XMPP communications to both clients. Clients connect to the same chat where the server listens for messages from the sensor module. When a message is received by the server, sensor data is parsed from it and saved in a database.
 
-\todo{xmpp initialization time}
 XMPP session lifecycle can be seen in \autoref{xmpp_lifecycle}. With the current implementation, steps 1 - 5 are done once when establishing the connection or when the connection drops. Data transmission step is done every 10 seconds and the last 2 steps are done when the connection is closed.
 
 \begin{figure}[H]

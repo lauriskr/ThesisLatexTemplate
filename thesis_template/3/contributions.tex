@@ -25,16 +25,19 @@ The first problem addressed is power consumption. There are two main ideas behin
 
 \subsection{Sleep}
 
-Since the module consists of 3 components - Arduino Mega ADK, Wireless SD Shield with WiFly module and TinkerKit Sensor Shield. Fortunately, both the Mega ADK and WiFly module support sleep modes. 
+Since the module consists of 3 components - Arduino Mega ADK, Wireless SD Shield with WiFly module and TinkerKit Sensor Shield. Both the Mega ADK and WiFly module support sleep modes. 
 
-\subsubsection{Watchdog timer}
+\subsubsection{Watchdog Timer}
 A watchdog timer \cite{watchdog_timer} is an electronic timer used to recover from computer malfunctions. They are found in automated systems where human interference is not possible and therefore the system must be able to recover from malfunctions on its own. 
 A watchdog timer essentially performs a timing function producing a delayed response to an input trigger. The most common implementation has a digital counter that counts from a specified value down to a terminal value. Usually the initial value is programmable. When the counter reaches the terminal value, the timer timeouts and triggers a timeout signal. Usually this means restarting the program from the start. A program can restart the watchdog timer at any time. The act of restarting is usually referred to as "kicking the dog". In this way, a program can be written witch never lets the counter reach the terminal value.
 
-In case of an Arduino board, when the watchdog timer timeouts, the sketch is restarted (new call to $setup()$). Furthermore, a watchdog timeout signal is sent and this signal can be captured by the sketch. In the Arduino sketch, this is implemented by the JeeLib library \cite{jeelib_general}. JeeLib is a library written for experimenting with JeeLabs products, however, some parts of the library are written for Arduino boards and can be used with them. Specifically, the Ports class \cite{jeelib_port} is the one used in this implementation to put the Arduino Mega ADK into sleep mode. \todo{Add a sample overview of the sketch here maybe?}
-\todo{Jeelib lib, how it handles sleep}
+\subsubsection{Arduino Mega ADK}
 
-\subsubsection{WiFly Sleep}
+In case of an Arduino board, when the watchdog timer timeouts, the sketch is restarted (new call to $setup()$). Furthermore, a watchdog timeout signal is sent and this signal can be captured by the sketch. In the Arduino sketch, this is implemented by the JeeLib library \cite{jeelib_general}. JeeLib is a library written for experimenting with JeeLabs products, however, some parts of the library are written for Arduino boards and can be used with them. Specifically, the Ports class \cite{jeelib_port} is the one used in this implementation to put the Arduino Mega ADK into sleep mode. The sketch execution stops for the specified sleep time and afterwards execution continues from the call to sleep function.
+
+\todo{Add a sample overview of the sketch here maybe?}
+
+\subsubsection{WiFly module}
 
 The RN-XV WiFly module can be put to sleep in two ways - sleep timer or sleep command. With the sleep timer, the shield will enter sleep mode after a specified time period has passed since all TCP active connections have closed. With the sleep command the module will enter sleep mode immediately, unless an active TCP connection exists. \cite{wifly_manual}. 
 
@@ -53,11 +56,14 @@ During testing the sleep and wake up cycles with XMPP, it was found that XMPP se
 
 As a result, XMPP as a means of communication was not viable when trying to minimize power consumption. As an alternative, \todo{look how to reference these} web sockets, raw sockets and HTTP was considered. Web sockets were left out because opening a web socket connection is opened with a HTTP request, making using that one request to actually send the data more efficient. Therefore, HTTP was preferred to web sockets. Raw socket implementation in Arduino would add needless complexity to the sketch and was therefore not implemented. 
 
-The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient. \todo{chart with power consumption for both configurations}
+The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP. 
 
-\todo{Switch to http instead of xmpp described here?}
-\todo{Jetty web server, http handler, sample messages}
-\todo{HTTP improvements over XMPP, lacks presence etc, describe pros and cons here}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.9]{4/figures/30s_xmpp_vs_http.pdf}
+\caption{Power Consumption at 30 Second Interval}
+\label{30s_interval_power}
+\end{figure}
 
 \section{Server-side Client}
 
@@ -83,22 +89,18 @@ The final web server consists of 4 modules:
 
 \subsection{Simple Linear Regression}
 
-A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. The idea and some implementation details were taken from a paper \todo{cite the paper here}. The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
+A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. \todo{add a mention of the paper the idea was taken from?} The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
 
 The model sample is taken from previous measurements during the last \todo{actual time} 5 minutes. The 5 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
 
-To measure the accuracy of the model, an error threshold of 90\% was introduced. \todo{cite the paper, add the equation, explain the variables used etc}. 
-
-If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
+To measure the accuracy of the model, an confidence level of 90\% was introduced. If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
 
 \begin{center}
 $\alpha = 2\Phi \left ( \frac{\epsilon}{RMSE}  \right ) - 1$.
 \end{center}
 
-Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error \todo{explain what it is} of our regression model.
+Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error the regression model. \todo{maybe describe what rmse is?}
 
-\todo{Describe methods used, error threshold etc}
-\todo{Error threshold taken for each sensor separately, model created for each sensor etc}
 Regression models are created separately for each sensor. Each model has a sample of previous measurements and the allowed error $\epsilon$ defined in the database. 
 The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected confidence threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 
 
@@ -145,11 +147,6 @@ The output variable is defuzzified from the idle time sets which have membership
 
 When all input variables have been fuzzified and degrees of membership calculated, then the next step is to fire all predefined rules. For each sensor, there is a collection of 3 rules, making a total of 9 rules (here $x \in \{hall, temp, light\}$):
 
-%	controller.addRule(new FuzzyAND(new FuzzyOR(tempChangedLeft, tempChangedRight), tempNotPredictable), new FuzzySet(requestData));
-%		controller.addRule(new FuzzyAND(new FuzzyOR(tempChangedLeft, tempChangedRight), tempPredictable), new FuzzySet(requestData));
-%		controller.addRule(new FuzzyAND(tempSame, tempNotPredictable), new FuzzySet(requestData));
-%		controller.addRule(new FuzzyAND(tempSame, tempPredictable), new FuzzySet(predictData));
-
 \begin{enumerate}
 \item IF $x$ IS $x\_changed\_left$ OR $x\_changed\_right$ AND $x\_predictability$ IS $not\_predictable$ OR $predictable$ THEN $request$
 \item IF $x$ IS $x\_same$ AND $x\_predictability$ IS $not\_predictable$ THEN $request$
@@ -164,7 +161,17 @@ The next step is to get the crisp result value. For this process, the idle time 
 
 When the crisp result is received from the fuzzy control system and idle time is longer than 10 seconds, future data is predicted for the idle period. This means that using the regression models, future values with 10 second intervals are inserted into the database for each sensor. 
 
-Finally, the idle time with a minimum value of 10 seconds is written as a JSON format string to the response body of the HTTP request. A sample response would look like: \todo{add a sample response here}
+Finally, the idle time with a minimum value of 10 seconds is written as a JSON format string to the response body of the HTTP request. A sample response would look like:\\ \todo{add a sample response here}
+
+\begin{lstlisting}
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=utf-8
+Content-Length: 12
+Connection: close
+Server: Jetty(7.2.0.v20101020)
+
+{"idle": 34}
+\end{lstlisting}
 
 \section{Results}
 \todo{Describe tests carried out}\\
