@@ -58,6 +58,8 @@ As a result, XMPP as a means of communication was not viable when trying to mini
 
 The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP. 
 
+\todo{Add a sample request here}
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.9]{4/figures/30s_xmpp_vs_http.pdf}
@@ -136,6 +138,8 @@ The measured sensor values are fuzzified into sets, which each have different me
 \label{change_sets}
 \end{figure}
 
+\todo{Add a table with the selected error values for fuzzy engine and prediction here}
+
 The output variable is defuzzified from the idle time sets which have membership functions described in \autoref{idle_sets}. The sets $request$ and $predict$ are symmetrical to enable easy defuzzification. The maximum idle time is 65 seconds, which is the maximum length of one sleep cycle for the sensor module. 
 
 \begin{figure}[h!]
@@ -177,6 +181,7 @@ Server: Jetty(7.2.0.v20101020)
 \todo{Describe tests carried out}\\
 \todo{Make a test with a 9V battery}\\
 \todo{Graphs with improved power consumption figures on it, description of what changed and how/why}
+\todo{Graph with 10s idle time as the worst-case scenario here}
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------
