@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  25 APR 2013 22:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  27 APR 2013 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,7 +1078,25 @@ l.35 \end{abstracts}
 
 
 
-] [4]) [5] [6]
+] [4]
+
+Package natbib Warning: Citation `thermistor_sensor' on page 5 undefined on inp
+ut line 87.
+
+
+Package natbib Warning: Citation `hall_sensor' on page 5 undefined on input lin
+e 89.
+
+
+Package natbib Warning: Citation `light_sensor' on page 5 undefined on input li
+ne 91.
+
+[5]
+
+Package natbib Warning: Citation `fuzzy_control_introduction' on page 6 undefin
+ed on input line 102.
+
+) [6]
 \openout2 = `3/researchquestion.aux'.
 
  (./3/researchquestion.tex
@@ -1115,10 +1133,10 @@ Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 67
 File: 4/figures/30s_xmpp_vs_http.pdf Graphic file (type pdf)
 
 <use 4/figures/30s_xmpp_vs_http.pdf>
-Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 63.
+Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 65.
 (pdftex.def)             Requested size: 414.6453pt x 233.97195pt.
 
-Overfull \hbox (2.08034pt too wide) in paragraph at lines 63--64
+Overfull \hbox (2.08034pt too wide) in paragraph at lines 65--66
  [][] 
  []
 
@@ -1126,49 +1144,49 @@ Overfull \hbox (2.08034pt too wide) in paragraph at lines 63--64
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15] [16 <./4/figures/30s_xmpp_vs_http.pdf>]
-<4/figures/data_model_final.jpg, id=410, 654.445pt x 120.45pt>
+<4/figures/data_model_final.jpg, id=411, 654.445pt x 120.45pt>
 File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 
 <use 4/figures/data_model_final.jpg>
-Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 85.
+Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 87.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
  [17 <./4/figures/data_model_final.jpg>]
-<4/figures/pred_sets.pdf, id=423, 756.8275pt x 392.46625pt>
+<4/figures/pred_sets.pdf, id=424, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
-Package pdftex.def Info: 4/figures/pred_sets.pdf used on input line 123.
+Package pdftex.def Info: 4/figures/pred_sets.pdf used on input line 125.
 (pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
 
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 123--124
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18] <4/figures/change_sets.pdf, id=437, 785.93625pt x 392.46625pt>
+[18] <4/figures/change_sets.pdf, id=438, 785.93625pt x 392.46625pt>
 File: 4/figures/change_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/change_sets.pdf>
-Package pdftex.def Info: 4/figures/change_sets.pdf used on input line 134.
+Package pdftex.def Info: 4/figures/change_sets.pdf used on input line 136.
 (pdftex.def)             Requested size: 432.26627pt x 215.85709pt.
 
-Overfull \hbox (19.70131pt too wide) in paragraph at lines 134--135
+Overfull \hbox (19.70131pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<4/figures/result_sets.pdf, id=439, 756.8275pt x 392.46625pt>
+<4/figures/result_sets.pdf, id=440, 756.8275pt x 392.46625pt>
 File: 4/figures/result_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/result_sets.pdf>
-Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 143.
+Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 147.
 (pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
 
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 143--144
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
@@ -1217,45 +1235,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout8 = `thesis.brf'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--16
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 [][]\T1/cmr/m/n/6 Arduino - Ar-duinoBoar-d-ADK[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
 [][]\T1/cmr/m/n/6 Arduino - Ar-duinoWire-lessShield[],
  []
 
 
-Overfull \hbox (8.09915pt too wide) in paragraph at lines 42--42
+Overfull \hbox (29.49951pt too wide) in paragraph at lines 36--36
+[][]\T1/cmr/m/n/6 Tinkerkit in-tro-duc-tion[], http://www.tinkerkit.com/introdu
+ction/. 
+ []
+
+
+Overfull \hbox (8.09915pt too wide) in paragraph at lines 63--63
 [][]\T1/cmr/m/n/6 JeeLib: in-tro-duc-tion[], http://jeelabs.net/pub/docs/jeelib
 /. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
 [][]\T1/cmr/m/n/6 JeeLib: port class ref-er-ence[],
  []
 
 
-Underfull \hbox (badness 7925) in paragraph at lines 47--47
+Underfull \hbox (badness 7925) in paragraph at lines 68--68
 \T1/cmr/m/n/6 URL []$\T1/cmtt/m/n/6 http : / / jeelabs . net / pub / docs / jee
 lib / classPort . html$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 [][]\T1/cmr/m/n/6 WiFly user guide - WiFly-RN-UM.pdf[],
  []
 
 
-Overfull \hbox (54.11568pt too wide) in paragraph at lines 53--53
+Overfull \hbox (54.11568pt too wide) in paragraph at lines 74--74
 \T1/cmr/m/n/6 http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFl
 y-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 \T1/cmr/m/n/6 URL []$\T1/cmtt/m/n/6 http : / / dlnmh9ip6v2uc . cloudfront . net
  / datasheets /
  []
@@ -1269,14 +1293,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--53
 \tf@lod=\write9
 \openout9 = `thesis.lod'.
 
+
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
- [29]
+[29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./thesis.aux (./title_page/stardard_page.aux)
 (./0_frontmatter/abstract.aux) (./1_introduction/introduction.aux)
 (./2/stateofart.aux) (./3/researchquestion.aux) (./3/contributions.aux)
 (./5/conclusions.aux) (./6/relatedwork.aux) (./6/futureresearch.aux)
-(./7/eestiabstract.aux))
+(./7/eestiabstract.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1286,10 +1319,10 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 18969 strings out of 495059
- 321903 string characters out of 3182030
- 403153 words of memory out of 3000000
- 21533 multiletter control sequences out of 15000+200000
+ 19000 strings out of 495059
+ 322559 string characters out of 3182030
+ 407153 words of memory out of 3000000
+ 21557 multiletter control sequences out of 15000+200000
  22702 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,12n,55p,940b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1298,8 +1331,8 @@ lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/lauris/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/lauris/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/lauris/.texmf-var/fonts/pk/ljf
 our/jknappen/ec/ectt1000.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecbx0800.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+en/ec/ecbx1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+0800.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
 > </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/l
 auris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/lauris/.tex
 mf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.600pk> </home/lauris/.texmf-var/fon
@@ -1313,10 +1346,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (35 pages, 407417 bytes).
+Output written on thesis.pdf (35 pages, 410456 bytes).
 PDF statistics:
- 1293 PDF objects out of 1440 (max. 8388607)
- 608 compressed objects within 7 object streams
- 147 named destinations out of 1000 (max. 500000)
+ 1314 PDF objects out of 1440 (max. 8388607)
+ 627 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
  384 words of extra memory for PDF output out of 10000 (max. 10000000)
 

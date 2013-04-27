@@ -82,21 +82,27 @@ TinkerKit \cite{tinkerkit_introduction} is a tool used to build interactive prod
 Here is the mega sensor shield used in this project...
 \todo{Add a figure of the mega sensor shield}
 
-The modules are divided into sensors and actuators. 
+The modules are divided into sensors and actuators. Sensors can measure their surrounding environment (provide input) and actuators perform actions (provide output). The sensors used are thermistor, LDR and Hall. 
 
-\todo{Thermistor Module, Light Dependent Resistor Module,Hall Sensor Module}
+Thermistor sensor \cite{thermistor_sensor} is a resistor whose resistance changes significantly with temperature. The module's output ranges from 0V to 5V
 
+Hall sensor \cite{hall_sensor} creates a voltage related to the magnetic field near the sensor. It can detect the presence of a nearby magnet or magnetic field induced in a coil or wire. The output ranges from 0V (no presence) to 5V (presence detected). 
 
+Light Dependent Resistor or LDR \cite{light_sensor} is a variable resistor whose resistance is decreased when light falls on the sensor. The module's output is 5V when the module receives no light and 0V when bright light falls on it.
 
 %Fuzzy logic is the main contribution, therefore, you can write here up to 5 pages
 \section{Fuzzy Logic}
 
+Fuzzy logic is a form of logical reasoning which is based on approximate instead of exact reasoning. When traditional reasoning has binary values like true (1) and false (0), fuzzy logic has values ranging from 0 to 1. These values represent a partial truth or in other words the degree of truth. 
+
 \subsection{Fuzzy Set}
+Fuzzy sets are the main building blocks of fuzzy logic. In traditional set theory where an element can either belong or not belong to a set. With fuzzy sets, an element has a degree of membership to a set. \todo{write more about fuzzy sets here}
 
 \subsection{Fuzzy Control Systems}
 
 Description of fuzzy logic and its uses.
 
+\cite{fuzzy_control_introduction}
 %This one is not necessary, since we will just mention the tool and it will be cited in chapter 4
 %\section{Power supply}
 %Overview of the PeakTech 1890 power supply.

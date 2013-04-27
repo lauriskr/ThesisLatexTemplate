@@ -5,6 +5,11 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{prev_thesis}
+{Kaarel Hanson}, Context sensor data on demand for mobile users supported by
+  xmpp, Tech. rep., University of Tartu, Faculty of Mathematics and Computer
+  Science, Institute of Computer Science, Tartu, Estonia.
+
 \bibitem{arduinoHome}
 \href{http://www.arduino.cc/}{Arduino - {HomePage}}, http://www.arduino.cc/.
 \newline\urlprefix\url{http://www.arduino.cc/}
@@ -25,12 +30,28 @@
 \newline\urlprefix\url{https://www.sparkfun.com/products/10822}
 
 \bibitem{tinkerkit_introduction}
+\href{http://www.tinkerkit.com/introduction/}{Tinkerkit introduction},
+  http://www.tinkerkit.com/introduction/.
+\newline\urlprefix\url{http://www.tinkerkit.com/introduction/}
 
+\bibitem{thermistor_sensor}
+\href{http://www.tinkerkit.com/thermistor/}{Thermistor},
+  http://www.tinkerkit.com/thermistor/.
+\newline\urlprefix\url{http://www.tinkerkit.com/thermistor/}
 
-\bibitem{prev_thesis}
-{Kaarel Hanson}, Context sensor data on demand for mobile users supported by
-  xmpp, Tech. rep., University of Tartu, Faculty of Mathematics and Computer
-  Science, Institute of Computer Science, Tartu, Estonia.
+\bibitem{hall_sensor}
+\href{http://www.tinkerkit.com/hall/}{Hall}, http://www.tinkerkit.com/hall/.
+\newline\urlprefix\url{http://www.tinkerkit.com/hall/}
+
+\bibitem{light_sensor}
+\href{http://www.tinkerkit.com/ldr/}{Light sensor},
+  http://www.tinkerkit.com/ldr/.
+\newline\urlprefix\url{http://www.tinkerkit.com/ldr/}
+
+\bibitem{fuzzy_control_introduction}
+{Marcelo Godoy Simoes}, Introduction to fuzzy control, Tech. rep., Colorado
+  School of Mines, Engineering Division, 1610 Illinois Street Golden, Colorado
+  80401-1887 {USA}.
 
 \bibitem{watchdog_timer}
 {Jim Lamberson}, Single and multistage watchdog timers (2012).
