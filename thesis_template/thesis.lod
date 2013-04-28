@@ -6,25 +6,29 @@
 \contentsline {todos}{{6. }Add an image of the wireless shield and rn-xv wifi module}{5}{todos.0.6}
 \contentsline {todos}{{7. }Add a figure of the mega sensor shield}{5}{todos.0.7}
 \contentsline {todos}{{8. }add citations here...}{6}{todos.0.8}
-\contentsline {todos}{{9. }add a citation to this book L.A. Zadeh. Fuzzy sets. Information and Control, 8:338\IeC {\textendash }353, 1965}{7}{todos.0.9}
-\contentsline {todos}{{10. }Add simple linear regression here, too?}{9}{todos.0.10}
-\contentsline {todos}{{11. }Add a small introduction of who wrote the previous thesis etc}{10}{todos.0.11}
-\contentsline {todos}{{12. }check if it really is like this}{11}{todos.0.12}
-\contentsline {todos}{{13. }how should i reference all the data collected?}{14}{todos.0.13}
-\contentsline {todos}{{14. }reference it somehow}{15}{todos.0.14}
-\contentsline {todos}{{15. }introduction}{15}{todos.0.15}
-\contentsline {todos}{{16. }Add a sample overview of the sketch here maybe?}{16}{todos.0.16}
-\contentsline {todos}{{17. }show a graph here i guess? or whatever}{17}{todos.0.17}
-\contentsline {todos}{{18. }look how to reference these}{18}{todos.0.18}
-\contentsline {todos}{{19. }Add a sample request here}{18}{todos.0.19}
-\contentsline {todos}{{20. }Do i really need this here?}{19}{todos.0.20}
-\contentsline {todos}{{21. }add a mention of the paper the idea was taken from?}{20}{todos.0.21}
-\contentsline {todos}{{22. }actual time}{20}{todos.0.22}
-\contentsline {todos}{{23. }look this part over, should be ok}{20}{todos.0.23}
-\contentsline {todos}{{24. }maybe calculate this automatically somehow, atm predefined variable used}{22}{todos.0.24}
-\contentsline {todos}{{25. }Add a table with the selected error values for fuzzy engine and prediction here}{22}{todos.0.25}
-\contentsline {todos}{{26. }add a sample response here}{25}{todos.0.26}
-\contentsline {todos}{{27. }Describe tests carried out}{25}{todos.0.27}
-\contentsline {todos}{{28. }Make a test with a 9V battery}{25}{todos.0.28}
-\contentsline {todos}{{29. }Graphs with improved power consumption figures on it, description of what changed and how/why}{25}{todos.0.29}
-\contentsline {todos}{{30. }Graph with 10s idle time as the worst-case scenario here}{25}{todos.0.30}
+\contentsline {todos}{{9. }Add simple linear regression here, too?}{9}{todos.0.9}
+\contentsline {todos}{{10. }Add a small introduction of who wrote the previous thesis etc}{10}{todos.0.10}
+\contentsline {todos}{{11. }check if it really is like this}{11}{todos.0.11}
+\contentsline {todos}{{12. }how should i reference all the data collected?}{14}{todos.0.12}
+\contentsline {todos}{{13. }reference it somehow}{15}{todos.0.13}
+\contentsline {todos}{{14. }introduction}{15}{todos.0.14}
+\contentsline {todos}{{15. }Add a sample overview of the sketch here maybe?}{16}{todos.0.15}
+\contentsline {todos}{{16. }show a graph here i guess? or whatever}{17}{todos.0.16}
+\contentsline {todos}{{17. }look how to reference these}{18}{todos.0.17}
+\contentsline {todos}{{18. }Add a sample request here}{18}{todos.0.18}
+\contentsline {todos}{{19. }Do i really need this here?}{19}{todos.0.19}
+\contentsline {todos}{{20. }add a mention of the paper the idea was taken from?}{20}{todos.0.20}
+\contentsline {todos}{{21. }actual time}{20}{todos.0.21}
+\contentsline {todos}{{22. }look this part over, should be ok}{20}{todos.0.22}
+\contentsline {todos}{{23. }maybe calculate this automatically somehow, atm predefined variable used}{22}{todos.0.23}
+\contentsline {todos}{{24. }Add a table with the selected error values for fuzzy engine and prediction here}{22}{todos.0.24}
+\contentsline {todos}{{25. }add a sample response here}{25}{todos.0.25}
+\contentsline {todos}{{26. }Describe tests carried out}{25}{todos.0.26}
+\contentsline {todos}{{27. }Make a test with a 9V battery}{25}{todos.0.27}
+\contentsline {todos}{{28. }Graphs with improved power consumption figures on it, description of what changed and how/why}{25}{todos.0.28}
+\contentsline {todos}{{29. }Graph with 10s idle time as the worst-case scenario here}{25}{todos.0.29}
+\contentsline {todos}{{30. }Previous thesis}{27}{todos.0.30}
+\contentsline {todos}{{31. }The paper used}{27}{todos.0.31}
+\contentsline {todos}{{32. }reference some blogs where arduino was mentioned}{27}{todos.0.32}
+\contentsline {todos}{{33. }Different arduino/hardware configuration}{28}{todos.0.33}
+\contentsline {todos}{{34. }Better prediction}{28}{todos.0.34}

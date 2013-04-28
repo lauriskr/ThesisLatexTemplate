@@ -6,9 +6,8 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{prev_thesis}
-{Kaarel Hanson}, Context sensor data on demand for mobile users supported by
-  xmpp, Tech. rep., University of Tartu, Faculty of Mathematics and Computer
-  Science, Institute of Computer Science, Tartu, Estonia.
+{Kaarel Hanson}, Context Sensor Data on Demand for Mobile Users Supported by
+  XMPP, Tartu, Estonia.
 
 \bibitem{arduinoHome}
 \href{http://www.arduino.cc/}{Arduino - {HomePage}}, http://www.arduino.cc/.
@@ -48,10 +47,12 @@
   http://www.tinkerkit.com/ldr/.
 \newline\urlprefix\url{http://www.tinkerkit.com/ldr/}
 
+\bibitem{fuzzy_sets}
+{Lotfi A. Zadeh}, Fuzzy Sets. Information and Control, 1965.
+
 \bibitem{fuzzy_control_introduction}
-{Marcelo Godoy Simoes}, Introduction to fuzzy control, Tech. rep., Colorado
-  School of Mines, Engineering Division, 1610 Illinois Street Golden, Colorado
-  80401-1887 {USA}.
+{Marcelo Godoy Simoes}, Introduction to Fuzzy Control, 1610 Illinois Street
+  Golden, Colorado 80401-1887 {USA}.
 
 \bibitem{watchdog_timer}
 {Jim Lamberson}, Single and multistage watchdog timers (2012).

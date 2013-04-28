@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  28 APR 2013 22:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  28 APR 2013 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,10 +1082,10 @@ l.35 \end{abstracts}
 File: 2/figures/sample_sets.pdf Graphic file (type pdf)
 
 <use 2/figures/sample_sets.pdf>
-Package pdftex.def Info: 2/figures/sample_sets.pdf used on input line 109.
+Package pdftex.def Info: 2/figures/sample_sets.pdf used on input line 110.
 (pdftex.def)             Requested size: 458.17204pt x 227.63057pt.
 
-Overfull \hbox (45.60709pt too wide) in paragraph at lines 109--110
+Overfull \hbox (45.60709pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
@@ -1098,14 +1098,14 @@ Overfull \hbox (45.60709pt too wide) in paragraph at lines 109--110
 
 
 
-] <3/figures/xmpp_session.png, id=373, 425.59pt x 781.92125pt>
+] <3/figures/xmpp_session.png, id=374, 425.59pt x 781.92125pt>
 File: 3/figures/xmpp_session.png Graphic file (type png)
 
 <use 3/figures/xmpp_session.png>
 Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 55.
 (pdftex.def)             Requested size: 255.35596pt x 469.15637pt.
  [11] [12 <./3/figures/xmpp_session.png>]
-<3/figures/data_model_initial.jpg, id=390, 560.0925pt x 105.39375pt>
+<3/figures/data_model_initial.jpg, id=391, 560.0925pt x 105.39375pt>
 File: 3/figures/data_model_initial.jpg Graphic file (type jpg)
 
 <use 3/figures/data_model_initial.jpg>
@@ -1122,7 +1122,7 @@ Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 67
 
 
 ] [16] [17]
-<4/figures/30s_xmpp_vs_http.pdf, id=430, 460.72125pt x 259.97125pt>
+<4/figures/30s_xmpp_vs_http.pdf, id=431, 460.72125pt x 259.97125pt>
 File: 4/figures/30s_xmpp_vs_http.pdf Graphic file (type pdf)
 
 <use 4/figures/30s_xmpp_vs_http.pdf>
@@ -1137,14 +1137,14 @@ Overfull \hbox (2.08034pt too wide) in paragraph at lines 65--66
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18] [19 <./4/figures/30s_xmpp_vs_http.pdf>]
-<4/figures/data_model_final.jpg, id=457, 654.445pt x 120.45pt>
+<4/figures/data_model_final.jpg, id=458, 654.445pt x 120.45pt>
 File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 
 <use 4/figures/data_model_final.jpg>
 Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 87.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
  [20 <./4/figures/data_model_final.jpg>]
-<4/figures/pred_sets.pdf, id=469, 756.8275pt x 392.46625pt>
+<4/figures/pred_sets.pdf, id=470, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
@@ -1158,7 +1158,7 @@ Overfull \hbox (26.3953pt too wide) in paragraph at lines 125--126
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21] <4/figures/change_sets.pdf, id=482, 785.93625pt x 392.46625pt>
+[21] <4/figures/change_sets.pdf, id=483, 785.93625pt x 392.46625pt>
 File: 4/figures/change_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/change_sets.pdf>
@@ -1172,7 +1172,7 @@ Overfull \hbox (19.70131pt too wide) in paragraph at lines 136--137
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<4/figures/result_sets.pdf, id=484, 756.8275pt x 392.46625pt>
+<4/figures/result_sets.pdf, id=485, 756.8275pt x 392.46625pt>
 File: 4/figures/result_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/result_sets.pdf>
@@ -1228,51 +1228,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \openout8 = `thesis.brf'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 [][]\T1/cmr/m/n/6 Arduino - Ar-duinoBoar-d-ADK[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 [][]\T1/cmr/m/n/6 Arduino - Ar-duinoWire-lessShield[],
  []
 
 
-Overfull \hbox (29.49951pt too wide) in paragraph at lines 36--36
+Overfull \hbox (29.49951pt too wide) in paragraph at lines 35--35
 [][]\T1/cmr/m/n/6 Tinkerkit in-tro-duc-tion[], http://www.tinkerkit.com/introdu
 ction/. 
  []
 
 
-Overfull \hbox (8.09915pt too wide) in paragraph at lines 63--63
+Overfull \hbox (8.09915pt too wide) in paragraph at lines 64--64
 [][]\T1/cmr/m/n/6 JeeLib: in-tro-duc-tion[], http://jeelabs.net/pub/docs/jeelib
 /. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 [][]\T1/cmr/m/n/6 JeeLib: port class ref-er-ence[],
  []
 
 
-Underfull \hbox (badness 7925) in paragraph at lines 68--68
+Underfull \hbox (badness 7925) in paragraph at lines 69--69
 \T1/cmr/m/n/6 URL []$\T1/cmtt/m/n/6 http : / / jeelabs . net / pub / docs / jee
 lib / classPort . html$[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 [][]\T1/cmr/m/n/6 WiFly user guide - WiFly-RN-UM.pdf[],
  []
 
 
-Overfull \hbox (54.11568pt too wide) in paragraph at lines 74--74
+Overfull \hbox (54.11568pt too wide) in paragraph at lines 75--75
 \T1/cmr/m/n/6 http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFl
 y-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 \T1/cmr/m/n/6 URL []$\T1/cmtt/m/n/6 http : / / dlnmh9ip6v2uc . cloudfront . net
  / datasheets /
  []
@@ -1304,18 +1304,18 @@ Package rerunfilecheck Warning: File `thesis.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `thesis.brf':
-(rerunfilecheck)             Before: 8FEE57BB077C0EE6676833FE0A4178B4;1038
-(rerunfilecheck)             After:  F745E667948452E271C8BACB20A40668;1040.
+(rerunfilecheck)             Before: 34F77224EE71CA2459905FA0AE88F208;1093
+(rerunfilecheck)             After:  4080B3D222B1FC86A6DC31378591711E;1093.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 19019 strings out of 495059
- 322883 string characters out of 3182030
- 408300 words of memory out of 3000000
- 21565 multiletter control sequences out of 15000+200000
+ 19031 strings out of 495059
+ 323044 string characters out of 3182030
+ 408316 words of memory out of 3000000
+ 21572 multiletter control sequences out of 15000+200000
  22702 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,12n,55p,940b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1339,10 +1339,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (38 pages, 433775 bytes).
+Output written on thesis.pdf (38 pages, 433496 bytes).
 PDF statistics:
- 1374 PDF objects out of 1440 (max. 8388607)
- 672 compressed objects within 7 object streams
- 163 named destinations out of 1000 (max. 500000)
+ 1383 PDF objects out of 1440 (max. 8388607)
+ 684 compressed objects within 7 object streams
+ 168 named destinations out of 1000 (max. 500000)
  413 words of extra memory for PDF output out of 10000 (max. 10000000)
 

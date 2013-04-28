@@ -1,3 +1,4 @@
+
 % this file is called up by thesis.tex
 % content in this file will be fed into the main document
 
@@ -113,9 +114,7 @@ The most used membership functions are triangular and trapezoidal functions. Sam
 
 \subsection{Fuzzy Set Operations}
 
-\todo{add a citation to this book L.A. Zadeh. Fuzzy sets. Information and Control, 8:338–353, 1965}.
-T
-Fuzzy set operations are a generalized version of standard set operations. The most widely used generalization is referred to as the standard fuzzy set operations. This generalization includes three main operations - complement, union and intersection. Lets assume we have two fuzzy sets with membership functions $A$ and $B$, then these operations can be defined as: 
+Fuzzy set operations \cite{fuzzy_sets} are a generalized version of standard set operations. The most widely used generalization is referred to as the standard fuzzy set operations. This generalization includes three main operations - complement, union and intersection. Lets assume we have two fuzzy sets with membership functions $A$ and $B$, then these operations can be defined as: 
 
 \begin{tabbing}
 \textbf{Complement:}\hspace{1em} \= $\neg A(x) = 1 - A(x)$\\
@@ -151,8 +150,6 @@ Defuzzification is the final step in the fuzzy control process. This part is res
 There are several defuzzification methods. The simplest of which would be to use the fuzzy set with the highest DOM as the final result. However, center of gravity is the most commonly used method. First, the different degrees of membership calculated from rules must be combined for each output variable's fuzzy sets. Then, the membership functions are depicted of a graph and for each fuzzy set, the top of the membership function is cut of in a straight horizontal line at the height of the DOM value. When this is done for all fuzzy sets of the output variable, the center of gravity for the remaining shape is calculated. The center point's projection on the value axis (usually the x-axis) is the crisp result.
 
 \section{Simple Linear Regression}
-
-
 
 \todo{Add simple linear regression here, too?}
 
