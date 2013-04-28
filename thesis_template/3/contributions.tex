@@ -98,10 +98,10 @@ The model sample is taken from previous measurements during the last \todo{actua
 To measure the accuracy of the model, an confidence level of 90\% was introduced. If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
 
 \begin{center}
-$\alpha = 2\Phi \left ( \frac{\epsilon}{RMSE}  \right ) - 1$.
+$\alpha = 2\Phi \left ( \frac{\epsilon}{STDEV[e]}  \right ) - 1$.
 \end{center}
 
-Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error the regression model. \todo{maybe describe what rmse is?}
+Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $STDEV[e]$ is the standard deviation of residuals (also known as standard error of estimate). \todo{look this part over, should be ok}
 
 Regression models are created separately for each sensor. Each model has a sample of previous measurements and the allowed error $\epsilon$ defined in the database. 
 The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected confidence threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 

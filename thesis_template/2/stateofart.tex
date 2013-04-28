@@ -93,19 +93,66 @@ Light Dependent Resistor or LDR \cite{light_sensor} is a variable resistor whose
 %Fuzzy logic is the main contribution, therefore, you can write here up to 5 pages
 \section{Fuzzy Logic}
 
-Fuzzy logic is a form of logical reasoning which is based on approximate instead of exact reasoning. When traditional reasoning has binary values like true (1) and false (0), fuzzy logic has values ranging from 0 to 1. These values represent a partial truth or in other words the degree of truth. 
+\todo{add citations here...}
+
+Fuzzy logic is a form of logical reasoning which is based on approximate instead of exact reasoning. When traditional reasoning has binary values like true (1) and false (0), fuzzy logic has values ranging from 0 to 1. These values represent a partial truth or in other words the degree of truth. This is similar to probability which also describes partial truth. The difference between probability and fuzzy logic is that whereas fuzzy logic describes how true something is, probability describes how likely it is for something to be true. 
 
 \subsection{Fuzzy Set}
-Fuzzy sets are the main building blocks of fuzzy logic. In traditional set theory where an element can either belong or not belong to a set. With fuzzy sets, an element has a degree of membership to a set. \todo{write more about fuzzy sets here}
+Fuzzy sets are the main building blocks of fuzzy logic. In traditional set theory where an element can either belong or not belong to a set. With fuzzy sets, an element has a degree of membership to a set. 
+
+Fuzzy sets are represented by membership functions, which measure the degree of membership (DOM) a given value has to the set. Membership functions are usually depicted graphically and have names based on the shape of their graphical representation. Membership functions are depicted as 2-dimensional graphs, where the x-axis represents the values and y-axis the degrees of membership (ranges from 0 to 1). The degree of membership for a given value can be found by projecting vertically to the upper boundary of the membership function. 
+
+The most used membership functions are triangular and trapezoidal functions. Sample sets are shown in \autoref{sample_fuzzy_sets}. Based on these graphs the DOM can easily be seen. Furthermore, from this graph can be seen the difference between fuzzy sets and traditional sets. Let us assume that the values represent age, trapezoidal membership function describes young people and triangular describes middle-aged people. Now when we have an age value that is between points $X_2$ and $X_3$, this value belongs to both the young and middle-aged sets. The difference is in the value of DOM to either set. When the value is nearer to point $X_3$ than to $X_2$ the statement that it belongs to the middle-aged set has a higher truth value.  
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.58]{2/figures/sample_sets.pdf}
+\caption{Trapezoidal and Triangular Membership Functions}
+\label{sample_fuzzy_sets}
+\end{figure}
+
+\subsection{Fuzzy Set Operations}
+
+\todo{add a citation to this book L.A. Zadeh. Fuzzy sets. Information and Control, 8:338–353, 1965}.
+T
+Fuzzy set operations are a generalized version of standard set operations. The most widely used generalization is referred to as the standard fuzzy set operations. This generalization includes three main operations - complement, union and intersection. Lets assume we have two fuzzy sets with membership functions $A$ and $B$, then these operations can be defined as: 
+
+\begin{tabbing}
+\textbf{Complement:}\hspace{1em} \= $\neg A(x) = 1 - A(x)$\\
+\textbf{Intersection:}\hspace{1em} \> $(A \cap B)(x) = min\{A(x), B(x)\}$\\
+\textbf{Union:}\hspace{1em} \> $(A \cup B)(x) = max\{A(x), B(x)\}$\\
+\end{tabbing}
 
 \subsection{Fuzzy Control Systems}
 
-Description of fuzzy logic and its uses.
+Fuzzy control systems \cite{fuzzy_control_introduction} take a heuristic modeling approach to describing the controllable domain. The heuristic model is based on a set of rules in the for: \textbf{if} $<condition>$ \textbf{then} $<action>$. 
 
-\cite{fuzzy_control_introduction}
+With the fuzzy logic part, the control system has a set of input variables and output variables, which are mapped into fuzzy sets. These variables and fuzzy sets have linguistic variables called labels. 
+
+These fuzzy sets and rules combined gives us a control system which consists of a set of rules where conditions and actions are defined as fuzzy values. For example if we have an input variable $temperature$ with a fuzzy set labelled $cold$ and an output variable $heat$ with a fuzzy set labelled $on$, we could write a following rule: IF $temperature = cold$ THEN $heat = on$. Based on this rule, the system can decide that if the temperature is cold then the heat should be turned on. 
+
+In an actual system there are multiple rules defined. As rules are activated only if their condition holds, the process of adding rules and variables has little computational overhead making the rulebase easily extendable.
+
+Fuzzy control systems are mostly based on experience and experiments rather than actual mathematical modelling. Furthermore, as input and output variables are mapped into fuzzy sets, which have linguistic labels, the systems control rules are easily understandable. This makes fuzzy control systems usable in cases where the actual users have little knowledge of the implementation details. Instead, they can focus on the control process by defining understandable variables, their fuzzy sets and rules based on these sets. 
 %This one is not necessary, since we will just mention the tool and it will be cited in chapter 4
 %\section{Power supply}
 %Overview of the PeakTech 1890 power supply.
+
+\subsubsection{Fuzzy control process}
+
+The decision making process has 4 main steps - fuzzification, rule evaluation, interference and defuzzification. These steps assume that the rules, input and output variables have already been defined.  of the model
+
+The first step in the process is fuzzification. In this step, the system's input and/or output variables are mapped into fuzzy sets. Each input variable can have one or more associated fuzzy sets. What this process does is decompose the crisp input values into fuzzy values. These fuzzy values are expressed by linguistic terms (labels) which can then be used in the rule evaluation process.
+
+The next step is to use the fuzzified values in rule evaluation. A set of predefined rules is evaluated based on the fuzzy values created during the fuzzification process. Rules are activated when their condition holds, otherwise they are skipped. After all rules have been considered, the activated ones are gathered together. The results or actions of these rules are the basis of the next step called defuzzification.
+
+Defuzzification is the final step in the fuzzy control process. This part is responsible for translating the fuzzy values (linguistic terms) into a crisp quantifiable result. Usually in the previous step, rule outputs will be linguistic terms (fuzzy sets) and corresponding degrees of membership for a defined output variable. In the defuzzification part, the different fuzzy sets and their DOMS for the output variable must be added together somehow to produce a final output. 
+
+There are several defuzzification methods. The simplest of which would be to use the fuzzy set with the highest DOM as the final result. However, center of gravity is the most commonly used method. First, the different degrees of membership calculated from rules must be combined for each output variable's fuzzy sets. Then, the membership functions are depicted of a graph and for each fuzzy set, the top of the membership function is cut of in a straight horizontal line at the height of the DOM value. When this is done for all fuzzy sets of the output variable, the center of gravity for the remaining shape is calculated. The center point's projection on the value axis (usually the x-axis) is the crisp result.
+
+\section{Simple Linear Regression}
+
+
 
 \todo{Add simple linear regression here, too?}
 
