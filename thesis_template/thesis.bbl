@@ -80,4 +80,21 @@ H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
 \newblock \href {http://dx.doi.org/10.1109/TPDS.2010.174}
   {\path{doi:10.1109/TPDS.2010.174}}.
 
+\bibitem{arduino_blog_1}
+\href{http://www.josephmoskie.com/?p=292}{An idiot and an arduino: Ruminations
+  on power « {\textasciitilde}jmoskie}, http://www.josephmoskie.com/?p=292.
+\newline\urlprefix\url{http://www.josephmoskie.com/?p=292}
+
+\bibitem{arduino_blog_2}
+\href{http://hwstartup.wordpress.com/2013/03/11/how-to-run-an-arduino-on-a-9v-battery-for-weeks-or-months/}{How
+  to run an arduino (clone) on a {9V} battery for weeks or even months},
+  http://hwstartup.wordpress.com/2013/03/11/how-to-run-an-arduino-on-a-9v-battery-for-weeks-or-months/.
+\newline\urlprefix\url{http://hwstartup.wordpress.com/2013/03/11/how-to-run-an-arduino-on-a-9v-battery-for-weeks-or-months/}
+
+\bibitem{arduino_blog_3}
+\href{http://www.fiz-ix.com/2012/11/low-power-arduino-using-the-watchdog-timer/}{Low-power
+  arduino using the watchdog timer {\textbar} fiz-ix},
+  http://www.fiz-ix.com/2012/11/low-power-arduino-using-the-watchdog-timer/.
+\newline\urlprefix\url{http://www.fiz-ix.com/2012/11/low-power-arduino-using-the-watchdog-timer/}
+
 \end{thebibliography}

@@ -18,45 +18,45 @@ Warning--empty year in prev_thesis
 Warning--empty publisher in fuzzy_sets
 Warning--empty publisher in fuzzy_control_introduction
 Warning--empty year in fuzzy_control_introduction
-You've used 16 entries,
+You've used 19 entries,
             2937 wiz_defined-function locations,
-            745 strings with 7184 characters,
-and the built_in function-call counts, 3019 in all, are:
-= -- 243
-> -- 37
+            755 strings with 7656 characters,
+and the built_in function-call counts, 3529 in all, are:
+= -- 285
+> -- 40
 < -- 0
-+ -- 23
++ -- 26
 - -- 7
-* -- 128
-:= -- 337
-add.period$ -- 17
-call.type$ -- 16
-change.case$ -- 13
+* -- 149
+:= -- 385
+add.period$ -- 20
+call.type$ -- 19
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 123
-empty$ -- 480
+cite$ -- 24
+duplicate$ -- 147
+empty$ -- 567
 format.name$ -- 8
-if$ -- 884
+if$ -- 1040
 int.to.chr$ -- 0
-int.to.str$ -- 16
+int.to.str$ -- 19
 missing$ -- 7
-newline$ -- 68
+newline$ -- 80
 num.names$ -- 5
-pop$ -- 140
+pop$ -- 167
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 252
+skip$ -- 297
 stack$ -- 0
 substring$ -- 27
-swap$ -- 15
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
 while$ -- 6
-width$ -- 18
-write$ -- 122
+width$ -- 21
+write$ -- 143
 (There were 5 warnings)
