@@ -3,7 +3,16 @@
 % content in this file will be fed into the main document
 
 \chapter{Related Work} % top level followed by section, subsection
-Compare your solution with existing projects. How your solution is better than the others?, why to use your solution?, etc.
+
+A solution for energy-efficient data collection for clustering-based wireless sensor networks has been suggested \cite{cluster_wsn_paper}. This solution has wireless sensor clusters with a head node, which actively decides if new sensor data should be requested from the nodes or if they can be predicted. The communication with the central data collection point goes through cluster heads only, which reduces transfer overhead. This is similar to the current thesis in a sense that data is predicted or requested and then forwarded, with the exception that this prototype does not have clusters and extra complexity that comes with clustering. 
+The general implementation idea has been taken from this solution and prediction algorithm details, because in both cases simple linear regression is used to predict sensor data. \todo{improve this?}
+
+\todo{check linear regression reference from that thesis}
+
+The previous prototype \cite{prev_thesis} is the main basis of this work as it was the starting point. The previous implementation used XMPP as the communication protocol and a fixed interval data collection. XMPP has several advantages over simple HTTP requests, mainly because the protocol supports message queues and security. However, actually useful security options \todo{which was it?}(SSL/TLS) are unavailable due to their overhead and implementation complexity for Arduino boards. On the other hand, XMPP protocol has communication overhead which reduces its usability when fast connection establishment and data transmission is required.
+
+\todo{add references to these blogs}
+Three blogs posts were found \todo{add blog citations here} where a similar system of Arduino sensor module and a central data collection server were used. The posts focused on power consumption of Arduino boards, because similarly a 9V battery did not power the device long enough. These posts mainly focused on hardware modifications to the boards by either using a more power-efficient Arduino board, \todo{maybe reference arduino mini here?} replacing certain components of the board or making their own hardware using a breadboard. On the software side, a similar sleep and wake cycle solution was developed. The sleep and wake cycles were implemented using the internal watchdog timer similar to what is used in the JeeLib library's Port class \cite{jeelib_port}.
 
 
 
@@ -18,12 +27,8 @@ Compare your solution with existing projects. How your solution is better than t
 
 % ----------------------- contents from here ------------------------
 
-\todo{Previous thesis}
-\todo{The paper used}
-\todo{reference some blogs where arduino was mentioned}
 
 
- 
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------

@@ -41,6 +41,6 @@
 \contentsline {section}{\numberline {5.1}Conclusions}{26}{section.5.1}
 \contentsline {section}{\numberline {5.2}Summary of Contributions}{26}{section.5.2}
 \contentsline {chapter}{\numberline {6}Related Work}{27}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Research Directions}{28}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{29}{chapter.8}
-\contentsline {chapter}{Bibliography}{30}{chapter*.10}
+\contentsline {chapter}{\numberline {7}Future Research Directions}{29}{chapter.7}
+\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{30}{chapter.8}
+\contentsline {chapter}{Bibliography}{31}{chapter*.10}

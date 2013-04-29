@@ -73,4 +73,11 @@
   {http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}.
 \newline\urlprefix\url{http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}
 
+\bibitem{cluster_wsn_paper}
+H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
+  clustering-based data collection in wireless sensor networks, Parallel and
+  Distributed Systems, IEEE Transactions on 22~(6) (2011) 1064--1071.
+\newblock \href {http://dx.doi.org/10.1109/TPDS.2010.174}
+  {\path{doi:10.1109/TPDS.2010.174}}.
+
 \end{thebibliography}
