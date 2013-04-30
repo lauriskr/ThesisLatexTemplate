@@ -1,16 +1,20 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Trapezoidal and Triangular Membership Functions\relax }}{7}{figure.caption.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arduino Mega ADK\relax }}{4}{figure.caption.2}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Wireless SD Shield\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces RN-XV Wifly Module\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Complete Arduino Sensor Module\relax }}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Trapezoidal and Triangular Membership Functions\relax }}{9}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP Session Lifecycle\relax }}{12}{figure.caption.3}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Server-side Data Model\relax }}{13}{figure.caption.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP Session Lifecycle\relax }}{15}{figure.caption.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Server-side Data Model\relax }}{16}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Power Consumption at 30 Second Interval\relax }}{19}{figure.caption.5}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Updated Server-side Data Model\relax }}{20}{figure.caption.6}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Regression Confidence Fuzzy Sets\relax }}{22}{figure.caption.7}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sensor Value Fuzzy Sets\relax }}{23}{figure.caption.8}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Idle Time Fuzzy Sets\relax }}{23}{figure.caption.9}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Power Consumption at 30 Second Interval\relax }}{22}{figure.caption.9}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Updated Server-side Data Model\relax }}{23}{figure.caption.10}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Regression Confidence Fuzzy Sets\relax }}{25}{figure.caption.11}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sensor Value Fuzzy Sets\relax }}{26}{figure.caption.12}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Idle Time Fuzzy Sets\relax }}{26}{figure.caption.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

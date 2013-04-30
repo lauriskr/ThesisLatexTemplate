@@ -53,43 +53,64 @@ Since programs are written in C/C++, there are a lot of libraries available for 
 
 \subsection{Arduino Mega ADK}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.58]{2/figures/mega_adk.pdf}
+\caption{Arduino Mega ADK}
+\label{mega_adk}
+\end{figure}
+
 Arduino Mega ADK \cite{megaAdk} is one of the most capable boards available. 
 The Arduino ADK is a microcontroller board based on the ATmega2560. Similar to the Mega 2560 and Uno, it features an ATmega8U2 programmed as a USB-to-serial converter. It has a USB host interface to connect with Android based phones, 54 digital input/output pins, 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, USB B, micro B connections and a 2.1mm center-positive power jack. The ADK is designed to be compatible with most shields designed for the Uno, Diecimila or Duemilanove
 
 The ADK has 256 KB of flash memory for storing code (of which 8 KB is used for the bootloader), 8 KB of SRAM and 4 KB of EEPROM (which can be read and written with the EEPROM library).
 
-The Arduino ADK can be powered via the USB connection or with an external power supply. The power source is selected automatically. External (non-USB) power can come either from an AC-to-DC adapter or battery. The board can operate on an external supply of 5.5 to 16 volts. The recommended range is 7 to 12 volts.
+The Arduino ADK can be powered via the USB connection or with an external power supply. The power source is selected automatically. External (non-USB) power can come either from an AC-to-DC adapter or battery. The board can operate on an external supply of 5.5 to 16 volts. The recommended range is 7 to 12 volts. The board can be seen in \autoref{mega_adk}
 
 \todo{format the text a bit, remove describe what is EEPROM, add an image}
 
 \subsection{Wireless SD Shield}
 
-The Wireless SD shield \cite{arduino_wireless} allows an Arduino board to communicate using a wireless module. The module can communicate up to 100 feet indoors or up to 300 feet outdoors. 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.58]{2/figures/wireless_shield.pdf}
+\caption{Wireless SD Shield}
+\label{wireless_shield}
+\end{figure}
+
+The Wireless SD shield \cite{arduino_wireless} allows an Arduino board to communicate using a wireless module. The module can communicate up to 100 feet indoors or up to 300 feet outdoors. The module can be seen in \autoref{wireless_shield} 
 
 The shield has an on-board switch which allows to select between USB and Micro modes. In USB mode, the shield bypasses Arduino board's microcontroller and communicates directly to the USB-to-serial converter. In Micro mode, data sent from the microcontroller will be transmitted to the computer via USB as well as being sent wirelessly by the wireless module. The microcontroller will not be programmable via USB in Micro mode.
 
 \subsection{RN-XV WiFly Module}
 
-The RN-XV module \cite{rn_xv_module} by Roving Networks is a certified Wi-Fi solution especially designed for customer who want to migrate their existing 802.15.4 architecture to a standard TCP/IP based platform without having to redesign their existing hardware. In other words, if your project is set up for XBee and you want to move it to a standard WiFi network, you can drop this in the same socket without any other new hardware.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.58]{2/figures/wifly.pdf}
+\caption{RN-XV Wifly Module}
+\label{wifly_module}
+\end{figure}	
 
-The RN-XV module is based upon Roving Networks' robust RN-171 Wi-Fi module and incorporates 802.11 b/g radio, 32 bit processor, TCP/IP stack, real-time clock, crypto accelerator, power management unit and analog sensor interface.The module is pre-loaded with Roving firmware to simplify integration and minimize development time of your application. In the simplest configuration, the hardware only requires four connections (PWR, TX, RX and GND) to create a wireless data connection.
-
-\todo{Add an image of the wireless shield and rn-xv wifi module}	
+The RN-XV module \cite{rn_xv_module} by Roving Networks is a certified Wi-Fi solution. It is based upon Roving Networks' robust RN-171 Wi-Fi module and has 802.11 b/g radio, 32 bit processor, TCP/IP stack, real-time clock, power management unit. It has a pre-loaded Roving firmware to enable simple configuration and usage. The module can be seen in \autoref{wifly_module}
 
 \subsection{TinkerKit}
 
 TinkerKit \cite{tinkerkit_introduction} is a tool used to build interactive products using Arduino boards. It consists of modules (sensors, actuators) and a sensor shield. The tool greatly simplifies product assembly, because instead of building circuits out of low level components, all the modules can be attached to the TinkerKit sensor shield with a snapping cable.
 
-Here is the mega sensor shield used in this project...
-\todo{Add a figure of the mega sensor shield}
-
-The modules are divided into sensors and actuators. Sensors can measure their surrounding environment (provide input) and actuators perform actions (provide output). The sensors used are thermistor, LDR and Hall. 
+The modules are divided into sensors and actuators. Sensors can measure their surrounding environment (provide input) and actuators perform actions (provide output). The sensors used are thermistor, LDR and Hall. The fully assembled module is shown in \autoref{complete_module}
 
 Thermistor sensor \cite{thermistor_sensor} is a resistor whose resistance changes significantly with temperature. The module's output ranges from 0V to 5V
 
 Hall sensor \cite{hall_sensor} creates a voltage related to the magnetic field near the sensor. It can detect the presence of a nearby magnet or magnetic field induced in a coil or wire. The output ranges from 0V (no presence) to 5V (presence detected). 
 
 Light Dependent Resistor or LDR \cite{light_sensor} is a variable resistor whose resistance is decreased when light falls on the sensor. The module's output is 5V when the module receives no light and 0V when bright light falls on it.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.58]{2/figures/complete_module.pdf}
+\caption{Complete Arduino Sensor Module}
+\label{complete_module}
+\end{figure}	
+
 
 %Fuzzy logic is the main contribution, therefore, you can write here up to 5 pages
 \section{Fuzzy Logic}

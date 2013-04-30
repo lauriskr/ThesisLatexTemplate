@@ -93,7 +93,7 @@ The final web server consists of 4 modules:
 
 A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. \todo{add a mention of the paper the idea was taken from?} The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
 
-The model sample is taken from previous measurements during the last \todo{actual time} 5 minutes. The 5 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
+The model sample is taken from previous measurements during the last 4 minutes. The 4 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
 
 To measure the accuracy of the model, an confidence level of 90\% was introduced. If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
 

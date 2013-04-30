@@ -2,34 +2,31 @@
 \contentsline {todos}{{2. }mention peaktech power supply here?}{2}{todos.0.2}
 \contentsline {todos}{{3. }add more chapters here when they're ready}{2}{todos.0.3}
 \contentsline {todos}{{4. }add an image of the IDE here... }{3}{todos.0.4}
-\contentsline {todos}{{5. }format the text a bit, remove describe what is EEPROM, add an image}{4}{todos.0.5}
-\contentsline {todos}{{6. }Add an image of the wireless shield and rn-xv wifi module}{5}{todos.0.6}
-\contentsline {todos}{{7. }Add a figure of the mega sensor shield}{5}{todos.0.7}
-\contentsline {todos}{{8. }add citations here...}{6}{todos.0.8}
-\contentsline {todos}{{9. }Add simple linear regression here, too?}{9}{todos.0.9}
-\contentsline {todos}{{10. }Add a small introduction of who wrote the previous thesis etc}{10}{todos.0.10}
-\contentsline {todos}{{11. }check if it really is like this}{11}{todos.0.11}
-\contentsline {todos}{{12. }how should i reference all the data collected?}{14}{todos.0.12}
-\contentsline {todos}{{13. }reference it somehow}{15}{todos.0.13}
-\contentsline {todos}{{14. }introduction}{15}{todos.0.14}
-\contentsline {todos}{{15. }Add a sample overview of the sketch here maybe?}{16}{todos.0.15}
-\contentsline {todos}{{16. }show a graph here i guess? or whatever}{17}{todos.0.16}
-\contentsline {todos}{{17. }look how to reference these}{18}{todos.0.17}
-\contentsline {todos}{{18. }Add a sample request here}{18}{todos.0.18}
-\contentsline {todos}{{19. }Do i really need this here?}{19}{todos.0.19}
-\contentsline {todos}{{20. }add a mention of the paper the idea was taken from?}{20}{todos.0.20}
-\contentsline {todos}{{21. }actual time}{20}{todos.0.21}
-\contentsline {todos}{{22. }look this part over, should be ok}{20}{todos.0.22}
-\contentsline {todos}{{23. }maybe calculate this automatically somehow, atm predefined variable used}{22}{todos.0.23}
-\contentsline {todos}{{24. }Add a table with the selected error values for fuzzy engine and prediction here}{22}{todos.0.24}
-\contentsline {todos}{{25. }add a sample response here}{25}{todos.0.25}
-\contentsline {todos}{{26. }Describe tests carried out}{25}{todos.0.26}
-\contentsline {todos}{{27. }Make a test with a 9V battery}{25}{todos.0.27}
-\contentsline {todos}{{28. }Graphs with improved power consumption figures on it, description of what changed and how/why}{25}{todos.0.28}
-\contentsline {todos}{{29. }Graph with 10s idle time as the worst-case scenario here}{25}{todos.0.29}
-\contentsline {todos}{{30. }improve this?}{27}{todos.0.30}
-\contentsline {todos}{{31. }check linear regression reference from that thesis}{27}{todos.0.31}
-\contentsline {todos}{{32. }which was it?}{27}{todos.0.32}
-\contentsline {todos}{{33. }maybe reference arduino mini here?}{28}{todos.0.33}
-\contentsline {todos}{{34. }Different arduino/hardware configuration}{29}{todos.0.34}
-\contentsline {todos}{{35. }Better prediction}{29}{todos.0.35}
+\contentsline {todos}{{5. }format the text a bit, remove describe what is EEPROM, add an image}{5}{todos.0.5}
+\contentsline {todos}{{6. }add citations here...}{7}{todos.0.6}
+\contentsline {todos}{{7. }Add simple linear regression here, too?}{12}{todos.0.7}
+\contentsline {todos}{{8. }Add a small introduction of who wrote the previous thesis etc}{13}{todos.0.8}
+\contentsline {todos}{{9. }check if it really is like this}{14}{todos.0.9}
+\contentsline {todos}{{10. }how should i reference all the data collected?}{17}{todos.0.10}
+\contentsline {todos}{{11. }reference it somehow}{18}{todos.0.11}
+\contentsline {todos}{{12. }introduction}{18}{todos.0.12}
+\contentsline {todos}{{13. }Add a sample overview of the sketch here maybe?}{19}{todos.0.13}
+\contentsline {todos}{{14. }show a graph here i guess? or whatever}{20}{todos.0.14}
+\contentsline {todos}{{15. }look how to reference these}{21}{todos.0.15}
+\contentsline {todos}{{16. }Add a sample request here}{21}{todos.0.16}
+\contentsline {todos}{{17. }Do i really need this here?}{22}{todos.0.17}
+\contentsline {todos}{{18. }add a mention of the paper the idea was taken from?}{23}{todos.0.18}
+\contentsline {todos}{{19. }look this part over, should be ok}{23}{todos.0.19}
+\contentsline {todos}{{20. }maybe calculate this automatically somehow, atm predefined variable used}{25}{todos.0.20}
+\contentsline {todos}{{21. }Add a table with the selected error values for fuzzy engine and prediction here}{25}{todos.0.21}
+\contentsline {todos}{{22. }add a sample response here}{28}{todos.0.22}
+\contentsline {todos}{{23. }Describe tests carried out}{28}{todos.0.23}
+\contentsline {todos}{{24. }Make a test with a 9V battery}{28}{todos.0.24}
+\contentsline {todos}{{25. }Graphs with improved power consumption figures on it, description of what changed and how/why}{28}{todos.0.25}
+\contentsline {todos}{{26. }Graph with 10s idle time as the worst-case scenario here}{28}{todos.0.26}
+\contentsline {todos}{{27. }improve this?}{30}{todos.0.27}
+\contentsline {todos}{{28. }check linear regression reference from that thesis}{30}{todos.0.28}
+\contentsline {todos}{{29. }which was it?}{30}{todos.0.29}
+\contentsline {todos}{{30. }maybe reference arduino mini here?}{31}{todos.0.30}
+\contentsline {todos}{{31. }Different arduino/hardware configuration}{32}{todos.0.31}
+\contentsline {todos}{{32. }Better prediction}{32}{todos.0.32}
