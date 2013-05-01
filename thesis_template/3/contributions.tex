@@ -56,7 +56,7 @@ During testing the sleep and wake up cycles with XMPP, it was found that XMPP se
 
 As a result, XMPP as a means of communication was not viable when trying to minimize power consumption. As an alternative, \todo{look how to reference these} web sockets, raw sockets and HTTP was considered. Web sockets were left out because opening a web socket connection is opened with a HTTP request, making using that one request to actually send the data more efficient. Therefore, HTTP was preferred to web sockets. Raw socket implementation in Arduino would add needless complexity to the sketch and was therefore not implemented. 
 
-The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP. 
+The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 6 seconds. In the previous scenario of 10 second transmission interval, it would mean 4 seconds could be spent in sleep mode, 4 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP. 
 
 \todo{Add a sample request here}
 
@@ -95,7 +95,7 @@ A simple linear regression model was selected to predict future data, which uses
 
 The model sample is taken from previous measurements during the last 4 minutes. The 4 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
 
-To measure the accuracy of the model, an confidence level of 90\% was introduced. If the sample for last 5 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
+To measure the accuracy of the model, an confidence level of 90\% was introduced. If the sample for last 4 minutes provides an accurate enough regression model, then the predictions can be used. Otherwise, fresh data should be queried and added to the model until the error threshold is satisfied. The equation to calculate regression model's confidence level $\alpha$:\\
 
 \begin{center}
 $\alpha = 2\Phi \left ( \frac{\epsilon}{STDEV[e]}  \right ) - 1$.
@@ -129,7 +129,7 @@ Here each sensor has a pair of input variables - measured sensor value and senso
 
 The fuzzy control system is initialized with a previous measurement for each sensor. This effectively sets the bounds of each sensor's fuzzy sets as seen in \autoref{change_sets}. The $PREDICTABLE$ fuzzy set's DOM (degree of membership) reaches maximum at a confidence level of 0.95 or 95\% because for our prototype anything above that level is highly predictable. 
 
-The measured sensor values are fuzzified into sets, which each have different membership functions. The membership functions are calculated on the last measurement received as seen in \autoref{change_sets}. Here $X$ in set labels notes the sensor type currently used as the sets are the same relative to each sensor's previous measurement. The center point $O$ is the previously measured value. $||X_2X_3||$ is the predefined sensor measurement error  ($sensor\_error$ field in the data model). This means that if the new measurement is between the points $X_2$ and $X_3$, there is no change in the measurement for the fuzzy system. The lengths $||X_0X_2||$, $||X_1O||$, $||OX_4||$ and $||X_3X_5||$ are defined by the same variable $slope\_width$. \todo{maybe calculate this automatically somehow, atm predefined variable used}
+The measured sensor values are fuzzified into sets, which each have different membership functions. The membership functions are calculated on the last measurement received as seen in \autoref{change_sets}. Here $X$ in set labels notes the sensor type currently used as the sets are the same relative to each sensor's previous measurement. The center point $O$ is the previously measured value. $||X_2X_3||$ is the predefined sensor measurement error  ($sensor\_error$ field in the data model). This means that if the new measurement is between the points $X_2$ and $X_3$, there is no change in the measurement for the fuzzy system. The lengths $||X_0X_2||$, $||X_1O||$, $||OX_4||$ and $||X_3X_5||$ are defined by the same variable $slope\_width$. Currently, slope width is the same as the selected $regression\_error$ values which are 5 times the value of $measure\_error$. The selected error values can be seen in \autoref{errors_table}. 
 
 \begin{figure}[h!]
 \centering
@@ -138,7 +138,18 @@ The measured sensor values are fuzzified into sets, which each have different me
 \label{change_sets}
 \end{figure}
 
-\todo{Add a table with the selected error values for fuzzy engine and prediction here}
+\begin{table}[h]
+\centering
+  \begin{tabular}{| l | l | l | l |}
+    \hline
+     & Temp & Hall & LDR \\ \hline
+    $measure\_error$ & 0.1 & 0.5 & 10 \\ \hline
+    $regression\_error$ & 0.5 & 2.5 & 50 \\
+    \hline
+  \end{tabular}
+\caption{Selected Error Values}
+\label{errors_table}
+\end{table}
 
 The output variable is defuzzified from the idle time sets which have membership functions described in \autoref{idle_sets}. The sets $request$ and $predict$ are symmetrical to enable easy defuzzification. The maximum idle time is 65 seconds, which is the maximum length of one sleep cycle for the sensor module. 
 

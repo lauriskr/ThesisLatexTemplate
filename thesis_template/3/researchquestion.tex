@@ -37,12 +37,14 @@ The first component is the Arduino sensor module. The hardware configuration is 
 
 On the software side, the implementation mainly relies on a XMPP library and WiFly module library called WiFlyHQ. The WiFlyHQ library is responsible for creating a TCP connection and communication over the network, the XMPP library handles all the XMPP implementation details. 
 
-The sketch itself is fairly straightforward - in $setup()$ a wireless network is joined, a TCP connection established and lastly a XMPP session is initialized. In $loop()$ all connections are checked and reestablished if needed. Then the last transmit time variable is compared to the current time and if the report step amount (currently 10 seconds) has passed, data is collected from the sensors, formatted to appropriate JSON format string and sent to the server-side client. 
+The sketch itself is fairly straightforward - in $setup()$ a wireless network is joined, a TCP connection established and lastly a XMPP session is initialized. In $loop()$ all connections are checked and reestablished if needed. Then the last transmit time variable is compared to the current time and if the report step amount (currently 10 seconds) has passed, data is collected from the sensors, formatted to appropriate JSON string and sent to the server-side client. A sample data JSON:
 
+\begin{center}
 \begin{lstlisting}
-{"SensorData": {"location": 1, "data": [{"type": 1, value: 5.00}, 
+{"location": 1, "data": [{"type": 1, value: 5.00}, 
 {"type": 2, "value": 500.00}, {"type": 3, "value": 312.00}]}
-\end{lstlisting}\todo{check if it really is like this}
+\end{lstlisting}
+\end{center}
 
 \subsection{XMPP Communication}
 
@@ -53,7 +55,7 @@ XMPP session lifecycle can be seen in \autoref{xmpp_lifecycle}. With the current
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{3/figures/xmpp_session.png}
-\caption{XMPP Session Lifecycle}
+\caption{XMPP Session Lifecycle \cite[p. 40]{prev_thesis}}
 \label{xmpp_lifecycle}
 \end{figure}
 

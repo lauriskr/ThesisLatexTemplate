@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  1 MAY 2013 00:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  1 MAY 2013 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,7 +1076,7 @@ l.35 \end{abstracts}
 
  (./2/stateofart.tex
  2.
-<2/figures/mega_adk.pdf, id=307, 774.895pt x 574.145pt>
+<2/figures/mega_adk.pdf, id=308, 774.895pt x 574.145pt>
 File: 2/figures/mega_adk.pdf Graphic file (type pdf)
 
 <use 2/figures/mega_adk.pdf>
@@ -1092,7 +1092,7 @@ Overfull \hbox (36.87447pt too wide) in paragraph at lines 58--59
 
 
 ] [4 <./2/figures/mega_adk.pdf>]
-<2/figures/wireless_shield.pdf, id=332, 767.86874pt x 569.12625pt>
+<2/figures/wireless_shield.pdf, id=334, 767.86874pt x 569.12625pt>
 File: 2/figures/wireless_shield.pdf Graphic file (type pdf)
 
 <use 2/figures/wireless_shield.pdf>
@@ -1104,7 +1104,7 @@ Overfull \hbox (32.79922pt too wide) in paragraph at lines 76--77
  []
 
 [5 <./2/figures/wireless_shield.pdf>]
-<2/figures/wifly.pdf, id=349, 772.8875pt x 579.16376pt>
+<2/figures/wifly.pdf, id=350, 772.8875pt x 579.16376pt>
 File: 2/figures/wifly.pdf Graphic file (type pdf)
 
 <use 2/figures/wifly.pdf>
@@ -1116,7 +1116,7 @@ Overfull \hbox (35.7101pt too wide) in paragraph at lines 89--90
  []
 
 [6 <./2/figures/wifly.pdf>]
-<2/figures/complete_module.pdf, id=369, 769.87625pt x 600.2425pt>
+<2/figures/complete_module.pdf, id=370, 769.87625pt x 600.2425pt>
 File: 2/figures/complete_module.pdf Graphic file (type pdf)
 
 <use 2/figures/complete_module.pdf>
@@ -1131,7 +1131,7 @@ Overfull \hbox (33.96358pt too wide) in paragraph at lines 109--110
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] [8 <./2/figures/complete_module.pdf>]
-<2/figures/sample_sets.pdf, id=392, 789.95125pt x 392.46625pt>
+<2/figures/sample_sets.pdf, id=393, 789.95125pt x 392.46625pt>
 File: 2/figures/sample_sets.pdf Graphic file (type pdf)
 
 <use 2/figures/sample_sets.pdf>
@@ -1151,18 +1151,18 @@ Overfull \hbox (45.60709pt too wide) in paragraph at lines 131--132
 
 
 
-] <3/figures/xmpp_session.png, id=429, 425.59pt x 781.92125pt>
+] <3/figures/xmpp_session.png, id=430, 425.59pt x 781.92125pt>
 File: 3/figures/xmpp_session.png Graphic file (type png)
 
 <use 3/figures/xmpp_session.png>
-Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 55.
+Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 57.
 (pdftex.def)             Requested size: 255.35596pt x 469.15637pt.
  [14] [15 <./3/figures/xmpp_session.png>]
-<3/figures/data_model_initial.jpg, id=446, 560.0925pt x 105.39375pt>
+<3/figures/data_model_initial.jpg, id=448, 560.0925pt x 105.39375pt>
 File: 3/figures/data_model_initial.jpg Graphic file (type jpg)
 
 <use 3/figures/data_model_initial.jpg>
-Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 67
+Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 69
 .
 (pdftex.def)             Requested size: 336.05809pt x 63.23672pt.
  [16 <./3/figures/data_model_initial.jpg>]) [17]
@@ -1175,7 +1175,7 @@ Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 67
 
 
 ] [19] [20]
-<4/figures/30s_xmpp_vs_http.pdf, id=487, 460.72125pt x 259.97125pt>
+<4/figures/30s_xmpp_vs_http.pdf, id=489, 460.72125pt x 259.97125pt>
 File: 4/figures/30s_xmpp_vs_http.pdf Graphic file (type pdf)
 
 <use 4/figures/30s_xmpp_vs_http.pdf>
@@ -1190,14 +1190,14 @@ Overfull \hbox (2.08034pt too wide) in paragraph at lines 65--66
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21] [22 <./4/figures/30s_xmpp_vs_http.pdf>]
-<4/figures/data_model_final.jpg, id=512, 654.445pt x 120.45pt>
+<4/figures/data_model_final.jpg, id=514, 654.445pt x 120.45pt>
 File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 
 <use 4/figures/data_model_final.jpg>
 Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 87.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
  [23 <./4/figures/data_model_final.jpg>]
-<4/figures/pred_sets.pdf, id=523, 756.8275pt x 392.46625pt>
+<4/figures/pred_sets.pdf, id=525, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
@@ -1211,7 +1211,7 @@ Overfull \hbox (26.3953pt too wide) in paragraph at lines 125--126
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] <4/figures/change_sets.pdf, id=536, 785.93625pt x 392.46625pt>
+[24] <4/figures/change_sets.pdf, id=539, 785.93625pt x 392.46625pt>
 File: 4/figures/change_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/change_sets.pdf>
@@ -1225,25 +1225,26 @@ Overfull \hbox (19.70131pt too wide) in paragraph at lines 136--137
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<4/figures/result_sets.pdf, id=538, 756.8275pt x 392.46625pt>
+[25 <./4/figures/pred_sets.pdf>]
+<4/figures/result_sets.pdf, id=548, 756.8275pt x 392.46625pt>
 File: 4/figures/result_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/result_sets.pdf>
-Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 147.
+Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 158.
 (pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
 
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 147--148
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 158--159
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./4/figures/pred_sets.pdf>] [26 <./4/figures/change_sets.pdf> <./4/figures
-/result_sets.pdf>] [27]) [28]
+[26 <./4/figures/change_sets.pdf>] [27 <./4/figures/result_sets.pdf>]) [28]
 \openout2 = `5/conclusions.aux'.
 
- (./5/conclusions.tex
+
+(./5/conclusions.tex
  5.
 ) [29
 
@@ -1388,19 +1389,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7167722D054668CAAAC420D5F31CF3BB;3026.
+(rerunfilecheck)             Checksum: CA7497EE8FD7BC13D435F6B308DA4CCB;3026.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: B72D5BDE4B2ECE16D72DC38CC7390C0A;1416.
+(rerunfilecheck)             Checksum: DB155221B601F4768C001FC70A5D5F1F;1521.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
  19089 strings out of 495059
- 324281 string characters out of 3182030
- 414605 words of memory out of 3000000
- 21616 multiletter control sequences out of 15000+200000
+ 324298 string characters out of 3182030
+ 414684 words of memory out of 3000000
+ 21618 multiletter control sequences out of 15000+200000
  22702 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,55p,940b,1019s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,55p,1052b,1080s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.450pk> </home/
 lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/lauris/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/lauris/.texmf-var/fo
@@ -1421,10 +1422,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (42 pages, 4270273 bytes).
+Output written on thesis.pdf (42 pages, 4272830 bytes).
 PDF statistics:
- 1488 PDF objects out of 1728 (max. 8388607)
+ 1498 PDF objects out of 1728 (max. 8388607)
  752 compressed objects within 8 object streams
- 178 named destinations out of 1000 (max. 500000)
+ 176 named destinations out of 1000 (max. 500000)
  433 words of extra memory for PDF output out of 10000 (max. 10000000)
 
