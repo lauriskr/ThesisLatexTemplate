@@ -189,6 +189,28 @@ Server: Jetty(7.2.0.v20101020)
 \end{lstlisting}
 
 \section{Results}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{4/figures/final_measurements.png}
+\caption{Final Measurements Comparison}
+\label{final_measurements}
+\end{figure}
+
+\begin{table}[h]
+\centering
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+     & Average current (mA) & Percentage & Improvement \\ \hline
+    XMPP 10s interval & 111.74 & 100\% & \\ \hline
+    HTTP 10s interval & 86.14 & 77\% & 23\% \\ \hline
+    HTTP final & 64.39 & 58\% & 42\% \\
+    \hline
+  \end{tabular}
+\caption{Overview of Final Results}
+\label{table}
+\end{table}
+
 \todo{Describe tests carried out}\\
 \todo{Make a test with a 9V battery}\\
 \todo{Graphs with improved power consumption figures on it, description of what changed and how/why}

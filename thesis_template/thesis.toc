@@ -37,10 +37,10 @@
 \contentsline {subsection}{\numberline {4.2.1}Simple Linear Regression}{23}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Fuzzy Logic Engine}{24}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Results}{28}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusions}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{29}{section.5.2}
-\contentsline {chapter}{\numberline {6}Related Work}{30}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Research Directions}{32}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{33}{chapter.8}
-\contentsline {chapter}{Bibliography}{34}{chapter*.15}
+\contentsline {chapter}{\numberline {5}Conclusions}{30}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{30}{section.5.1}
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{30}{section.5.2}
+\contentsline {chapter}{\numberline {6}Related Work}{31}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Research Directions}{33}{chapter.7}
+\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{34}{chapter.8}
+\contentsline {chapter}{Bibliography}{35}{chapter*.17}
