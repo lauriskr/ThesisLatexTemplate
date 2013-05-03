@@ -29,13 +29,13 @@ Since the module consists of 3 components - Arduino Mega ADK, Wireless SD Shield
 
 \subsubsection{Watchdog Timer}
 A watchdog timer \cite{watchdog_timer} is an electronic timer used to recover from computer malfunctions. They are found in automated systems where human interference is not possible and therefore the system must be able to recover from malfunctions on its own. 
-A watchdog timer essentially performs a timing function producing a delayed response to an input trigger. The most common implementation has a digital counter that counts from a specified value down to a terminal value. Usually the initial value is programmable. When the counter reaches the terminal value, the timer timeouts and triggers a timeout signal. Usually this means restarting the program from the start. A program can restart the watchdog timer at any time. The act of restarting is usually referred to as "kicking the dog". In this way, a program can be written witch never lets the counter reach the terminal value.
+A watchdog timer essentially performs a timing function producing a delayed response to an input trigger. The most common implementation has a digital counter that counts from a specified value down to a terminal value. Usually the initial value is programmable. When the counter reaches the terminal value, the timer timeouts and triggers a timeout signal. Usually this means restarting the program from the start. A program can restart the watchdog timer at any time. The act of restarting is usually referred to as "kicking the dog". In this way, a program can be written which never lets the counter reach the terminal value.
 
 \subsubsection{Arduino Mega ADK}
 
 In case of an Arduino board, when the watchdog timer timeouts, the sketch is restarted (new call to $setup()$). Furthermore, a watchdog timeout signal is sent and this signal can be captured by the sketch. In the Arduino sketch, this is implemented by the JeeLib library \cite{jeelib_general}. JeeLib is a library written for experimenting with JeeLabs products, however, some parts of the library are written for Arduino boards and can be used with them. Specifically, the Ports class \cite{jeelib_port} is the one used in this implementation to put the Arduino Mega ADK into sleep mode. The sketch execution stops for the specified sleep time and afterwards execution continues from the call to sleep function.
 
-\todo{Add a sample overview of the sketch here maybe?}
+\todo{Add a sample overview of the sketch here maybe}
 
 \subsubsection{WiFly module}
 
@@ -50,15 +50,24 @@ Since XMPP session initialization is quite verbose and the communication over Wi
 
 Because all TCP connections and therefore the XMPP session have to be closed after every data transmit, XMPP session lifecycle steps 1 - 5 shown in \autoref{xmpp_lifecycle} are executed multiple times. When testing the XMPP implementation with Arduino Mega ADK and WiFly module sleep modes enabled, a troubling fact was discovered - the XMPP session negotiation fails at least once for every 30 minute test. The reason for these connection failures are scrambled authentication or stream opening stanzas. 
 
-From the tests, it could be seen that the average XMPP session start up time was 15 seconds. \todo{show a graph here i guess? or whatever} Data needs to be transmitted every 10 seconds, which means that the module can never be put to sleep as it will not be able to go through the sleep and wake up cycle during the available time period. Moreover, data transmission took on average 1 second, meaning that 15 seconds spent on wake up would result in a second of actual work, which is not efficient. 
+From the tests, it could be seen that the average XMPP session start up time was 15 seconds. Data needs to be transmitted every 10 seconds, which means that the module can never be put to sleep as it will not be able to go through the sleep and wake up cycle during the available time period. Moreover, data transmission took on average 1 second, meaning that 15 seconds spent on wake up would result in a second of actual work, which is not efficient. 
 
 During testing the sleep and wake up cycles with XMPP, it was found that XMPP session negotiation will hang approximately once in 15 minutes. As the maximum sleep time in our implementation is 65 seconds, this means that there are at least 13 separate session negotiations. Of course, this is the problem of the XMPP library in use and its lack of error handling. Problems with the library could be addressed with a better implementation, however, there was another factor discovered during the tests.
 
-As a result, XMPP as a means of communication was not viable when trying to minimize power consumption. As an alternative, \todo{look how to reference these} web sockets, raw sockets and HTTP was considered. Web sockets were left out because opening a web socket connection is opened with a HTTP request, making using that one request to actually send the data more efficient. Therefore, HTTP was preferred to web sockets. Raw socket implementation in Arduino would add needless complexity to the sketch and was therefore not implemented. 
+As a result, XMPP as a means of communication was not viable when trying to minimize power consumption. As an alternative, web sockets, raw sockets and HTTP was considered. Web sockets were left out because a web socket connection is opened with an HTTP request. Thus, using that one request to actually send the data is more efficient. Therefore, HTTP was preferred to web sockets. Raw socket implementation in Arduino would add needless complexity to the sketch and was therefore not implemented. Here is a sample of used HTTP request:
 
-The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 6 seconds. In the previous scenario of 10 second transmission interval, it would mean 4 seconds could be spent in sleep mode, 4 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP. 
+\begin{lstlisting}
+POST /data/ HTTP/1.1
+Host: ec2-54-224-196-78.compute-1.amazonaws.com
+Connection: close
+Content-Type: application/json
+Content-Length: 105
 
-\todo{Add a sample request here}
+{"location":1, "data":[{"type":1, "value":  7.87}, {"type":2, \
+"value":512.00},{"type":3, "value":166.00}]}
+\end{lstlisting}
+
+The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 6 seconds. In the previous scenario of 10 second transmission interval, it would mean 4 seconds could be spent in sleep mode, 4 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP.
 
 \begin{figure}[h]
 \centering
@@ -71,16 +80,16 @@ The main advantages of HTTP are connection initialization speed and simplicity. 
 
 With the move from XMPP to HTTP, the server-side client's implementation changed. Instead of using XMPP Smack library, a web server was needed. Jetty was selected because of its simplicity and possibility to embed it into the application. A web server embedded in an application is useful when prototyping, because it saves time on configuration and deployment. 
 
-Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The new data model can be seen in \autoref{data_model_final}. $Data$ table now has $measured$ field, which indicates if the value has been measured or predicted. $SensorTypes$ table has two new fields - $regression\_error$ and $measure\_error$. $regression\_error$ is the acceptable regression model error for future predictions. $measure\_error$ indicates the acceptable variance for measured values. 
+Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The final web server consists of 4 modules:
 
-\todo{Do i really need this here?}
-The final web server consists of 4 modules:
 \begin{enumerate}
 \item Request handler
 \item Linear regression model
 \item Fuzzy control engine
 \item Data storage
 \end{enumerate}
+
+The new data model can be seen in \autoref{data_model_final}. $Data$ table now has $measured$ field, which indicates if the value has been measured or predicted. $SensorTypes$ table has two new fields - $regression\_error$ and $measure\_error$. $regression\_error$ is the acceptable regression model error for future predictions. $measure\_error$ indicates the acceptable variance for measured values. 
 
 \begin{figure}[h!]
 \centering
@@ -101,7 +110,9 @@ To measure the accuracy of the model, an confidence level of 90\% was introduced
 $\alpha = 2\Phi \left ( \frac{\epsilon}{STDEV[e]}  \right ) - 1$.
 \end{center}
 
-Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $STDEV[e]$ is the standard deviation of residuals (also known as standard error of estimate). \todo{look this part over, should be ok}
+\todo{explain this equation and how rmse is connected to it}
+
+Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $STDEV[e]$ is the standard deviation of residuals (also known as standard error of estimate). 
 
 Regression models are created separately for each sensor. Each model has a sample of previous measurements and the allowed error $\epsilon$ defined in the database. 
 The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected confidence threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 
@@ -176,7 +187,7 @@ The next step is to get the crisp result value. For this process, the idle time 
 
 When the crisp result is received from the fuzzy control system and idle time is longer than 10 seconds, future data is predicted for the idle period. This means that using the regression models, future values with 10 second intervals are inserted into the database for each sensor. 
 
-Finally, the idle time with a minimum value of 10 seconds is written as a JSON format string to the response body of the HTTP request. A sample response would look like:\\ \todo{add a sample response here}
+Finally, the idle time with a minimum value of 10 seconds is written as a JSON format string to the response body of the HTTP request. A sample response would look like:
 
 \begin{lstlisting}
 HTTP/1.1 200 OK
@@ -187,6 +198,8 @@ Server: Jetty(7.2.0.v20101020)
 
 {"idle": 34}
 \end{lstlisting}
+
+\todo{Add an overall figure of the solution here}
 
 \section{Results}
 
@@ -213,9 +226,8 @@ Server: Jetty(7.2.0.v20101020)
 
 \todo{Describe tests carried out}\\
 \todo{Make a test with a 9V battery}\\
-\todo{Graphs with improved power consumption figures on it, description of what changed and how/why}
-\todo{Graph with 10s idle time as the worst-case scenario here}
-
+\todo{Add a test link bandwidth used and mention 3G connection problems}
+\todo{add jetty web server capability references with avg request handle time}
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------
 % ---------------------------------------------------------------------------

@@ -5,6 +5,11 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{fuzzy_logic_offloading}
+H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
+  applications: Exploiting fuzzy sets and evidence-based learning, Tech. rep.,
+  Institute of Computer Science, Mobile Cloud Lab, University of Tartu (2013).
+
 \bibitem{prev_thesis}
 {Kaarel Hanson}, Context Sensor Data on Demand for Mobile Users Supported by
   XMPP, Tartu, Estonia.
@@ -47,12 +52,12 @@
   http://www.tinkerkit.com/ldr/.
 \newline\urlprefix\url{http://www.tinkerkit.com/ldr/}
 
-\bibitem{fuzzy_sets}
-{Lotfi A. Zadeh}, Fuzzy Sets. Information and Control, 1965.
-
 \bibitem{fuzzy_control_introduction}
 {Marcelo Godoy Simoes}, Introduction to Fuzzy Control, 1610 Illinois Street
   Golden, Colorado 80401-1887 {USA}.
+
+\bibitem{fuzzy_sets}
+{Lotfi A. Zadeh}, Fuzzy Sets. Information and Control, 1965.
 
 \bibitem{watchdog_timer}
 {Jim Lamberson}, Single and multistage watchdog timers (2012).
@@ -79,22 +84,5 @@ H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
   Distributed Systems, IEEE Transactions on 22~(6) (2011) 1064--1071.
 \newblock \href {http://dx.doi.org/10.1109/TPDS.2010.174}
   {\path{doi:10.1109/TPDS.2010.174}}.
-
-\bibitem{arduino_blog_1}
-\href{http://www.josephmoskie.com/?p=292}{An idiot and an arduino: Ruminations
-  on power « {\textasciitilde}jmoskie}, http://www.josephmoskie.com/?p=292.
-\newline\urlprefix\url{http://www.josephmoskie.com/?p=292}
-
-\bibitem{arduino_blog_2}
-\href{http://hwstartup.wordpress.com/2013/03/11/how-to-run-an-arduino-on-a-9v-battery-for-weeks-or-months/}{How
-  to run an arduino (clone) on a {9V} battery for weeks or even months},
-  http://hwstartup.wordpress.com/2013/03/11/how-to-run-an-arduino-on-a-9v-battery-for-weeks-or-months/.
-\newline\urlprefix\url{http://hwstartup.wordpress.com/2013/03/11/how-to-run-an-arduino-on-a-9v-battery-for-weeks-or-months/}
-
-\bibitem{arduino_blog_3}
-\href{http://www.fiz-ix.com/2012/11/low-power-arduino-using-the-watchdog-timer/}{Low-power
-  arduino using the watchdog timer {\textbar} fiz-ix},
-  http://www.fiz-ix.com/2012/11/low-power-arduino-using-the-watchdog-timer/.
-\newline\urlprefix\url{http://www.fiz-ix.com/2012/11/low-power-arduino-using-the-watchdog-timer/}
 
 \end{thebibliography}

@@ -16,8 +16,7 @@
 %: ----------------------- Mobile Cloud Middleware ------------------------
 
 In this chapter, the prototype developed in Context Sensor Data on Demand
-for Mobile Users Supported by XMPP \cite{prev_thesis} is described. The prototype was successful, but had some areas of improvement. Secondly, an overview of these improvements is given. 
-\todo{Add a small introduction of who wrote the previous thesis etc}
+for Mobile Users Supported by XMPP \cite{prev_thesis} is described. The prototype was successful, but had some areas of improvement. Secondly, an overview of these possible improvements is given. 
 
 \section{Current Solution}
 
@@ -37,11 +36,11 @@ The first component is the Arduino sensor module. The hardware configuration is 
 
 On the software side, the implementation mainly relies on a XMPP library and WiFly module library called WiFlyHQ. The WiFlyHQ library is responsible for creating a TCP connection and communication over the network, the XMPP library handles all the XMPP implementation details. 
 
-The sketch itself is fairly straightforward - in $setup()$ a wireless network is joined, a TCP connection established and lastly a XMPP session is initialized. In $loop()$ all connections are checked and reestablished if needed. Then the last transmit time variable is compared to the current time and if the report step amount (currently 10 seconds) has passed, data is collected from the sensors, formatted to appropriate JSON string and sent to the server-side client. A sample data JSON:
+The sketch itself is fairly straightforward - in $setup()$ a wireless network is joined, a TCP connection established and lastly a XMPP session is initialized. In $loop()$ all connections are checked and reestablished if needed. Then the last transmit time variable is compared to the current time and if the report step amount (currently 10 seconds) has passed, data is collected from the sensors, formatted to a JSON string and sent to the server-side client. A sample data string:
 
 \begin{center}
 \begin{lstlisting}
-{"location": 1, "data": [{"type": 1, value: 5.00}, 
+SensorData{"location": 1, "data": [{"type": 1, value: 5.00}, 
 {"type": 2, "value": 500.00}, {"type": 3, "value": 312.00}]}
 \end{lstlisting}
 \end{center}
@@ -62,12 +61,12 @@ XMPP session lifecycle can be seen in \autoref{xmpp_lifecycle}. With the current
 \subsection{Data Collection Server}
 The data collection server is responsible for gathering sensor data and saving it in a database. Its implementation is written in Java and uses Smack XMPP API to communicate over XMPP. Data is stored in a H2 database, because of its simplicity and suitability for prototyping. 
 
-The database has three main tables - sensors, data and locations. Locations table has different sensor module locations, sensors table has different types of sensors and data has data gathered from different locations and sensors. The data model can be seen in \autoref{data_model_initial}.
+The database has three main tables - sensors, data and locations. Locations table has different sensor module locations, sensors table has different types of sensors and data has data gathered from different locations and sensors. The data model can be seen in \autoref{data_model_initial}.\\
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{3/figures/data_model_initial.jpg}
-\caption{Server-side Data Model}
+\caption{Server-side Data Model \cite[p. 46]{prev_thesis}}
 \label{data_model_initial}
 \end{figure}
 
@@ -91,9 +90,7 @@ In addition, as messages from the Wireless Shield might not be complete and  XMP
 
 \subsection{Power Consumption}
 
-Power consumption is the main problem this thesis focuses on. As a 9V battery has an average capacity of 400 $mAh$ at 100 $mA$ current, the resource is quite limited. With the existing configuration, the average current drawn is 108 $mA$. Battery lifetime tests in the previous thesis showed that the module runs for 161,5 minutes on a 9V battery \cite[p. 50]{prev_thesis}. However, 161,5 minutes is not enough to gather contextual data for the proposed data collection system. The batteries need to be changed too often for it to be a viable solution. 
-\todo{how should i reference all the data collected?}
-
+Power consumption is the main problem this thesis focuses on. As a 9V battery has an average capacity of 400 $mAh$ at 100 $mA$ current, the resource is quite limited. With the existing configuration, the average current drawn is around 111$mA$ as seen in \autoref{final_measurements}. Battery lifetime tests in the previous thesis showed that the module runs for 161,5 minutes on a 9V battery \cite[p. 50]{prev_thesis}. However, 161,5 minutes is not enough to gather contextual data for the proposed data collection system. The batteries need to be changed too often for it to be a viable solution.
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------
