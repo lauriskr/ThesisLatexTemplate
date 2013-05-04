@@ -59,6 +59,12 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
 \bibitem{fuzzy_sets}
 {Lotfi A. Zadeh}, Fuzzy Sets. Information and Control, 1965.
 
+\bibitem{least_squres}
+\href{http://mathworld.wolfram.com/LeastSquaresFitting.html}{Least squares
+  fitting -- from wolfram {MathWorld}},
+  {http://mathworld.wolfram.com/LeastSquaresFitting.html}.
+\newline\urlprefix\url{http://mathworld.wolfram.com/LeastSquaresFitting.html}
+
 \bibitem{watchdog_timer}
 {Jim Lamberson}, Single and multistage watchdog timers (2012).
 

@@ -153,16 +153,16 @@ There are several defuzzification methods. The simplest of which would be to use
 
 \section{Simple Linear Regression}
 
-\todo{Add simple linear regression here}
+Linear regression uses a linear model to predict future values based on a sample of previous measurements. Simple linear regression is a linear regression model that uses least squares fitting (least squares method) \cite{least_squres} to determine the placement of the linear function line based on the given sample values. The model has one explanatory (the x-axis) variable, based on which the future values of the predicted variable (y-axis) are calculated.
 
-%add figures
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.65\textwidth]{2/figures/Cloud/funambolArchitecture.png}
-%\caption{Funambol architecture}
-%\label{fig:funambolArchitecture}
-%\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{2/figures/regression_sample.pdf}
+\caption{Least Squares Fitting Regression Line}
+\label{reg_sample}
+\end{figure}
 
+Least squares fitting uses a simple approach to determine the placement of the regression line. The line placement is determined by minimizing the sum of the squares of the residuals. Residuals are the difference of the predicted values and actual values in the sample. A sample regression line can be seen in \autoref{reg_sample}. From there it can be seen, that the regression line fits in the middle of the sample points so that their residuals (errors) would be minimal. 
 
 % ---------------------------------------------------------------------------
 % ----------------------- end of thesis sub-document ------------------------
