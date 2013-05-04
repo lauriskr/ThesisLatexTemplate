@@ -5,15 +5,10 @@
 \contentsline {todos}{{5. }rewrite these paragraphs and remove copy paste things from here}{3}{todos.0.5}
 \contentsline {todos}{{6. }Add simple linear regression here}{12}{todos.0.6}
 \contentsline {todos}{{7. }reference it somehow}{18}{todos.0.7}
-\contentsline {todos}{{8. }introduction}{18}{todos.0.8}
-\contentsline {todos}{{9. }Add a sample overview of the sketch here maybe}{19}{todos.0.9}
-\contentsline {todos}{{10. }add a mention of the paper the idea was taken from?}{23}{todos.0.10}
-\contentsline {todos}{{11. }explain this equation and how rmse is connected to it}{24}{todos.0.11}
-\contentsline {todos}{{12. }Add an overall figure of the solution here}{28}{todos.0.12}
-\contentsline {todos}{{13. }Describe tests carried out}{28}{todos.0.13}
-\contentsline {todos}{{14. }Make a test with a 9V battery}{28}{todos.0.14}
-\contentsline {todos}{{15. }Add a test link bandwidth used and mention 3G connection problems}{28}{todos.0.15}
-\contentsline {todos}{{16. }add jetty web server capability references with avg request handle time}{28}{todos.0.16}
-\contentsline {todos}{{17. }improve this?}{31}{todos.0.17}
-\contentsline {todos}{{18. }Different arduino/hardware configuration}{32}{todos.0.18}
-\contentsline {todos}{{19. }Better prediction}{32}{todos.0.19}
+\contentsline {todos}{{8. }Add a sample overview of the sketch here maybe}{19}{todos.0.8}
+\contentsline {todos}{{9. }explain this equation and how rmse is connected to it}{24}{todos.0.9}
+\contentsline {todos}{{10. }Describe tests carried out}{29}{todos.0.10}
+\contentsline {todos}{{11. }Make a test with a 9V battery}{29}{todos.0.11}
+\contentsline {todos}{{12. }Add a test link bandwidth used and mention 3G connection problems}{29}{todos.0.12}
+\contentsline {todos}{{13. }add jetty web server capability references with avg request handle time}{29}{todos.0.13}
+\contentsline {todos}{{14. }improve this?}{31}{todos.0.14}

@@ -8,8 +8,6 @@ In this chapter improvements to the existing implementation are discussed. First
 
 The main goal is to reduce the average power consumption measured by \todo{reference it somehow} the PeakTech power supply. 
 
-\todo{introduction}
-
 %: ----------------------- paths to graphics ------------------------
 
 % change according to folder and file names
@@ -80,14 +78,21 @@ The main advantages of HTTP are connection initialization speed and simplicity. 
 
 With the move from XMPP to HTTP, the server-side client's implementation changed. Instead of using XMPP Smack library, a web server was needed. Jetty was selected because of its simplicity and possibility to embed it into the application. A web server embedded in an application is useful when prototyping, because it saves time on configuration and deployment. 
 
-Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The final web server consists of 4 modules:
+Furthermore, to take full advantage of the newly developed sleep mode functionality, the client was further developed to predict sensor values for some time. Two modules were added the server for this - simple linear regression and fuzzy control engine. In addition, the data model was modified to suit the new modules. The final web server consists of 4 modules and a figure of the architecture can be seen in \autoref{final_solution}
 
 \begin{enumerate}
-\item Request handler
-\item Linear regression model
+\item HTTP Request handler
+\item Prediction module (Linear regression model)
 \item Fuzzy control engine
 \item Data storage
 \end{enumerate}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.45]{4/figures/finalsolution.jpg}
+\caption{Final Solution Architecture}
+\label{final_solution}
+\end{figure}
 
 The new data model can be seen in \autoref{data_model_final}. $Data$ table now has $measured$ field, which indicates if the value has been measured or predicted. $SensorTypes$ table has two new fields - $regression\_error$ and $measure\_error$. $regression\_error$ is the acceptable regression model error for future predictions. $measure\_error$ indicates the acceptable variance for measured values. 
 
@@ -100,7 +105,7 @@ The new data model can be seen in \autoref{data_model_final}. $Data$ table now h
 
 \subsection{Simple Linear Regression}
 
-A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. \todo{add a mention of the paper the idea was taken from?} The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
+A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. A linear regression models is sufficient to predict sensor data \cite[p. 1066]{cluster_wsn_paper}. The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
 
 The model sample is taken from previous measurements during the last 4 minutes. The 4 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
 
@@ -198,8 +203,6 @@ Server: Jetty(7.2.0.v20101020)
 
 {"idle": 34}
 \end{lstlisting}
-
-\todo{Add an overall figure of the solution here}
 
 \section{Results}
 

@@ -4,7 +4,15 @@
 
 \chapter{Future Research Directions} % top level followed by section, subsection
 
-Briefly indicate how your current research can be extended, some improvements, etc.
+The changes made in this thesis are done with the notion of improving on a proof of concept prototype. This means that the changes are done to prove a concept as well. 
+Hence, several aspects of the changes implemented can be improved upon.
+
+Firstly, starting with the Arduino sensor module, the hardware side of the module can greatly affect the power consumption of the device. Currently, Arduino Mega ADK is used, which is one of the most power-hungry boards available. Currently, the board on average draws 55$mA$ in sleep mode, which is very close to the average current drawn as seen in \autoref{final_measurements}. When this number is lowered, the average current drawn will decrease and thus improve battery lifetime. 
+
+Secondly, the server-side client's fuzzy control engine and prediction models can be improved. At the moment, the fuzzy control engine checks if the measured value has changed from a previous measurement by a degree $x$. If it has, a new measurement is requested. However, this configuration does not cover the case when the measurement values changes steadily by a degree which is larger than the acceptable $measure\_error$. In this case, the changes in value might be large, but if they are steady, then the future values could still be predictable. 
+
+Finally, the prediction model can be improved upon to better handle extreme values, because currently, a large enough deviation can cause the model to become inaccurate. The selected $measure\_error$ and $regressin\_error$ values can be adjusted to better suit the selected sensors and their data ranges. At the moment, the values are based on a trial and error tuning of the models to suit the needs of the prototype level device. However, in an actual implementation environment, these values should be based of the type of information needed from the sensors. For example, a small change in the light sensor measurements might indicate that an object (a bird) has flown past the sensor, but if the goal is to measure the cloudiness of the sky or the time of day, the acceptable deviations in the sensor values can be larger to ignore small fluctuations.  
+
 
 
 
@@ -31,13 +39,6 @@ Briefly indicate how your current research can be extended, some improvements, e
 \fi
 
 % ----------------------- contents from here ------------------------
-
-\todo{Different arduino/hardware configuration}
-\todo{Better prediction}
-
-
-
-
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------
 % ---------------------------------------------------------------------------
