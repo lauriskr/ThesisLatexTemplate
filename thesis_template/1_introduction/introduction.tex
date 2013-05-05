@@ -27,10 +27,6 @@
 %    \subsubsection{} = level 4
 % note that everything after the percentage sign is hidden from output
 
-
-
-\section{Introduction} % section headings are printed smaller than chapter names
-
 Mobile applications are becoming more context aware and depend on perceiving the surrounding environment to provide users with the best functionality possible. This is achieved due to technological advances that enable the device to sense the surroundings, however, these abilities are limited to each device's hardware configuration.
 
 A proposed solution has been made in the thesis "Context Sensor Data on Demand for Mobile Users Supported by XMPP" by Kaarel Hanson \cite{prev_thesis}. The solution is to have special sensor modules perceive the environment and gather the measurements in a central data center, which can then be used to provide data to mobile users. 
@@ -39,14 +35,14 @@ A prototype was developed based on Arduino for the sensors and XMPP for communic
 
 Without enough battery life, the overhead of using the modules to gather data makes the solution inefficient. Therefore, it is crucial to make the modules last longer, which is the main goal of this thesis.
 
-\subsection{Motivation}
+\section{Motivation}
 The developed prototype \cite{prev_thesis} works well when the general idea and goal is considered. However, the lack of flexibility of data transmission intervals and high power needs constrain the implementation usages. In order to take full advantage of the prototype, power usage should be reduced and more flexibility added to the communication between the server-side client and sensor modules.  
 
-\subsection{Contributions}
+\section{Contributions}
 
 A more flexible data collection solution is developed based on HTTP. The changes made enable more energy-efficient data collection by predicting sensor data when possible. A fuzzy control system was developed to decide if sensor data is predictable and for what time period.  Moreover, the prototype's Arduino-based sensor module has been improved to support sleep mode while no sensor data is sent to the server-side client. Power consumption before and after the changes was tested to indicate changes' effect on battery life. 
 
-\subsection{Outline}
+\section{Outline}
 
 %for example
 %\noindent \textbf{Chapter 2}: discusses the state of the art addressed by this thesis. 
