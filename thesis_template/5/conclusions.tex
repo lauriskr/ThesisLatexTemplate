@@ -4,7 +4,14 @@
 %: ----------------------- name of chapter  -------------------------
 \chapter{Conclusions} % top level followed by section, subsection
 
-\todo{write conclusions}
+Pervasive applications have become more common in recent years and therefore mobile applications need to take advantage of the possibilities they offer. To provide this contextual information, a prototype solution was developed, which registers sensor data from an Arduino-based module and saves it in a data server.
+
+The prototype solution was further developed in this thesis to increase battery performance and therefore the usability of the prototype. For this, a variable sensor reading interval solution was developed, which consists of a fuzzy control engine and simple linear regression model. Moreover, the sensor module was improved to enable sleep mode during periods of inactivity to fully utilize the variable sensor reading times.
+
+A switch from XMPP to HTTP was made on the communication protocol part. This switch was necessary to enable sleep mode in the sensor modules, since XMPP session negotiation is a verbose process and therefore takes longer than making a simple HTTP request. The move to HTTP decreased connection initialization and data sending times, which enabled the module to utilize sleep mode for longer periods.
+
+Several tests were carried out to measure the actual benefits of the proposed improvements and the results were positive. Two tests, with improvements of 80\% and 111\% over the previous prototype's battery lifetime, were carried out. These tests show that the proposed solution of enabling sleep mode in the sensor module for idle periods decreases power consumption and enables the module to perform its tasks for a longer period of time.
+ 
 %: ----------------------- paths to graphics ------------------------
 
 % change according to folder and file names
@@ -15,10 +22,6 @@
 \fi
 
 %: ----------------------- contents from here ------------------------
-
-\section{Conclusions}
-
-\section{Summary of Contributions}
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------

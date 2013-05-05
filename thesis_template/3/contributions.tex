@@ -270,7 +270,9 @@ From \autoref{9V_measurements_table} it can be seen that the two test results di
 
 As can be seen in \autoref{9V_test_results}, change in total idle time and battery lifetime have almost identical lines, which indicates that they are closely correlated. This, in fact, is quite logical because the main decrease in power consumption comes from utilizing idle mode as much as possible. 
 
-All in all, the outcome is positive with the daytime test giving an 80\% and the evening test giving 110\% improvement. The different results are caused by the selection of acceptable error values, which can be fine tuned based on the actual measurement characteristics needed. 
+The server-side client was not separately load tested, because the average request handling time was measured to be 53ms, which is quick enough to handle sensor module loads. Furthermore, since Jetty web server is a Java application server, which has proven itself in real commercial implementations, the solution was trusted to handle larger number of requests.
+
+All in all, the outcome is positive with the daytime test giving an 80\% and the evening test giving 111\% improvement. The different results are caused by the selection of acceptable error values, which can be fine tuned based on the actual measurement characteristics needed. 
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------

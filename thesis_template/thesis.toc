@@ -41,8 +41,6 @@
 \contentsline {subsection}{\numberline {4.3.2}Overview of Tests}{31}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Test Results}{31}{subsection.4.3.3}
 \contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{34}{section.5.1}
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{34}{section.5.2}
 \contentsline {chapter}{\numberline {6}Related Work}{35}{chapter.6}
 \contentsline {chapter}{\numberline {7}Future Research Directions}{36}{chapter.7}
 \contentsline {chapter}{Res\IeC {\"u}mee}{38}{chapter*.23}
