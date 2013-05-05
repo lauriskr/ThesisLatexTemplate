@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  5 MAY 2013 20:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  5 MAY 2013 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,14 +1190,14 @@ Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 70.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] <4/figures/finalsolution.png, id=535, 908.39375pt x 545.03625pt>
+[22] <4/figures/finalsolution.png, id=535, 910.40125pt x 554.07pt>
 File: 4/figures/finalsolution.png Graphic file (type png)
 
 <use 4/figures/finalsolution.png>
 Package pdftex.def Info: 4/figures/finalsolution.png used on input line 90.
-(pdftex.def)             Requested size: 417.8662pt x 250.71971pt.
+(pdftex.def)             Requested size: 418.78966pt x 254.87529pt.
 
-Overfull \hbox (5.30124pt too wide) in paragraph at lines 90--91
+Overfull \hbox (6.2247pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
@@ -1424,8 +1424,8 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 19127 strings out of 495059
- 325491 string characters out of 3182030
+ 19126 strings out of 495059
+ 325482 string characters out of 3182030
  415255 words of memory out of 3000000
  21653 multiletter control sequences out of 15000+200000
  22702 words of font info for 55 fonts, out of 3000000 for 9000
@@ -1451,10 +1451,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (47 pages, 5547078 bytes).
+Output written on thesis.pdf (47 pages, 5539985 bytes).
 PDF statistics:
- 1518 PDF objects out of 1728 (max. 8388607)
- 766 compressed objects within 8 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 1517 PDF objects out of 1728 (max. 8388607)
+ 764 compressed objects within 8 object streams
+ 172 named destinations out of 1000 (max. 500000)
  479 words of extra memory for PDF output out of 10000 (max. 10000000)
 

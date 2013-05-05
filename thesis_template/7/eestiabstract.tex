@@ -2,11 +2,15 @@
 % content in this file will be fed into the main document
 \chapter[Resümee]{Mobiilsetele kasutajatele sensoritelt kogutud keskonnapõhiste andmete edastamise optimeerimine} % top level followed by section, subsection
 \textbf{Bakalaureusetöö (6 EAP)}\\
-\textbf{Lauris Kruusamäe}
+\textbf{Lauris Kruusamäe}\\
 
-Eesti abstract...
+Tänapäeval levib järjest rohkem rakendusi, mis tajuvad ümbritsevat keskkonda ning pakuvad sellele põhinevalt kasutajale lisavõimalusi. Selliste võimaluste pakkumiseks on arendatud prototüüp, mis kogub keskkonna kohta andmeid kasutades Arduino platvormil põhinevad sensorite moodulit ning keskset andmet kogumise serverit. 
 
-\todo{write resümee}
+Käesolevas töös arendati antud prototüüpi edasi, et tõsta aku vastupidavust ning seeläbi parandada lahenduse kasutatavust. Selleks loodi varieeruva sensoriandmete saatmise intervalliga lahendus, mis koosneb hägusloogikat kasutavast kontrollsüsteemist ning lihtsa lineaarse regressiooni mudelist. Lisaks loodi lahendus, mis lubab sensorite moodulil vabadel hetkedel minna puhkerežiimi.
+
+Töö käigus asendati seni kasutuselolev XMPP protokoll HTTP protokolli vastu, et parandada ühenduse loomise ajakulu ning lubada sensorite moodulil kauem puhkerežiimis olla.
+
+Parandatud lahenduse tulemusi mõõdeti mitme testi käigus. Kaks põhilist testi, mille käigus sensorite moodul sai voolu 9-voldiselt patareilt, andsid vastavalt tulemusteks 80 ja 110 \% pikema eluea. Sellest tulenevalt saab eeldada, et pakutud puhkerežiimi ja muutuva intervalliga andmete kogumist kasutav lahendus parandab aku vastupidavust ning seega ka prototüübi kasulikkust.
 
 
 
