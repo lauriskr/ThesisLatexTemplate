@@ -4,7 +4,7 @@
 %: ----------------------- name of chapter  -------------------------
 \chapter{Problem Solution} % top level followed by section, subsection
 
-In this chapter improvements to the existing implementation are discussed. First, changes in the Arduino sensor module are described. Secondly, an overview of changes in the communication between the module and data collection server (the server from here on). Lastly, an overview of the fuzzy control and data prediction systems that were implemented to reduce communication overhead and power consumption.
+In this chapter improvements to the existing implementation are discussed. First, changes to the Arduino sensor module are described. Secondly, an overview of changes in the communication between the module and data collection server. Lastly, an overview of the implemented fuzzy control and data prediction systems is given.
 
 %: ----------------------- paths to graphics ------------------------
 
@@ -21,7 +21,7 @@ The first problem addressed is power consumption. There are two main ideas behin
 
 \subsection{Sleep}
 
-Since the module consists of 3 components - Arduino Mega ADK, Wireless SD Shield with WiFly module and TinkerKit Sensor Shield. Both the Mega ADK and WiFly module support sleep modes. 
+The module consists of 3 components - Arduino Mega ADK, Wireless SD Shield with WiFly module and TinkerKit Sensor Shield. Both the Mega ADK and WiFly module support sleep modes, however, TinkerKit Sensor Shield does not.
 
 \subsubsection{Watchdog Timer}
 A watchdog timer \cite{watchdog_timer} is an electronic timer used to recover from computer malfunctions. They are found in automated systems where human interference is not possible and therefore the system must be able to recover from malfunctions on its own. 
@@ -29,9 +29,9 @@ A watchdog timer essentially performs a timing function producing a delayed resp
 
 \subsubsection{Arduino Mega ADK}
 
-In case of an Arduino board, when the watchdog timer timeouts, the sketch is restarted (new call to $setup()$). Furthermore, a watchdog timeout signal is sent and this signal can be captured by the sketch. In the Arduino sketch, this is implemented by the JeeLib library \cite{jeelib_general}. JeeLib is a library written for experimenting with JeeLabs products, however, some parts of the library are written for Arduino boards and can be used with them. Specifically, the Ports class \cite{jeelib_port} is the one used in this implementation to put the Arduino Mega ADK into sleep mode. The sketch execution stops for the specified sleep time and afterwards execution continues from the call to sleep function.
+In case of an Arduino board, when the watchdog timer timeouts, the sketch is restarted (new call to $setup()$). Furthermore, a watchdog timeout signal is sent and this signal can be captured by the sketch. In the Arduino sketch, this is implemented by the JeeLib library \cite{jeelib_general}. JeeLib is a library written for experimenting with JeeLabs products, however, some parts of the library are written for Arduino boards and can be used with them. Specifically, the Ports class \cite{jeelib_port} is the one used in this implementation to put the Arduino Mega ADK into sleep mode. The sketch execution stops for the specified sleep time and afterwards continues from the call to the sleep function. 
 
-\todo{Add a sample overview of the sketch here maybe}
+\todo{Add a reference to the code}
 
 \subsubsection{WiFly module}
 
@@ -63,7 +63,7 @@ Content-Length: 105
 "value":512.00},{"type":3, "value":166.00}]}
 \end{lstlisting}
 
-The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 6 seconds. In the previous scenario of 10 second transmission interval, it would mean 4 seconds could be spent in sleep mode, 4 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP.
+The main advantages of HTTP are connection initialization speed and simplicity. The average time to wake up from sleep mode, send an HTTP request and receive response from the server, was measured to be around 5 seconds. In the previous scenario of 10 second transmission interval, it would mean 5 seconds could be spent in sleep mode, 5 seconds to wake up and transmit the data. This implementation would be more energy efficient, which can be seen in \autoref{30s_interval_power}. The data was gathered while running the prototype for 30 minutes with a data sending interval of 30 seconds. The sleep times were adjusted for both configurations based on their wake up times. As seen in the figure, the HTTP configuration consumes approximately 20\% less power than the one using XMPP.
 
 \begin{figure}[h]
 \centering
@@ -103,7 +103,7 @@ The new data model can be seen in \autoref{data_model_final}. $Data$ table now h
 
 \subsection{Prediction Module}
 
-A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. A linear regression models is sufficient to predict sensor data \cite[p. 1066]{cluster_wsn_paper}. The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
+A simple linear regression model was selected to predict future data, which uses the least squares method to calculate the future values. A linear regression model is sufficient to predict sensor data \cite[p. 1066]{cluster_wsn_paper}. The model has a single explanatory variable - Unix time. This variable is used to predict the future values of sensor readings based on previous measurements. 
 
 The model sample is taken from previous measurements during the last 4 minutes. The 4 minute interval is selected to balance out errors caused by extreme values. This is necessary because a single value with big enough deviation can cause the regression model to become inaccurate. 
 
@@ -113,10 +113,10 @@ To measure the accuracy of the model, an confidence level of 90\% was introduced
 $\alpha = 2\Phi \left ( \frac{\epsilon}{RMSE}  \right ) - 1$.
 \end{center}
 
-Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error (also known as standard error of estimate) of the regression model The original equation used standard deviation of errors instead of RMSE, but RMSE is used here because of computational ease and because RMSE is the square root of the mean squared deviation \cite{RMSE} which describes the same thing as standard deviation (deviations from the mean). 
+Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error (also known as standard error of estimate) of the regression model. The original equation used standard deviation of errors instead of RMSE, but RMSE is used here because of computational ease. RMSE is the square root of the mean squared deviation \cite{RMSE} which describes the same thing as standard deviation (deviations from the mean). 
 
 Regression models are created separately for each sensor. Each model has a sample of previous measurements and the allowed error $\epsilon$ defined in the database. 
-The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected confidence threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 
+The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 
 
 \subsection{Fuzzy Logic Engine}
 
@@ -180,7 +180,7 @@ When all input variables have been fuzzified and degrees of membership calculate
 \item IF $x$ IS $x\_same$ AND $x\_predictability$ IS $predictable$ THEN $predict$
 \end{enumerate}
 
-The previously calculated degrees of membership are fed into these rules. For $AND$ relationship, the minimum value is selected, for $OR$ relationship, the maximum value is selected. For each rule, the output variable received a DOM equal to the DOM of the premise. When all rules have been evaluated, the results are defuzzified into a single crisp value, which is the idle time decision. This process is called defuzzification.
+The previously calculated degrees of membership are fed into these rules. For $AND$ relationship, the minimum value is selected, for $OR$ relationship, the maximum value is selected. For each rule, the output variable receives a DOM equal to the DOM of the premise. When all rules have been evaluated, the results are defuzzified into a single crisp value, which is the idle time decision. 
 
 During defuzzification the DOMs of result sets $request$ and $predict$ for each rule are combined into a single DOM for the specified set. For this, $request$ output has an $OR$ relationship (maximum value) and the $predict$ set has an $AND$ relationship (minimum value). These relationships mean that the most inaccurate sensors would be represented in the final result. For example if $hall$ has a DOM of 1.0 to $predict$, but $temp$ has a DOM of 0.5 to $predict$, then the outcome would be a DOM of 0.5, because we need the output for least accurate sensors. For $request$ this logic is reversed as the maximum DOM to $request$ represents the output for the least accurate sensor. 
 
@@ -215,13 +215,13 @@ A PeakTech 1890 programmable power supply was used when testing the power consum
 
 \subsection{Overview of Tests}
 
-All average current tests were carried out using the PeakTech 1890 power supply. The power supply collects data with 1 second interval for 1800 seconds (30 minutes). 30 minutes is long enough to get the data of average current drawn. The 9V battery tests were carried out in the same environment to make the data more comparable. 
+All average current tests were carried out using the PeakTech 1890 power supply. The power supply collected data with 1 second interval for 1800 seconds (30 minutes).
 
 When testing with the server hosted in an Amazon EC2 micro instance, it was discovered that the previously used 3G wireless connection was not stable enough to provide consistent connections. Previous tests were made in a local area network where 3G was sufficient. To fix this, a switch to local Wi-Fi connection was made, the connection speeds were measured at 17.68 Mb/s download and 23.44 Mb/s upload. The latency of HTTP response for the we server was measured with Google Chrome web browser's developer tools console and produced an average of 120ms. 
 
 \subsection{Test Results}
 
-Firstly, the average current drawn in a second was measured for the original XMPP implementation, the final HTTP implementation with a hard coded 10 second idle time (same as the original XMPP version) and finally, the HTTP implementation with variable idle times enabled. The results can be seen in \autoref{final_current_measurements} and \autoref{current_measurements_table}. As seen from the table, there was a 23\% improvement for the HTTP version with the same fixed idle time. With variable idle times, the improvement was 42\% with the average idle time measured at 37.15 seconds. 
+Firstly, the average current drawn in a second was measured for the original XMPP implementation, the final HTTP implementation with a hard coded 10 second idle time (same as the original XMPP version) and finally, the HTTP implementation with variable idle times enabled. The results can be seen in \autoref{final_current_measurements} and \autoref{current_measurements_table}. As seen from the table, there was a 23\% improvement for the HTTP version with the same fixed idle time. With variable idle time, the improvement was 42\% with the average idle time measured at 37.15 seconds. 
 
 \begin{figure}[h!]
 \centering

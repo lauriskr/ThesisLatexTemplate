@@ -120,18 +120,18 @@ Fuzzy control systems \cite{fuzzy_control_introduction} take a heuristic modelin
 
 With the fuzzy logic part, the control system has a set of input variables and output variables, which are mapped into fuzzy sets. These variables and fuzzy sets have linguistic variables called labels. 
 
-These fuzzy sets and rules combined gives us a control system which consists of a set of rules where conditions and actions are defined as fuzzy values. For example if we have an input variable $temperature$ with a fuzzy set labelled $cold$ and an output variable $heat$ with a fuzzy set labelled $on$, we could write a following rule: IF $temperature = cold$ THEN $heat = on$. Based on this rule, the system can decide that if the temperature is cold then the heat should be turned on. 
+These fuzzy sets and rules combined give us a control system which consists of a set of rules where conditions and actions are defined as fuzzy values. For example if we have an input variable $temperature$ with a fuzzy set labelled $cold$ and an output variable $heat$ with a fuzzy set labelled $on$, we could write a following rule: IF $temperature = cold$ THEN $heat = on$. Based on this rule, the system can decide that if the temperature is cold then the heat should be turned on. 
 
 In an actual system there are multiple rules defined. As rules are activated only if their condition holds, the process of adding rules and variables has little computational overhead making the rulebase easily extendable.
 
-Fuzzy control systems are mostly based on experience and experiments rather than actual mathematical modelling. Furthermore, as input and output variables are mapped into fuzzy sets, which have linguistic labels, the systems control rules are easily understandable. This makes fuzzy control systems usable in cases where the actual users have little knowledge of the implementation details. Instead, they can focus on the control process by defining understandable variables, their fuzzy sets and rules based on these sets. 
+Fuzzy control systems are mostly based on experience and experiments rather than actual mathematical modelling. Furthermore, as input and output variables are mapped into fuzzy sets, which have linguistic labels, the system's control rules are easily understandable. This makes fuzzy control systems usable in cases where the actual users have little knowledge of the implementation details. Instead, they can focus on the control process by defining understandable variables, their fuzzy sets and rules based on these sets. 
 %This one is not necessary, since we will just mention the tool and it will be cited in chapter 4
 %\section{Power supply}
 %Overview of the PeakTech 1890 power supply.
 
 \subsubsection{Fuzzy control process}
 
-The decision making process has 4 main steps - fuzzification, rule evaluation, interference and defuzzification. These steps assume that the rules, input and output variables have already been defined. An overview of a fuzzy control process can be seen in \autoref{fuzzy_control_process}
+The decision making process has 3 main steps - fuzzification, rule evaluation and defuzzification. These steps assume that the rules, input and output variables have already been defined. An overview of a fuzzy control process can be seen in \autoref{fuzzy_control_process}
 
 The first step in the process is fuzzification. In this step, the system's input and/or output variables are mapped into fuzzy sets. Each input variable can have one or more associated fuzzy sets. What this process does is decompose the crisp input values into fuzzy values. These fuzzy values are expressed by linguistic terms (labels) which can then be used in the rule evaluation process.
 
@@ -146,7 +146,7 @@ The next step is to use the fuzzified values in rule evaluation. A set of predef
 
 Defuzzification is the final step in the fuzzy control process. This part is responsible for translating the fuzzy values (linguistic terms) into a crisp quantifiable result. Usually in the previous step, rule outputs will be linguistic terms (fuzzy sets) and corresponding degrees of membership for a defined output variable. In the defuzzification part, the different fuzzy sets and their DOMS for the output variable must be added together somehow to produce a final output. 
 
-There are several defuzzification methods. The simplest of which would be to use the fuzzy set with the highest DOM as the final result. However, center of gravity is the most commonly used method. First, the different degrees of membership calculated from rules must be combined for each output variable's fuzzy sets. Then, the membership functions are depicted of a graph and for each fuzzy set, the top of the membership function is cut of in a straight horizontal line at the height of the DOM value. When this is done for all fuzzy sets of the output variable, the center of gravity for the remaining shape is calculated. The center point's projection on the value axis (usually the x-axis) is the crisp result.
+There are several defuzzification methods. The simplest of which would be to use the fuzzy set with the highest DOM as the final result. However, center of gravity is the most commonly used method. First, the different degrees of membership calculated from rules must be combined for each output variable's fuzzy sets. Then, the membership functions are depicted on a graph and for each fuzzy set, the top of the membership function is cut off in a straight horizontal line at the height of the DOM value. When this is done for all fuzzy sets of the output variable, the center of gravity for the remaining shape is calculated. The center point's projection on the value axis (usually the x-axis) is the crisp result.
 
 
 \section{Simple Linear Regression}
@@ -160,7 +160,7 @@ Linear regression uses a linear model to predict future values based on a sample
 \label{reg_sample}
 \end{figure}
 
-Least squares fitting uses a simple approach to determine the placement of the regression line. The line placement is determined by minimizing the sum of the squares of the residuals. Residuals are the difference of the predicted values and actual values in the sample. A sample regression line can be seen in \autoref{reg_sample}. From there it can be seen, that the regression line fits in the middle of the sample points so that their residuals (errors) would be minimal. 
+Least squares fitting uses a simple approach to determine the placement of the regression line. The line placement is determined by minimizing the sum of the squares of the residuals. Residuals are the difference of the predicted values and actual values in the sample. A sample regression line can be seen in \autoref{reg_sample}. From there it can be seen, that the regression line fits in the middle of the sample points so that their residuals (depicted by the dotted lines) would be minimal. 
 
 % ---------------------------------------------------------------------------
 % ----------------------- end of thesis sub-document ------------------------
