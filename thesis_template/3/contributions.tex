@@ -6,8 +6,6 @@
 
 In this chapter improvements to the existing implementation are discussed. First, changes in the Arduino sensor module are described. Secondly, an overview of changes in the communication between the module and data collection server (the server from here on). Lastly, an overview of the fuzzy control and data prediction systems that were implemented to reduce communication overhead and power consumption.
 
-The main goal is to reduce the average power consumption measured by \todo{reference it somehow} the PeakTech power supply. 
-
 %: ----------------------- paths to graphics ------------------------
 
 % change according to folder and file names
@@ -69,7 +67,7 @@ The main advantages of HTTP are connection initialization speed and simplicity. 
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.9]{4/figures/30s_xmpp_vs_http.pdf}
+\includegraphics[scale=0.85]{4/figures/30s_xmpp_vs_http.pdf}
 \caption{Power Consumption at 30 Second Interval}
 \label{30s_interval_power}
 \end{figure}
@@ -89,7 +87,7 @@ Furthermore, to take full advantage of the newly developed sleep mode functional
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.45]{4/figures/finalsolution.jpg}
+\includegraphics[scale=0.46]{4/figures/finalsolution.png}
 \caption{Final Solution Architecture}
 \label{final_solution}
 \end{figure}
@@ -204,13 +202,33 @@ Server: Jetty(7.2.0.v20101020)
 
 \section{Results}
 
-\begin{figure}[h!]
+\subsection{PeakTech 1890 Power Supply}
+
+\begin{figure}[h]
 \centering
-\includegraphics[scale=1]{4/figures/final_measurements.png}
-\caption{Final Measurements Comparison}
-\label{final_measurements}
+\includegraphics[scale=0.48]{4/figures/peaktech.pdf}
+\caption{PeakTech 1890}
+\label{peaktech}
 \end{figure}
 
+A PeakTech 1890 programmable power supply was used when testing the power consumption of the Arduino sensor module. The power supply enables to set variable output voltage and current values and has RS-232 and RS-485 interfaces for connecting with external devices. The RS-232 interface was used to collect drawn current values with 1 second interval. The power supply can be seen in \autoref{peaktech}
+
+\subsection{Overview of Tests}
+
+All average current tests were carried out using the PeakTech 1890 power supply. The power supply collects data with 1 second interval for 1800 seconds (30 minutes). 30 minutes is long enough to get the data of average current drawn. The 9V battery tests were carried out in the same environment to make the data more comparable. 
+
+When testing with the server hosted in an Amazon EC2 micro instance, it was discovered that the previously used 3G wireless connection was not stable enough to provide consistent connections. Previous tests were made in a local area network where 3G was sufficient. To fix this, a switch to local Wi-Fi connection was made, the connection speeds were measured at 17.68 Mb/s download and 23.44 Mb/s upload. The latency of HTTP response for the we server was measured with Google Chrome web browser's developer tools console and produced an average of 120ms. 
+
+\subsection{Test Results}
+
+Firstly, the average current drawn in a second was measured for the original XMPP implementation, the final HTTP implementation with a hard coded 10 second idle time (same as the original XMPP version) and finally, the HTTP implementation with variable idle times enabled. The results can be seen in \autoref{final_current_measurements} and \autoref{current_measurements_table}. As seen from the table, there was a 23\% improvement for the HTTP version with the same fixed idle time. With variable idle times, the improvement was 42\% with the average idle time measured at 37.15 seconds. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.55]{4/figures/final_measurements.png}
+\caption{Current Measurements Comparison}
+\label{final_current_measurements}
+\end{figure}
 
 \begin{table}[h]
 \centering
@@ -222,14 +240,38 @@ Server: Jetty(7.2.0.v20101020)
     HTTP final & 64.39 & 58\% & 42\% \\
     \hline
   \end{tabular}
-\caption{Overview of Final Results}
-\label{table}
+\caption{Overview of Current Measurement Results}
+\label{current_measurements_table}
 \end{table}
 
-\todo{Describe tests carried out}\\
-\todo{Make a test with a 9V battery}\\
-\todo{Add a test link bandwidth used and mention 3G connection problems}
-\todo{add jetty web server capability references with avg request handle time}
+Secondly, the module's lifetime on a 9V battery was tested. The result time was the time difference between the first and the last request received by the server-side client after powering the sensor module from a 9V battery. Two separate tests were carried out - one later in the day and one earlier to show behaviour in different conditions. The difference mainly involved the LDR sensor which is quite sensitive and slight fluctuations in lighting effect the measurements. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.9]{4/figures/9V_test_results.png}
+\caption{Battery Lifetime and Idle Time Comparison}
+\label{9V_test_results}
+\end{figure}
+
+\begin{table}[h]
+\centering
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+     & Lifetime (min) & Improvement (\%) & Total Idle Time (min)\\ \hline
+    Previous Prototype & 161.5 & - & 0\\ \hline
+    Test 1 & 340 & 111 & 266 \\ \hline
+    Test 2 & 291 & 80 & 194 \\ \hline
+  \end{tabular}
+\caption{9V Battery Lifetime Test Results}
+\label{9V_measurements_table}
+\end{table}
+
+From \autoref{9V_measurements_table} it can be seen that the two test results differ a bit. This is because Test 1 was done in the evening and Test 2 was done during the day, which affects the LDR sensor's readings. During the day the sensor readings change a lot due to the variable lighting conditions. However, both tests confirm that the fuzzy control engine and prediction system work well together and that the overall battery lifetime has improved. The decrease in power consumption is dependent on the actual time spent in idle mode, because the more the module sleeps, the less power it consumes in total. 
+
+As can be seen in \autoref{9V_test_results}, change in total idle time and battery lifetime have almost identical lines, which indicates that they are closely correlated. This, in fact, is quite logical because the main decrease in power consumption comes from utilizing idle mode as much as possible. 
+
+All in all, the outcome is positive with the daytime test giving an 80\% and the evening test giving 110\% improvement. The different results are caused by the selection of acceptable error values, which can be fine tuned based on the actual measurement characteristics needed. 
+
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------
 % ---------------------------------------------------------------------------

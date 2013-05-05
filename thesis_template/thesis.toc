@@ -2,21 +2,21 @@
 \contentsline {chapter}{List of Figures}{v}{section*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Motivation}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Contributions}{1}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.1}Motivation}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Contributions}{2}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Outline}{2}{subsection.1.1.3}
-\contentsline {chapter}{\numberline {2}State of the Art}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Arduino}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Arduino Mega ADK}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Wireless SD Shield}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}RN-XV WiFly Module}{6}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}TinkerKit}{6}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Fuzzy Logic}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Fuzzy Set}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Fuzzy Set Operations}{9}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {2}State of the Art}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Arduino}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Arduino Mega ADK}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Wireless SD Shield}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}RN-XV WiFly Module}{7}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}TinkerKit}{7}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Fuzzy Logic}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Fuzzy Set}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Fuzzy Set Operations}{10}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Fuzzy Control Systems}{10}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Fuzzy control process}{10}{subsubsection.2.2.3.1}
-\contentsline {section}{\numberline {2.3}Simple Linear Regression}{12}{section.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Fuzzy control process}{11}{subsubsection.2.2.3.1}
+\contentsline {section}{\numberline {2.3}Simple Linear Regression}{13}{section.2.3}
 \contentsline {chapter}{\numberline {3}Problem Statement}{14}{chapter.3}
 \contentsline {section}{\numberline {3.1}Current Solution}{14}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Arduino}{14}{subsection.3.1.1}
@@ -37,11 +37,14 @@
 \contentsline {subsection}{\numberline {4.2.1}Prediction Module}{24}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Fuzzy Logic Engine}{25}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Results}{30}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusions}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusions}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Summary of Contributions}{31}{section.5.2}
-\contentsline {chapter}{\numberline {6}Related Work}{32}{chapter.6}
-\contentsline {chapter}{\numberline {7}Future Research Directions}{33}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sisukokkuv\~{o}te}{35}{chapter.8}
-\contentsline {chapter}{\numberline {9}Licence}{36}{chapter.9}
-\contentsline {chapter}{Bibliography}{37}{chapter*.20}
+\contentsline {subsection}{\numberline {4.3.1}PeakTech 1890 Power Supply}{30}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Overview of Tests}{31}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Test Results}{31}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusions}{34}{section.5.1}
+\contentsline {section}{\numberline {5.2}Summary of Contributions}{34}{section.5.2}
+\contentsline {chapter}{\numberline {6}Related Work}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Research Directions}{36}{chapter.7}
+\contentsline {chapter}{Res\IeC {\"u}mee}{38}{chapter*.23}
+\contentsline {chapter}{Licence}{39}{chapter*.24}
+\contentsline {chapter}{Bibliography}{40}{chapter*.25}

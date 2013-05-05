@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  4 MAY 2013 22:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  5 MAY 2013 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,116 +1071,106 @@ l.35 \end{abstracts}
 
 
 
-]) [2]
+] [2]) [3]
 \openout2 = `2/stateofart.aux'.
 
  (./2/stateofart.tex
  2.
-<2/figures/mega_adk.pdf, id=324, 774.895pt x 574.145pt>
+[4
+
+
+
+] <2/figures/mega_adk.pdf, id=352, 774.895pt x 574.145pt>
 File: 2/figures/mega_adk.pdf Graphic file (type pdf)
 
 <use 2/figures/mega_adk.pdf>
-Package pdftex.def Info: 2/figures/mega_adk.pdf used on input line 38.
-(pdftex.def)             Requested size: 449.43942pt x 333.00433pt.
+Package pdftex.def Info: 2/figures/mega_adk.pdf used on input line 35.
+(pdftex.def)             Requested size: 410.6924pt x 304.2954pt.
 
-Overfull \hbox (36.87447pt too wide) in paragraph at lines 38--39
- [][] 
- []
-
-[3
-
-
-
-] <2/figures/wireless_shield.pdf, id=336, 767.86874pt x 569.12625pt>
+<2/figures/wireless_shield.pdf, id=355, 767.86874pt x 569.12625pt>
 File: 2/figures/wireless_shield.pdf Graphic file (type pdf)
 
 <use 2/figures/wireless_shield.pdf>
-Package pdftex.def Info: 2/figures/wireless_shield.pdf used on input line 50.
-(pdftex.def)             Requested size: 445.36418pt x 330.09346pt.
-
-Overfull \hbox (32.79922pt too wide) in paragraph at lines 50--51
- [][] 
- []
-
-[4 <./2/figures/mega_adk.pdf>]
-<2/figures/wifly.pdf, id=354, 772.8875pt x 579.16376pt>
+Package pdftex.def Info: 2/figures/wireless_shield.pdf used on input line 47.
+(pdftex.def)             Requested size: 406.96849pt x 301.63547pt.
+ [5 <./2/figures/mega_adk.pdf>]
+<2/figures/wifly.pdf, id=372, 772.8875pt x 579.16376pt>
 File: 2/figures/wifly.pdf Graphic file (type pdf)
 
 <use 2/figures/wifly.pdf>
-Package pdftex.def Info: 2/figures/wifly.pdf used on input line 63.
-(pdftex.def)             Requested size: 448.27505pt x 335.9152pt.
-
-Overfull \hbox (35.7101pt too wide) in paragraph at lines 63--64
- [][] 
- []
-
-[5 <./2/figures/wireless_shield.pdf>] [6 <./2/figures/wifly.pdf>]
-<2/figures/complete_module.pdf, id=387, 769.87625pt x 600.2425pt>
-File: 2/figures/complete_module.pdf Graphic file (type pdf)
-
-<use 2/figures/complete_module.pdf>
-Package pdftex.def Info: 2/figures/complete_module.pdf used on input line 84.
-(pdftex.def)             Requested size: 446.52853pt x 348.14088pt.
-
-Overfull \hbox (33.96358pt too wide) in paragraph at lines 84--85
- [][] 
- []
+Package pdftex.def Info: 2/figures/wifly.pdf used on input line 61.
+(pdftex.def)             Requested size: 409.62842pt x 306.95532pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8 <./2/figures/complete_module.pdf>]
-<2/figures/sample_sets.pdf, id=411, 789.95125pt x 392.46625pt>
+[6 <./2/figures/wireless_shield.pdf>] [7 <./2/figures/wifly.pdf>]
+<2/figures/complete_module.pdf, id=406, 769.87625pt x 600.2425pt>
+File: 2/figures/complete_module.pdf Graphic file (type pdf)
+
+<use 2/figures/complete_module.pdf>
+Package pdftex.def Info: 2/figures/complete_module.pdf used on input line 82.
+(pdftex.def)             Requested size: 408.03247pt x 318.127pt.
+ [8 <./2/figures/complete_module.pdf>]
+<2/figures/sample_sets.pdf, id=423, 789.95125pt x 392.46625pt>
 File: 2/figures/sample_sets.pdf Graphic file (type pdf)
 
 <use 2/figures/sample_sets.pdf>
-Package pdftex.def Info: 2/figures/sample_sets.pdf used on input line 104.
-(pdftex.def)             Requested size: 458.17204pt x 227.63057pt.
+Package pdftex.def Info: 2/figures/sample_sets.pdf used on input line 102.
+(pdftex.def)             Requested size: 418.67216pt x 208.0061pt.
 
-Overfull \hbox (45.60709pt too wide) in paragraph at lines 104--105
+Overfull \hbox (6.10721pt too wide) in paragraph at lines 102--103
  [][] 
  []
 
-[9 <./2/figures/sample_sets.pdf>] [10]
-<2/figures/fuzzy_control_engine.png, id=426, 650.43pt x 386.44376pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10 <./2/figures/sample_sets.pdf>]
+<2/figures/fuzzy_control_engine.png, id=440, 650.43pt x 386.44376pt>
 File: 2/figures/fuzzy_control_engine.png Graphic file (type png)
 
 <use 2/figures/fuzzy_control_engine.png>
 Package pdftex.def Info: 2/figures/fuzzy_control_engine.png used on input line 
-144.
+142.
 (pdftex.def)             Requested size: 390.261pt x 231.86804pt.
- [11 <./2/figures/fuzzy_control_engine.png>] <2/figures/regression_sample.pdf, 
-id=436, 510.90875pt x 384.43625pt>
+ [11] [12 <./2/figures/fuzzy_control_engine.png>]
+<2/figures/regression_sample.pdf, id=454, 510.90875pt x 384.43625pt>
 File: 2/figures/regression_sample.pdf Graphic file (type pdf)
 
 <use 2/figures/regression_sample.pdf>
-Package pdftex.def Info: 2/figures/regression_sample.pdf used on input line 160
+Package pdftex.def Info: 2/figures/regression_sample.pdf used on input line 158
 .
 (pdftex.def)             Requested size: 357.63368pt x 269.10353pt.
- [12 <./2/figures/regression_sample.pdf>]) [13]
+) [13 <./2/figures/regression_sample.pdf>]
 \openout2 = `3/researchquestion.aux'.
 
- (./3/researchquestion.tex
+(./3/researchquestion.tex
  3.
 [14
 
 
 
-] <3/figures/xmpp_session.png, id=459, 425.59pt x 781.92125pt>
+] <3/figures/xmpp_session.png, id=474, 425.59pt x 781.92125pt>
 File: 3/figures/xmpp_session.png Graphic file (type png)
 
 <use 3/figures/xmpp_session.png>
 Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 56.
 (pdftex.def)             Requested size: 255.35596pt x 469.15637pt.
  [15] [16 <./3/figures/xmpp_session.png>]
-<3/figures/data_model_initial.jpg, id=477, 560.0925pt x 105.39375pt>
+<3/figures/data_model_initial.jpg, id=491, 560.0925pt x 105.39375pt>
 File: 3/figures/data_model_initial.jpg Graphic file (type jpg)
 
 <use 3/figures/data_model_initial.jpg>
 Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 68
 .
 (pdftex.def)             Requested size: 336.05809pt x 63.23672pt.
- [17 <./3/figures/data_model_initial.jpg>]) [18]
+ [17 <./3/figures/data_model_initial.jpg>]
+
+LaTeX Warning: Reference `final_measurements' on page 18 undefined on input lin
+e 93.
+
+) [18]
 \openout2 = `3/contributions.aux'.
 
  (./3/contributions.tex
@@ -1190,106 +1180,114 @@ Package pdftex.def Info: 3/figures/data_model_initial.jpg used on input line 68
 
 
 ] [20] [21]
-<4/figures/30s_xmpp_vs_http.pdf, id=517, 460.72125pt x 259.97125pt>
+<4/figures/30s_xmpp_vs_http.pdf, id=530, 460.72125pt x 259.97125pt>
 File: 4/figures/30s_xmpp_vs_http.pdf Graphic file (type pdf)
 
 <use 4/figures/30s_xmpp_vs_http.pdf>
-Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 72.
-(pdftex.def)             Requested size: 414.6453pt x 233.97195pt.
-
-Overfull \hbox (2.08034pt too wide) in paragraph at lines 72--73
- [][] 
- []
+Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 70.
+(pdftex.def)             Requested size: 391.61491pt x 220.9766pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] <4/figures/finalsolution.jpg, id=532, 1027.84pt x 572.1375pt>
-File: 4/figures/finalsolution.jpg Graphic file (type jpg)
+[22] <4/figures/finalsolution.png, id=545, 908.39375pt x 545.03625pt>
+File: 4/figures/finalsolution.png Graphic file (type png)
 
-<use 4/figures/finalsolution.jpg>
-Package pdftex.def Info: 4/figures/finalsolution.jpg used on input line 92.
-(pdftex.def)             Requested size: 462.52373pt x 257.45949pt.
+<use 4/figures/finalsolution.png>
+Package pdftex.def Info: 4/figures/finalsolution.png used on input line 90.
+(pdftex.def)             Requested size: 417.8662pt x 250.71971pt.
 
-Overfull \hbox (49.95877pt too wide) in paragraph at lines 92--93
+Overfull \hbox (5.30124pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <./4/figures/30s_xmpp_vs_http.pdf>]
-<4/figures/data_model_final.jpg, id=551, 654.445pt x 120.45pt>
+<4/figures/data_model_final.jpg, id=547, 654.445pt x 120.45pt>
 File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 
 <use 4/figures/data_model_final.jpg>
-Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 101.
-
+Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 99.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
- [24 <./4/figures/finalsolution.jpg> <./4/figures/data_model_final.jpg>]
-
-Package natbib Warning: Citation `RMSE' on page 25 undefined on input line 118.
-
-
-[25] <4/figures/pred_sets.pdf, id=567, 756.8275pt x 392.46625pt>
+ [23 <./4/figures/30s_xmpp_vs_http.pdf>]
+[24 <./4/figures/finalsolution.png> <./4/figures/data_model_final.jpg>]
+[25] <4/figures/pred_sets.pdf, id=585, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
-Package pdftex.def Info: 4/figures/pred_sets.pdf used on input line 139.
+Package pdftex.def Info: 4/figures/pred_sets.pdf used on input line 137.
 (pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
 
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 139--140
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
 [26 <./4/figures/pred_sets.pdf>]
-<4/figures/change_sets.pdf, id=583, 785.93625pt x 392.46625pt>
+<4/figures/change_sets.pdf, id=599, 785.93625pt x 392.46625pt>
 File: 4/figures/change_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/change_sets.pdf>
-Package pdftex.def Info: 4/figures/change_sets.pdf used on input line 150.
+Package pdftex.def Info: 4/figures/change_sets.pdf used on input line 148.
 (pdftex.def)             Requested size: 432.26627pt x 215.85709pt.
 
-Overfull \hbox (19.70131pt too wide) in paragraph at lines 150--151
+Overfull \hbox (19.70131pt too wide) in paragraph at lines 148--149
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<4/figures/result_sets.pdf, id=585, 756.8275pt x 392.46625pt>
+[27 <./4/figures/change_sets.pdf>]
+<4/figures/result_sets.pdf, id=607, 756.8275pt x 392.46625pt>
 File: 4/figures/result_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/result_sets.pdf>
-Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 172.
+Package pdftex.def Info: 4/figures/result_sets.pdf used on input line 170.
 (pdftex.def)             Requested size: 438.96025pt x 227.63057pt.
 
-Overfull \hbox (26.3953pt too wide) in paragraph at lines 172--173
+Overfull \hbox (26.3953pt too wide) in paragraph at lines 170--171
  [][] 
  []
+
+[28 <./4/figures/result_sets.pdf>] [29]
+<4/figures/peaktech.pdf, id=629, 853.1875pt x 640.3925pt>
+File: 4/figures/peaktech.pdf Graphic file (type pdf)
+
+<use 4/figures/peaktech.pdf>
+Package pdftex.def Info: 4/figures/peaktech.pdf used on input line 209.
+(pdftex.def)             Requested size: 409.52534pt x 307.3849pt.
+ [30 <./4/figures/peaktech.pdf>]
+<4/figures/final_measurements.png, id=644, 730.73pt x 426.59375pt>
+File: 4/figures/final_measurements.png Graphic file (type png)
+
+<use 4/figures/final_measurements.png>
+Package pdftex.def Info: 4/figures/final_measurements.png used on input line 22
+8.
+(pdftex.def)             Requested size: 401.90274pt x 234.62727pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27 <./4/figures/change_sets.pdf>] [28 <./4/figures/result_sets.pdf>] [29]
-<4/figures/final_measurements.png, id=612, 455.45157pt x 255.95625pt>
-File: 4/figures/final_measurements.png Graphic file (type png)
+[31] <4/figures/9V_test_results.png, id=651, 455.301pt x 255.95625pt>
+File: 4/figures/9V_test_results.png Graphic file (type png)
 
-<use 4/figures/final_measurements.png>
-Package pdftex.def Info: 4/figures/final_measurements.png used on input line 20
-9.
-(pdftex.def)             Requested size: 455.45045pt x 255.95561pt.
+<use 4/figures/9V_test_results.png>
+Package pdftex.def Info: 4/figures/9V_test_results.png used on input line 251.
+(pdftex.def)             Requested size: 409.7671pt x 230.35847pt.
 
-Overfull \hbox (42.8855pt too wide) in paragraph at lines 209--210
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (13.8412pt too wide) in paragraph at lines 258--265
  [][] 
  []
 
-) [30 <./4/figures/final_measurements.png (PNG copy)>]
+[32 <./4/figures/final_measurements.png (PNG copy)>]) [33 <./4/figures/9V_test_
+results.png (PNG copy)>]
 \openout2 = `5/conclusions.aux'.
 
  (./5/conclusions.tex
  5.
-) [31
+) [34
 
 
 
@@ -1298,7 +1296,7 @@ Overfull \hbox (42.8855pt too wide) in paragraph at lines 209--210
 
  (./6/relatedwork.tex
  6.
-) [32
+) [35
 
 
 
@@ -1307,22 +1305,19 @@ Overfull \hbox (42.8855pt too wide) in paragraph at lines 209--210
 
  (./6/futureresearch.tex
  7.
-[33
+[36
 
 
 
-]) [34]
+]) [37]
 \openout2 = `7/eestiabstract.aux'.
 
- (./7/eestiabstract.tex
- 8.
-) [35
+ (./7/eestiabstract.tex) [38
 
 
 
-]
- 9.
-[36
+
+] [39
 
 
 ] (./thesis.bbl (./thesis.brf)
@@ -1390,49 +1385,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
  / datasheets /
  []
 
-) [37
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[][]\T1/cmr/m/n/6 Root-mean-square -- from wol-fram Math-World[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\T1/cmr/m/n/6 http://mathworld.wolfram.com/Root-Mean-
+ []
+
+) [40
 
 ] (./thesis.lod)
 \tf@lod=\write9
 \openout9 = `thesis.lod'.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
-[38
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+ [41
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
  (./thesis.aux (./title_page/stardard_page.aux)
 (./0_frontmatter/abstract.aux) (./1_introduction/introduction.aux)
 (./2/stateofart.aux) (./3/researchquestion.aux) (./3/contributions.aux)
 (./5/conclusions.aux) (./6/relatedwork.aux) (./6/futureresearch.aux)
 (./7/eestiabstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 60D15449D78710B9FB80C6382AD9275C;3063.
+(rerunfilecheck)             Checksum: CBC06ED75E1DAC39622232A8D21269A8;3289.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: FE2665E0866C9C7F51AAB232EEAC0DFF;1797.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
+(rerunfilecheck)             Checksum: B45E1A5F7261DD438F1701726CE561EE;1895.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 19111 strings out of 495059
- 325036 string characters out of 3182030
- 413034 words of memory out of 3000000
- 21635 multiletter control sequences out of 15000+200000
+ 19132 strings out of 495059
+ 325548 string characters out of 3182030
+ 415255 words of memory out of 3000000
+ 21655 multiletter control sequences out of 15000+200000
  22702 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,55p,1053b,1080s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,55p,1052b,1080s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.450pk> </home/
 lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/lauris/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/lauris/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/lauris/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecbx1095.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecbx1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-0800.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/lauris/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/lauris/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecrm1095.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1095.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+1440.600pk> </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
 > </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/l
 auris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/lauris/.tex
 mf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.600pk> </home/lauris/.texmf-var/fon
@@ -1446,10 +1451,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (44 pages, 4384688 bytes).
+Output written on thesis.pdf (47 pages, 5545961 bytes).
 PDF statistics:
- 1511 PDF objects out of 1728 (max. 8388607)
- 756 compressed objects within 8 object streams
- 177 named destinations out of 1000 (max. 500000)
- 461 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1535 PDF objects out of 1728 (max. 8388607)
+ 779 compressed objects within 8 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 495 words of extra memory for PDF output out of 10000 (max. 10000000)
 

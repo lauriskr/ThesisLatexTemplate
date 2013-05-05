@@ -3,10 +3,9 @@
 % content in this file will be fed into the main document
 
 \chapter{State of the Art} % top level followed by section, subsection
-
-\todo{write this part here}
 %transition between chapters, usually no more than two parragraphs
-The state of the art used in the thesis highlighted the advances in the cloud computing domain and the mobile domain...
+
+This chapter introduces the Arduino prototyping platform along with the components used. Secondly, as providing flexibility to a system means implementing some sort of decision making mechanism, an overview of fuzzy logic and fuzzy control systems is given. Finally, a short description of simple linear regression to briefly describe the mathematics behind linear prediction of future values based on a sample set.
 
 
 % change according to folder and file names
@@ -23,9 +22,7 @@ The state of the art used in the thesis highlighted the advances in the cloud co
 %or we can put a footnote with a link to your github account
 \section{Arduino}
 
-\todo{rewrite these paragraphs and remove copy paste things from here}
-
-Arduino \cite{arduinoHome} is an open-source electronics prototyping platform based on a simple microcontroller board and a development environment for writing software for the board. It is intended for anyone interested in creating interactive solutions. Arduino can take inputs from a variety of sensors and control various actuators and lights. The microcontroller is programmed using the Arduino programming language (based on Wiring) and the Arduino development environment (based on Processing). Arduino IDE enables to choose between different board models, microcontroller programmers and communication ports. 
+Arduino \cite{arduinoHome} is an open-source prototyping platform based on a simple microcontroller board and a development environment. It is intended for anyone interested in creating interactive solutions. Arduino can take inputs from a variety of sensors and control various actuators. The microcontroller is programmed using the Arduino programming language (based on Wiring) and the Arduino development environment (based on Processing). Arduino IDE enables to choose between different board models, microcontroller programmers and communication ports. 
 
 Programs (called sketches) are written and uploaded to the board using the Arduino IDE. Each sketch must have two functions- $setup()$ and $loop()$. $setup()$ is the first function called after Arduino is started or rebooted. It is called once and afterwards the function $loop()$ is called consecutively until the board is stopped, restarted or crashes. When a crash occurs, the program is restarted, which means calling $setup()$ again. 
 
@@ -35,41 +32,42 @@ Since programs are written in C/C++, there are a lot of libraries available for 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.58]{2/figures/mega_adk.pdf}
+\includegraphics[scale=0.53]{2/figures/mega_adk.pdf}
 \caption{Arduino Mega ADK}
 \label{mega_adk}
 \end{figure}
 
 Arduino Mega ADK \cite{megaAdk} is one of the most capable boards available. 
-The Arduino ADK is a microcontroller board based on the ATmega2560. Similar to the Mega 2560 and Uno, it features an ATmega8U2 programmed as a USB-to-serial converter. It has a USB host interface to connect with Android based phones, 54 digital input/output pins, 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, USB B, micro B connections and a 2.1mm center-positive power jack. The ADK has 256 KB of flash memory for storing code. The Arduino ADK can be powered via the USB connection or with an external power supply. The board can operate on an external supply of 5.5 to 16 volts, recommended range is 7 to 12 volts. The board can be seen in \autoref{mega_adk}
+The Arduino ADK is based on the ATmega2560. It has an ATmega8U2 programmed as a USB-to-serial converter, USB host interface to connect with Android based phones, 54 digital input/output pins, 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, USB B, micro B connections and a 2.1mm center-positive power jack. The ADK has 256 KB of flash memory for storing code. The Arduino ADK can be powered via the USB connection or with an external power supply. The board can operate on an external supply of 5.5 to 16 volts, recommended range is 7 to 12 volts. The board can be seen in \autoref{mega_adk}
 
 \subsection{Wireless SD Shield}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.58]{2/figures/wireless_shield.pdf}
+\includegraphics[scale=0.53]{2/figures/wireless_shield.pdf}
 \caption{Wireless SD Shield}
 \label{wireless_shield}
 \end{figure}
 
-The Wireless SD shield \cite{arduino_wireless} allows an Arduino board to communicate using a wireless module. The module can communicate up to 100 feet indoors or up to 300 feet outdoors. The module can be seen in \autoref{wireless_shield} 
+The Wireless SD shield \cite{arduino_wireless} gives an Arduino board wireless communication capabilities. The module can communicate up to 100 feet indoors or up to 300 feet outdoors. The module can be seen in \autoref{wireless_shield} 
 
-The shield has an on-board switch which allows to select between USB and Micro modes. In USB mode, the shield bypasses Arduino board's microcontroller and communicates directly to the USB-to-serial converter. In Micro mode, data sent from the microcontroller will be transmitted to the computer via USB as well as being sent wirelessly by the wireless module. The microcontroller will not be programmable via USB in Micro mode.
+The shield has an on-board switch which allows to select between USB and Micro modes. In USB mode, the shield bypasses Arduino board's microcontroller and communicates directly to the USB-to-serial converter. In Micro mode, data sent from the microcontroller will be transmitted via USB and by the wireless module at the same time. The microcontroller is not programmable via USB in Micro mode.
+
 
 \subsection{RN-XV WiFly Module}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.58]{2/figures/wifly.pdf}
+\includegraphics[scale=0.53]{2/figures/wifly.pdf}
 \caption{RN-XV Wifly Module}
 \label{wifly_module}
 \end{figure}	
 
-The RN-XV module \cite{rn_xv_module} by Roving Networks is a certified Wi-Fi solution. It is based upon Roving Networks' robust RN-171 Wi-Fi module and has 802.11 b/g radio, 32 bit processor, TCP/IP stack, real-time clock, power management unit. It has a pre-loaded Roving firmware to enable simple configuration and usage. The module can be seen in \autoref{wifly_module}
+The RN-XV module \cite{rn_xv_module} is produced by Roving Networks. It is based upon their RN-171 Wi-Fi module and has 802.11 b/g radio, 32 bit processor, TCP/IP stack, real-time clock, power management unit. It has a pre-loaded Roving firmware to enable simple configuration and usage. The module can be seen in \autoref{wifly_module}
 
 \subsection{TinkerKit}
 
-TinkerKit \cite{tinkerkit_introduction} is a tool used to build interactive products using Arduino boards. It consists of modules (sensors, actuators) and a sensor shield. The tool greatly simplifies product assembly, because instead of building circuits out of low level components, all the modules can be attached to the TinkerKit sensor shield with a snapping cable.
+TinkerKit \cite{tinkerkit_introduction} is a tool to simplify interactive product prototyping using Arduino boards. It consists of modules (sensors, actuators) and a sensor shield. The tool greatly simplifies product assembly, because instead of building circuits out of low level components, all the modules can be attached to the TinkerKit sensor shield with a snapping cable.
 
 The modules are divided into sensors and actuators. Sensors can measure their surrounding environment (provide input) and actuators perform actions (provide output). The sensors used are thermistor, LDR and Hall. The fully assembled module is shown in \autoref{complete_module}
 
@@ -81,7 +79,7 @@ Light Dependent Resistor or LDR \cite{light_sensor} is a variable resistor whose
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.58]{2/figures/complete_module.pdf}
+\includegraphics[scale=0.53]{2/figures/complete_module.pdf}
 \caption{Complete Arduino Sensor Module}
 \label{complete_module}
 \end{figure}	
@@ -101,7 +99,7 @@ The most used membership functions are triangular and trapezoidal functions. Sam
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.58]{2/figures/sample_sets.pdf}
+\includegraphics[scale=0.53]{2/figures/sample_sets.pdf}
 \caption{Trapezoidal and Triangular Membership Functions}
 \label{sample_fuzzy_sets}
 \end{figure}

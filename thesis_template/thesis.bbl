@@ -91,4 +91,10 @@ H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
 \newblock \href {http://dx.doi.org/10.1109/TPDS.2010.174}
   {\path{doi:10.1109/TPDS.2010.174}}.
 
+\bibitem{RMSE}
+\href{http://mathworld.wolfram.com/Root-Mean-Square.html}{Root-mean-square --
+  from wolfram {MathWorld}},
+  {http://mathworld.wolfram.com/Root-Mean-Square.html}.
+\newline\urlprefix\url{http://mathworld.wolfram.com/Root-Mean-Square.html}
+
 \end{thebibliography}

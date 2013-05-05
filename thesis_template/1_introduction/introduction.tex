@@ -30,19 +30,21 @@
 
 
 \section{Introduction} % section headings are printed smaller than chapter names
-% intro
-\todo{Write this part}
-Briefly summarize the question (you will be stating the question in detail later), and perhaps give an overview of your main results. (it is not just a description of the contents of each section)
 
+Mobile applications are becoming more context aware and depend on perceiving the surrounding environment to provide users with the best functionality possible. This is achieved due to technological advances that enable the device to sense the surroundings, however, these abilities are limited to each device's hardware configuration.
+
+A proposed solution has been made in the thesis "Context Sensor Data on Demand for Mobile Users Supported by XMPP" by Kaarel Hanson \cite{prev_thesis}. The solution is to have special sensor modules perceive the environment and gather the measurements in a central data center, which can then be used to provide data to mobile users. 
+
+A prototype was developed based on Arduino for the sensors and XMPP for communication. This thesis proposes improvements to the existing prototype to enable sleep mode for the sensor modules and data prediction on the data server side. These improvements help prolong battery life on a 9V battery, which was measured to be 161,5 minutes with the existing prototype. 
+
+Without enough battery life, the overhead of using the modules to gather data makes the solution inefficient. Therefore, it is crucial to make the modules last longer, which is the main goal of this thesis.
 
 \subsection{Motivation}
 The developed prototype \cite{prev_thesis} works well when the general idea and goal is considered. However, the lack of flexibility of data transmission intervals and high power needs constrain the implementation usages. In order to take full advantage of the prototype, power usage should be reduced and more flexibility added to the communication between the server-side client and sensor modules.  
 
 \subsection{Contributions}
 
-A more flexible data collection solution is developed based on HTTP. The changes made enable more energy-efficient data collection by predicting sensor data when possible. A fuzzy control system was developed to decide if sensor data is predictable and for what time period.  Moreover, the prototype's Arduino-based sensor module has been improved to support sleep mode while no sensor data is sent to the server-side client. 
-
-Power consumption before and after the changes was tested to indicate changes' effect on battery life. \todo{mention peaktech power supply here?}
+A more flexible data collection solution is developed based on HTTP. The changes made enable more energy-efficient data collection by predicting sensor data when possible. A fuzzy control system was developed to decide if sensor data is predictable and for what time period.  Moreover, the prototype's Arduino-based sensor module has been improved to support sleep mode while no sensor data is sent to the server-side client. Power consumption before and after the changes was tested to indicate changes' effect on battery life. 
 
 \subsection{Outline}
 
@@ -58,7 +60,14 @@ Power consumption before and after the changes was tested to indicate changes' e
 \noindent \textbf{Chapter 4}: explains the improvements made to the prototype. Firstly, describes changes made to the Arduino sensor module. Secondly, changes in the communication between the sensor module and the server-side client are discussed. Lastly, an overview of the server-side fuzzy control system and data prediction techniques is given. The chapter is ended by a power consumption comparison between the initial and improved prototype.
 \newline
 
-\todo{add more chapters here when they're ready}
+\noindent \textbf{Chapter 5}: draws conclusions and summarizes the results.
+\newline
+
+\noindent \textbf{Chapter 6}: discusses a related paper and the thesis on which the current work is based on.
+\newline
+
+\noindent \textbf{Chapter 7}: points out some areas of the prototype which can be developed further to improve the results.
+\newline
 
 %\noindent \textbf{Chapter 3}: explains the problems regarding the combination and the invocation of cloud services from the mobile phone. 
 
