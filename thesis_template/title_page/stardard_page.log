@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 12:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,7 +162,7 @@ Overfull \hbox (29.88876pt too wide) in paragraph at lines 15--15
 
 ! Undefined control sequence.
 l.16 {\Huge
-            \bfseries Power-aware Contextual Sensor Data Collection for Mobi...
+            \bfseries Energy-aware Sensor Data Collection for Mobile Users}\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -170,28 +170,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (34.79845pt too wide) in paragraph at lines 16--16
- []\OT1/cmr/bx/n/10 Power- 
+Overfull \hbox (39.60397pt too wide) in paragraph at lines 16--16
+ []\OT1/cmr/bx/n/10 Energy- 
  []
 
 
 Overfull \hbox (28.85399pt too wide) in paragraph at lines 16--16
  \OT1/cmr/bx/n/10 aware 
- []
-
-
-Overfull \hbox (24.27765pt too wide) in paragraph at lines 16--16
- \OT1/cmr/bx/n/10 Con- 
- []
-
-
-Overfull \hbox (19.64574pt too wide) in paragraph at lines 16--16
- \OT1/cmr/bx/n/10 tex- 
- []
-
-
-Overfull \hbox (19.6457pt too wide) in paragraph at lines 16--16
- \OT1/cmr/bx/n/10 tual 
  []
 
 
@@ -302,8 +287,8 @@ Overfull \hbox (28.02765pt too wide) in paragraph at lines 39--39
  []
 
 
-Overfull \hbox (33.59705pt too wide) in paragraph at lines 39--39
- \OT1/cmr/bx/n/10 Month 
+Overfull \hbox (22.2568pt too wide) in paragraph at lines 39--39
+ \OT1/cmr/bx/n/10 May 
  []
 
 
@@ -322,8 +307,8 @@ Overfull \hbox (28.02765pt too wide) in paragraph at lines 41--41
  []
 
 
-Overfull \hbox (33.59705pt too wide) in paragraph at lines 41--41
- \OT1/cmr/bx/n/10 Month 
+Overfull \hbox (22.2568pt too wide) in paragraph at lines 41--41
+ \OT1/cmr/bx/n/10 May 
  []
 
 
@@ -342,8 +327,8 @@ Overfull \hbox (28.02765pt too wide) in paragraph at lines 43--43
  []
 
 
-Overfull \hbox (33.59705pt too wide) in paragraph at lines 43--43
- \OT1/cmr/bx/n/10 Month 
+Overfull \hbox (22.2568pt too wide) in paragraph at lines 43--43
+ \OT1/cmr/bx/n/10 May 
  []
 
 
@@ -397,5 +382,5 @@ Here is how much of TeX's memory you used:
  3298 multiletter control sequences out of 15000+200000
  4763 words of font info for 18 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 20i,3n,18p,125b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,3n,18p,119b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
