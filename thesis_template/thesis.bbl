@@ -15,43 +15,30 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
   XMPP} (2012).
 
 \bibitem{arduinoHome}
-\href{http://www.arduino.cc/}{Arduino - {HomePage}}, http://www.arduino.cc/.
-\newline\urlprefix\url{http://www.arduino.cc/}
+Arduino - {HomePage}, http://www.arduino.cc/.
 
 \bibitem{megaAdk}
-\href{http://arduino.cc/en/Main/ArduinoBoardADK}{Arduino - {ArduinoBoardADK}},
-  {http://arduino.cc/en/Main/ArduinoBoardADK}.
-\newline\urlprefix\url{http://arduino.cc/en/Main/ArduinoBoardADK}
+Arduino - {ArduinoBoardADK}, {http://arduino.cc/en/Main/ArduinoBoardADK}.
 
 \bibitem{arduino_wireless}
-\href{http://arduino.cc/en/Main/ArduinoWirelessShield}{Arduino -
-  {ArduinoWirelessShield}}, {http://arduino.cc/en/Main/ArduinoWirelessShield}.
-\newline\urlprefix\url{http://arduino.cc/en/Main/ArduinoWirelessShield}
+Arduino - {ArduinoWirelessShield},
+  {http://arduino.cc/en/Main/ArduinoWirelessShield}.
 
 \bibitem{rn_xv_module}
-\href{https://www.sparkfun.com/products/10822}{{RN-XV} {WiFly} module - wire
-  antenna - {SparkFun} electronics}, https://www.sparkfun.com/products/10822.
-\newline\urlprefix\url{https://www.sparkfun.com/products/10822}
+{RN-XV} {WiFly} module - wire antenna - {SparkFun} electronics,
+  https://www.sparkfun.com/products/10822.
 
 \bibitem{tinkerkit_introduction}
-\href{http://www.tinkerkit.com/introduction/}{Tinkerkit introduction},
-  http://www.tinkerkit.com/introduction/.
-\newline\urlprefix\url{http://www.tinkerkit.com/introduction/}
+Tinkerkit introduction, http://www.tinkerkit.com/introduction/.
 
 \bibitem{thermistor_sensor}
-\href{http://www.tinkerkit.com/thermistor/}{Thermistor sensor},
-  http://www.tinkerkit.com/thermistor/.
-\newline\urlprefix\url{http://www.tinkerkit.com/thermistor/}
+Thermistor sensor, http://www.tinkerkit.com/thermistor/.
 
 \bibitem{hall_sensor}
-\href{http://www.tinkerkit.com/hall/}{Hall sensor},
-  http://www.tinkerkit.com/hall/.
-\newline\urlprefix\url{http://www.tinkerkit.com/hall/}
+Hall sensor, http://www.tinkerkit.com/hall/.
 
 \bibitem{light_sensor}
-\href{http://www.tinkerkit.com/ldr/}{Light sensor},
-  http://www.tinkerkit.com/ldr/.
-\newline\urlprefix\url{http://www.tinkerkit.com/ldr/}
+Light sensor, http://www.tinkerkit.com/ldr/.
 
 \bibitem{fuzzy_control_introduction}
 {Marcelo Godoy Simoes}, {Introduction to Fuzzy Control}, 1610 Illinois Street
@@ -62,29 +49,23 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
   338–353.
 
 \bibitem{least_squres}
-\href{http://mathworld.wolfram.com/LeastSquaresFitting.html}{Least squares
-  fitting -- from wolfram {MathWorld}},
-  {http://mathworld.wolfram.com/LeastSquaresFitting.html}.
-\newline\urlprefix\url{http://mathworld.wolfram.com/LeastSquaresFitting.html}
+Least squares fitting -- from wolfram {MathWorld},
+  {http://mathworld.wolfram.com/} {LeastSquaresFitting.html}.
 
 \bibitem{watchdog_timer}
 {Jim Lamberson}, {Single and Multistage Watchdog Timers} (2012).
 
 \bibitem{jeelib_general}
-\href{http://jeelabs.net/pub/docs/jeelib/}{{JeeLib:} introduction},
-  http://jeelabs.net/pub/docs/jeelib/.
-\newline\urlprefix\url{http://jeelabs.net/pub/docs/jeelib/}
+{JeeLib:} introduction, http://jeelabs.net/pub/docs/jeelib/.
 
 \bibitem{jeelib_port}
-\href{http://jeelabs.net/pub/docs/jeelib/classPort.html}{{JeeLib:} port class
-  reference}, {http://jeelabs.net/pub/docs/jeelib/classPort.html}.
-\newline\urlprefix\url{http://jeelabs.net/pub/docs/jeelib/classPort.html}
+{JeeLib:} port class reference,
+  {http://jeelabs.net/pub/docs/jeelib/classPort.html}.
 
 \bibitem{wifly_manual}
-\href{http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}{{WiFly}
-  user guide - {WiFly-RN-UM.pdf}},
-  {http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}.
-\newline\urlprefix\url{http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/WiFi/WiFly-RN-UM.pdf}
+{WiFly} user guide - {WiFly-RN-UM.pdf},
+  {http://dlnmh9ip6v2uc.cloudfront.net/datasheets/
+  Wireless/WiFi/WiFly-RN-UM.pdf}.
 
 \bibitem{cluster_wsn_paper}
 H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
@@ -94,9 +75,7 @@ H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
   {\path{doi:10.1109/TPDS.2010.174}}.
 
 \bibitem{RMSE}
-\href{http://mathworld.wolfram.com/Root-Mean-Square.html}{Root-mean-square --
-  from wolfram {MathWorld}},
+Root-mean-square -- from wolfram {MathWorld},
   {http://mathworld.wolfram.com/Root-Mean-Square.html}.
-\newline\urlprefix\url{http://mathworld.wolfram.com/Root-Mean-Square.html}
 
 \end{thebibliography}

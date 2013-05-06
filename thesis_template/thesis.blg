@@ -14,43 +14,43 @@ A level-1 auxiliary file: 7/eestiabstract.aux
 The style file: elsarticle-num.bst
 Database file #1: thesis.bib
 Warning--entry type for "prev_thesis" isn't style-file defined
---line 73 of file thesis.bib
+--line 65 of file thesis.bib
 Warning--entry type for "wifly_manual" isn't style-file defined
---line 112 of file thesis.bib
+--line 94 of file thesis.bib
 Warning--empty publisher in fuzzy_sets
 You've used 19 entries,
             2937 wiz_defined-function locations,
-            760 strings with 7690 characters,
-and the built_in function-call counts, 3753 in all, are:
-= -- 329
+            754 strings with 7378 characters,
+and the built_in function-call counts, 3350 in all, are:
+= -- 277
 > -- 46
 < -- 2
 + -- 28
 - -- 9
-* -- 151
-:= -- 419
+* -- 73
+:= -- 354
 add.period$ -- 20
 call.type$ -- 19
 change.case$ -- 19
 chr.to.int$ -- 0
 cite$ -- 20
-duplicate$ -- 169
-empty$ -- 558
+duplicate$ -- 143
+empty$ -- 506
 format.name$ -- 11
-if$ -- 1097
+if$ -- 993
 int.to.chr$ -- 0
 int.to.str$ -- 19
 missing$ -- 3
-newline$ -- 79
+newline$ -- 66
 num.names$ -- 6
-pop$ -- 159
+pop$ -- 146
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 326
+skip$ -- 352
 stack$ -- 0
 substring$ -- 45
-swap$ -- 39
+swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
@@ -58,5 +58,5 @@ type$ -- 0
 warning$ -- 1
 while$ -- 8
 width$ -- 21
-write$ -- 147
+write$ -- 134
 (There were 3 warnings)

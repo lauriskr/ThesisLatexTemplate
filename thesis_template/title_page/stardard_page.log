@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  25 APR 2013 21:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,7 +162,7 @@ Overfull \hbox (29.88876pt too wide) in paragraph at lines 15--15
 
 ! Undefined control sequence.
 l.16 {\Huge
-            \bfseries Optimizing Contextual Sensor Data Collection for Mobil...
+            \bfseries Power-aware Contextual Sensor Data Collection for Mobi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -170,8 +170,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (55.91637pt too wide) in paragraph at lines 16--16
- []\OT1/cmr/bx/n/10 Optimizing 
+Overfull \hbox (34.79845pt too wide) in paragraph at lines 16--16
+ []\OT1/cmr/bx/n/10 Power- 
+ []
+
+
+Overfull \hbox (28.85399pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/bx/n/10 aware 
  []
 
 
@@ -347,7 +352,7 @@ Overfull \hbox (22.99988pt too wide) in paragraph at lines 43--43
  []
 
 ! Undefined control sequence.
-l.48 {\large
+l.47 {\large
              TARTU, 2013}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -372,7 +377,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \end{titlepage}
+l.51 \end{titlepage}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -392,5 +397,5 @@ Here is how much of TeX's memory you used:
  3298 multiletter control sequences out of 15000+200000
  4763 words of font info for 18 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 20i,3n,18p,124b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,3n,18p,125b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
