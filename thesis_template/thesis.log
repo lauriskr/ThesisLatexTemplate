@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 12:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,77 +1287,92 @@ s.png (PNG copy)>]) [33]
 \openout9 = `thesis.brf'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []\T1/cmr/m/n/8 Arduino - Ar-duinoBoar-d-ADK,
  []
 
 
-Overfull \hbox (2.89943pt too wide) in paragraph at lines 22--22
-\T1/cmr/m/n/8 http://arduino.cc/en/Main/ArduinoBoardADK.
+Overfull \hbox (2.89943pt too wide) in paragraph at lines 23--23
+\T1/cmr/m/n/8 http://arduino.cc/en/Main/ArduinoBoardADK,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 []\T1/cmr/m/n/8 Arduino - Ar-duinoWire-lessShield,
  []
 
 
-Overfull \hbox (14.57713pt too wide) in paragraph at lines 26--26
-\T1/cmr/m/n/8 http://arduino.cc/en/Main/ArduinoWirelessShield.
+Overfull \hbox (14.57713pt too wide) in paragraph at lines 27--27
+\T1/cmr/m/n/8 http://arduino.cc/en/Main/ArduinoWirelessShield,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\T1/cmr/m/n/8 RN-XV Wi-Fly mod-ule - wire an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \T1/cmr/m/n/8 tenna - Spark-Fun elec-tron-ics,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/cmr/m/n/8 https://www.sparkfun.com/products/10822,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []\T1/cmr/m/n/8 Tinkerkit in-tro-duc-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
-\T1/cmr/m/n/8 http://www.tinkerkit.com/introduction/.
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\T1/cmr/m/n/8 http://www.tinkerkit.com/introduction/,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 []\T1/cmr/m/n/8 Thermistor sen-sor,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\T1/cmr/m/n/8 http://www.tinkerkit.com/thermistor/, 2013-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
 []\T1/cmr/m/n/8 JeeLib: in-tro-duc-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/8 http://jeelabs.net/pub/docs/jeelib/, 2013-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []\T1/cmr/m/n/8 JeeLib: port class ref-er-ence,
  []
 
 
-Overfull \hbox (11.01967pt too wide) in paragraph at lines 64--64
-\T1/cmr/m/n/8 http://jeelabs.net/pub/docs/jeelib/classPort.html.
+Overfull \hbox (11.01967pt too wide) in paragraph at lines 65--65
+\T1/cmr/m/n/8 http://jeelabs.net/pub/docs/jeelib/classPort.html,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []\T1/cmr/m/n/8 WiFly user guide - WiFly-RN-UM.pdf,
  []
 
 
-Overfull \hbox (7.50664pt too wide) in paragraph at lines 69--69
+Overfull \hbox (7.50664pt too wide) in paragraph at lines 70--70
 \T1/cmr/m/n/8 http://dlnmh9ip6v2uc.cloudfront.net/datasheets/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 \T1/cmr/m/n/8 http://mathworld.wolfram.com/Root-Mean-
  []
 
@@ -1415,7 +1430,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (48 pages, 5535319 bytes).
+Output written on thesis.pdf (48 pages, 5535391 bytes).
 PDF statistics:
  1477 PDF objects out of 1728 (max. 8388607)
  753 compressed objects within 8 object streams

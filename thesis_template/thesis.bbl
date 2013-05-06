@@ -15,30 +15,31 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
   XMPP} (2012).
 
 \bibitem{arduinoHome}
-Arduino - {HomePage}, http://www.arduino.cc/.
+Arduino - {HomePage}, http://www.arduino.cc/, 2013-04-16.
 
 \bibitem{megaAdk}
-Arduino - {ArduinoBoardADK}, {http://arduino.cc/en/Main/ArduinoBoardADK}.
+Arduino - {ArduinoBoardADK}, {http://arduino.cc/en/Main/ArduinoBoardADK},
+  2013-04-18.
 
 \bibitem{arduino_wireless}
 Arduino - {ArduinoWirelessShield},
-  {http://arduino.cc/en/Main/ArduinoWirelessShield}.
+  {http://arduino.cc/en/Main/ArduinoWirelessShield}, 2013-04-18.
 
 \bibitem{rn_xv_module}
 {RN-XV} {WiFly} module - wire antenna - {SparkFun} electronics,
-  https://www.sparkfun.com/products/10822.
+  https://www.sparkfun.com/products/10822, 2013-04-18.
 
 \bibitem{tinkerkit_introduction}
-Tinkerkit introduction, http://www.tinkerkit.com/introduction/.
+Tinkerkit introduction, http://www.tinkerkit.com/introduction/, 2013-04-19.
 
 \bibitem{thermistor_sensor}
-Thermistor sensor, http://www.tinkerkit.com/thermistor/.
+Thermistor sensor, http://www.tinkerkit.com/thermistor/, 2013-04-27.
 
 \bibitem{hall_sensor}
-Hall sensor, http://www.tinkerkit.com/hall/.
+Hall sensor, http://www.tinkerkit.com/hall/, 2013-04-27.
 
 \bibitem{light_sensor}
-Light sensor, http://www.tinkerkit.com/ldr/.
+Light sensor, http://www.tinkerkit.com/ldr/, 2013-04-27.
 
 \bibitem{fuzzy_control_introduction}
 {Marcelo Godoy Simoes}, {Introduction to Fuzzy Control}, 1610 Illinois Street
@@ -50,22 +51,22 @@ Light sensor, http://www.tinkerkit.com/ldr/.
 
 \bibitem{least_squres}
 Least squares fitting -- from wolfram {MathWorld},
-  {http://mathworld.wolfram.com/} {LeastSquaresFitting.html}.
+  {http://mathworld.wolfram.com/} {LeastSquaresFitting.html}, 2013-05-04.
 
 \bibitem{watchdog_timer}
 {Jim Lamberson}, {Single and Multistage Watchdog Timers} (2012).
 
 \bibitem{jeelib_general}
-{JeeLib:} introduction, http://jeelabs.net/pub/docs/jeelib/.
+{JeeLib:} introduction, http://jeelabs.net/pub/docs/jeelib/, 2013-04-23.
 
 \bibitem{jeelib_port}
 {JeeLib:} port class reference,
-  {http://jeelabs.net/pub/docs/jeelib/classPort.html}.
+  {http://jeelabs.net/pub/docs/jeelib/classPort.html}, 2013-04-23.
 
 \bibitem{wifly_manual}
 {WiFly} user guide - {WiFly-RN-UM.pdf},
   {http://dlnmh9ip6v2uc.cloudfront.net/datasheets/
-  Wireless/WiFi/WiFly-RN-UM.pdf}.
+  Wireless/WiFi/WiFly-RN-UM.pdf}, 2013-04-23.
 
 \bibitem{cluster_wsn_paper}
 H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
@@ -76,6 +77,6 @@ H.~Jiang, S.~Jin, C.~Wang, Prediction or not? an energy-efficient framework for
 
 \bibitem{RMSE}
 Root-mean-square -- from wolfram {MathWorld},
-  {http://mathworld.wolfram.com/Root-Mean-Square.html}.
+  {http://mathworld.wolfram.com/Root-Mean-Square.html}, 2013-05-04.
 
 \end{thebibliography}

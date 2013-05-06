@@ -20,36 +20,36 @@ Warning--entry type for "wifly_manual" isn't style-file defined
 Warning--empty publisher in fuzzy_sets
 You've used 19 entries,
             2937 wiz_defined-function locations,
-            754 strings with 7378 characters,
-and the built_in function-call counts, 3350 in all, are:
-= -- 277
+            760 strings with 7438 characters,
+and the built_in function-call counts, 3636 in all, are:
+= -- 342
 > -- 46
 < -- 2
 + -- 28
 - -- 9
-* -- 73
-:= -- 354
+* -- 99
+:= -- 380
 add.period$ -- 20
 call.type$ -- 19
-change.case$ -- 19
+change.case$ -- 32
 chr.to.int$ -- 0
 cite$ -- 20
-duplicate$ -- 143
-empty$ -- 506
+duplicate$ -- 156
+empty$ -- 519
 format.name$ -- 11
-if$ -- 993
+if$ -- 1071
 int.to.chr$ -- 0
 int.to.str$ -- 19
 missing$ -- 3
 newline$ -- 66
 num.names$ -- 6
-pop$ -- 146
+pop$ -- 172
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 352
+skip$ -- 339
 stack$ -- 0
-substring$ -- 45
+substring$ -- 71
 swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
@@ -58,5 +58,5 @@ type$ -- 0
 warning$ -- 1
 while$ -- 8
 width$ -- 21
-write$ -- 134
+write$ -- 147
 (There were 3 warnings)
