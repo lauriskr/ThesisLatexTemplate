@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 11:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,87 +598,36 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/easy-todo/easy-todo.sty
-Package: easy-todo 2011/01/01
-
-(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2010/10/13 v2.3e parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 43.
-\cftparskip=\skip58
-\cftbeforetoctitleskip=\skip59
-\cftaftertoctitleskip=\skip60
-\cftbeforepartskip=\skip61
-\cftpartnumwidth=\skip62
-\cftpartindent=\skip63
-\cftbeforechapskip=\skip64
-\cftchapindent=\skip65
-\cftchapnumwidth=\skip66
-\cftbeforesecskip=\skip67
-\cftsecindent=\skip68
-\cftsecnumwidth=\skip69
-\cftbeforesubsecskip=\skip70
-\cftsubsecindent=\skip71
-\cftsubsecnumwidth=\skip72
-\cftbeforesubsubsecskip=\skip73
-\cftsubsubsecindent=\skip74
-\cftsubsubsecnumwidth=\skip75
-\cftbeforeparaskip=\skip76
-\cftparaindent=\skip77
-\cftparanumwidth=\skip78
-\cftbeforesubparaskip=\skip79
-\cftsubparaindent=\skip80
-\cftsubparanumwidth=\skip81
-\cftbeforeloftitleskip=\skip82
-\cftafterloftitleskip=\skip83
-\cftbeforefigskip=\skip84
-\cftfigindent=\skip85
-\cftfignumwidth=\skip86
-\c@lofdepth=\count113
-\c@lotdepth=\count114
-\cftbeforelottitleskip=\skip87
-\cftafterlottitleskip=\skip88
-\cftbeforetabskip=\skip89
-\cfttabindent=\skip90
-\cfttabnumwidth=\skip91
-)
-\c@todos=\count115
-\cftbeforetodosskip=\skip92
-\cfttodosindent=\skip93
-\cfttodosnumwidth=\skip94
-\c@loddepth=\count116
-\cftbeforelodtitleskip=\skip95
-\cftafterlodtitleskip=\skip96
-)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count117
+\c@float@type=\count113
 \float@exts=\toks20
 \float@box=\box52
 \@float@everytoks=\toks21
 \@floatcapt=\box53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count118
+\lst@mode=\count114
 \lst@gtempboxa=\box54
 \lst@token=\toks22
-\lst@length=\count119
+\lst@length=\count115
 \lst@currlwidth=\dimen126
-\lst@column=\count120
-\lst@pos=\count121
+\lst@column=\count116
+\lst@pos=\count117
 \lst@lostspace=\dimen127
 \lst@width=\dimen128
-\lst@newlines=\count122
-\lst@lineno=\count123
+\lst@newlines=\count118
+\lst@lineno=\count119
 \lst@maxwidth=\dimen129
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count124
-\lst@skipnumbers=\count125
+\c@lstnumber=\count120
+\lst@skipnumbers=\count121
 \lst@framebox=\box55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -725,10 +674,10 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yc=\dimen137
 \w@pgf@writea=\write4
 \r@pgf@reada=\read1
-\c@pgf@counta=\count126
-\c@pgf@countb=\count127
-\c@pgf@countc=\count128
-\c@pgf@countd=\count129
+\c@pgf@counta=\count122
+\c@pgf@countb=\count123
+\c@pgf@countc=\count124
+\c@pgf@countd=\count125
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -743,8 +692,8 @@ File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count130
-\pgfsyssoftpath@bigbuffer@items=\count131
+\pgfsyssoftpath@smallbuffer@items=\count126
+\pgfsyssoftpath@bigbuffer@items=\count127
 )
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -775,7 +724,7 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen138
-\pgfmath@count=\count132
+\pgfmath@count=\count128
 \pgfmath@box=\box57
 \pgfmath@toks=\toks27
 \pgfmath@stack@operand=\toks28
@@ -790,7 +739,7 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count133
+\c@pgfmathroundto@lastzeros=\count129
 ))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
@@ -824,7 +773,7 @@ File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box58
 \pgf@hbox=\box59
 \pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count134
+\pgf@picture@serial@count=\count130
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
@@ -851,7 +800,7 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
 \pgf@max=\dimen161
-\pgf@sys@shading@range@num=\count135
+\pgf@sys@shading@range@num=\count131
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
@@ -899,7 +848,7 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count136
+\pgf@plot@mark@count=\count132
 \pgfplotmarksize=\dimen166
 )
 \tikz@lastx=\dimen167
@@ -910,18 +859,18 @@ File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \tikzsiblingdistance=\dimen172
 \tikz@figbox=\box63
 \tikz@tempbox=\box64
-\tikztreelevel=\count137
-\tikznumberofchildren=\count138
-\tikznumberofcurrentchild=\count139
-\tikz@fig@count=\count140
+\tikztreelevel=\count133
+\tikznumberofchildren=\count134
+\tikznumberofcurrentchild=\count135
+\tikz@fig@count=\count136
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count141
-\pgfmatrixcurrentcolumn=\count142
-\pgf@matrix@numberofcolumns=\count143
+\pgfmatrixcurrentrow=\count137
+\pgfmatrixcurrentcolumn=\count138
+\pgf@matrix@numberofcolumns=\count139
 )
-\tikz@expandcount=\count144
+\tikz@expandcount=\count140
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
@@ -947,33 +896,33 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 (./7/eestiabstract.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
+\scratchcounter=\count141
 \scratchdimen=\dimen174
 \scratchbox=\box65
-\nofMPsegments=\count146
-\nofMParguments=\count147
+\nofMPsegments=\count142
+\nofMParguments=\count143
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count148
+\MPscratchCnt=\count144
 \MPscratchDim=\dimen175
-\MPnumerator=\count149
-\makeMPintoPDFobject=\count150
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
 \everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -995,8 +944,8 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box66
-Package backref Info: ** backref set up for natbib ** on input line 50.
-Package hyperref Info: Link coloring OFF on input line 50.
+Package backref Info: ** backref set up for natbib ** on input line 49.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1004,17 +953,17 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count151
+\c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-\c@lstlisting=\count152
+\c@lstlisting=\count148
  ABD: EveryShipout initializing macros
 \openout2 = `title_page/stardard_page.aux'.
 
@@ -1054,6 +1003,7 @@ l.35 \end{abstracts}
 ] [2]) (./thesis.toc [3
 \FN@pp@footnotehinttrue 
 
+
 ])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
@@ -1062,11 +1012,15 @@ l.35 \end{abstracts}
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [5] (./thesis.lot)
+ [5
+
+] (./thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [6]
+ [6
+
+]
 \openout2 = `1_introduction/introduction.aux'.
 
  (./1_introduction/introduction.tex
@@ -1084,21 +1038,21 @@ l.35 \end{abstracts}
 
 
 
-] <2/figures/mega_adk.pdf, id=356, 774.895pt x 574.145pt>
+] <2/figures/mega_adk.pdf, id=357, 774.895pt x 574.145pt>
 File: 2/figures/mega_adk.pdf Graphic file (type pdf)
 
 <use 2/figures/mega_adk.pdf>
 Package pdftex.def Info: 2/figures/mega_adk.pdf used on input line 35.
 (pdftex.def)             Requested size: 410.6924pt x 304.2954pt.
 
-<2/figures/wireless_shield.pdf, id=359, 767.86874pt x 569.12625pt>
+<2/figures/wireless_shield.pdf, id=360, 767.86874pt x 569.12625pt>
 File: 2/figures/wireless_shield.pdf Graphic file (type pdf)
 
 <use 2/figures/wireless_shield.pdf>
 Package pdftex.def Info: 2/figures/wireless_shield.pdf used on input line 47.
 (pdftex.def)             Requested size: 406.96849pt x 301.63547pt.
  [5 <./2/figures/mega_adk.pdf>]
-<2/figures/wifly.pdf, id=377, 772.8875pt x 579.16376pt>
+<2/figures/wifly.pdf, id=378, 772.8875pt x 579.16376pt>
 File: 2/figures/wifly.pdf Graphic file (type pdf)
 
 <use 2/figures/wifly.pdf>
@@ -1109,14 +1063,14 @@ Package pdftex.def Info: 2/figures/wifly.pdf used on input line 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./2/figures/wireless_shield.pdf>] [7 <./2/figures/wifly.pdf>]
-<2/figures/complete_module.pdf, id=411, 769.87625pt x 600.2425pt>
+<2/figures/complete_module.pdf, id=412, 769.87625pt x 600.2425pt>
 File: 2/figures/complete_module.pdf Graphic file (type pdf)
 
 <use 2/figures/complete_module.pdf>
 Package pdftex.def Info: 2/figures/complete_module.pdf used on input line 82.
 (pdftex.def)             Requested size: 408.03247pt x 318.127pt.
  [8 <./2/figures/complete_module.pdf>]
-<2/figures/sample_sets.pdf, id=428, 789.95125pt x 392.46625pt>
+<2/figures/sample_sets.pdf, id=429, 789.95125pt x 392.46625pt>
 File: 2/figures/sample_sets.pdf Graphic file (type pdf)
 
 <use 2/figures/sample_sets.pdf>
@@ -1131,7 +1085,7 @@ Overfull \hbox (6.10721pt too wide) in paragraph at lines 102--103
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9] [10 <./2/figures/sample_sets.pdf>]
-<2/figures/fuzzy_control_engine.png, id=445, 650.43pt x 386.44376pt>
+<2/figures/fuzzy_control_engine.png, id=446, 650.43pt x 386.44376pt>
 File: 2/figures/fuzzy_control_engine.png Graphic file (type png)
 
 <use 2/figures/fuzzy_control_engine.png>
@@ -1139,7 +1093,7 @@ Package pdftex.def Info: 2/figures/fuzzy_control_engine.png used on input line
 142.
 (pdftex.def)             Requested size: 390.261pt x 231.86804pt.
  [11] [12 <./2/figures/fuzzy_control_engine.png>]
-<2/figures/regression_sample.pdf, id=460, 510.90875pt x 384.43625pt>
+<2/figures/regression_sample.pdf, id=461, 510.90875pt x 384.43625pt>
 File: 2/figures/regression_sample.pdf Graphic file (type pdf)
 
 <use 2/figures/regression_sample.pdf>
@@ -1155,14 +1109,14 @@ Package pdftex.def Info: 2/figures/regression_sample.pdf used on input line 158
 
 
 
-] <3/figures/xmpp_session.png, id=479, 425.59pt x 781.92125pt>
+] <3/figures/xmpp_session.png, id=480, 425.59pt x 781.92125pt>
 File: 3/figures/xmpp_session.png Graphic file (type png)
 
 <use 3/figures/xmpp_session.png>
 Package pdftex.def Info: 3/figures/xmpp_session.png used on input line 56.
 (pdftex.def)             Requested size: 255.35596pt x 469.15637pt.
  [15] [16 <./3/figures/xmpp_session.png>]
-<3/figures/data_model_initial.jpg, id=496, 560.0925pt x 105.39375pt>
+<3/figures/data_model_initial.jpg, id=497, 560.0925pt x 105.39375pt>
 File: 3/figures/data_model_initial.jpg Graphic file (type jpg)
 
 <use 3/figures/data_model_initial.jpg>
@@ -1184,7 +1138,7 @@ e 93.
 
 
 ] [20] [21]
-<4/figures/30s_xmpp_vs_http.pdf, id=538, 460.72125pt x 259.97125pt>
+<4/figures/30s_xmpp_vs_http.pdf, id=539, 460.72125pt x 259.97125pt>
 File: 4/figures/30s_xmpp_vs_http.pdf Graphic file (type pdf)
 
 <use 4/figures/30s_xmpp_vs_http.pdf>
@@ -1194,7 +1148,7 @@ Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 68.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] <4/figures/finalsolution.png, id=553, 910.40125pt x 554.07pt>
+[22] <4/figures/finalsolution.png, id=554, 910.40125pt x 554.07pt>
 File: 4/figures/finalsolution.png Graphic file (type png)
 
 <use 4/figures/finalsolution.png>
@@ -1209,14 +1163,14 @@ Overfull \hbox (6.2247pt too wide) in paragraph at lines 88--89
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23 <./4/figures/30s_xmpp_vs_http.pdf>]
-<4/figures/data_model_final.jpg, id=572, 654.445pt x 120.45pt>
+<4/figures/data_model_final.jpg, id=573, 654.445pt x 120.45pt>
 File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 
 <use 4/figures/data_model_final.jpg>
 Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 97.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
  [24 <./4/figures/finalsolution.png> <./4/figures/data_model_final.jpg>] [25]
-<4/figures/pred_sets.pdf, id=592, 756.8275pt x 392.46625pt>
+<4/figures/pred_sets.pdf, id=593, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
@@ -1228,7 +1182,7 @@ Overfull \hbox (26.3953pt too wide) in paragraph at lines 135--136
  []
 
 [26 <./4/figures/pred_sets.pdf>]
-<4/figures/change_sets.pdf, id=607, 785.93625pt x 392.46625pt>
+<4/figures/change_sets.pdf, id=608, 785.93625pt x 392.46625pt>
 File: 4/figures/change_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/change_sets.pdf>
@@ -1242,7 +1196,7 @@ Overfull \hbox (19.70131pt too wide) in paragraph at lines 146--147
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<4/figures/result_sets.pdf, id=609, 756.8275pt x 392.46625pt>
+<4/figures/result_sets.pdf, id=610, 756.8275pt x 392.46625pt>
 File: 4/figures/result_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/result_sets.pdf>
@@ -1257,14 +1211,14 @@ Overfull \hbox (26.3953pt too wide) in paragraph at lines 168--169
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [27 <./4/figures/change_sets.pdf>] [28 <./4/figures/result_sets.pdf>] [29]
-<4/figures/peaktech.pdf, id=636, 853.1875pt x 640.3925pt>
+<4/figures/peaktech.pdf, id=637, 853.1875pt x 640.3925pt>
 File: 4/figures/peaktech.pdf Graphic file (type pdf)
 
 <use 4/figures/peaktech.pdf>
 Package pdftex.def Info: 4/figures/peaktech.pdf used on input line 207.
 (pdftex.def)             Requested size: 409.52534pt x 307.3849pt.
  [30 <./4/figures/peaktech.pdf>]
-<4/figures/final_measurements.png, id=652, 730.73pt x 426.59375pt>
+<4/figures/final_measurements.png, id=653, 730.73pt x 426.59375pt>
 File: 4/figures/final_measurements.png Graphic file (type png)
 
 <use 4/figures/final_measurements.png>
@@ -1275,7 +1229,7 @@ Package pdftex.def Info: 4/figures/final_measurements.png used on input line 22
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] <4/figures/9V_test_results.png, id=657, 455.301pt x 255.95625pt>
+[31] <4/figures/9V_test_results.png, id=658, 455.301pt x 255.95625pt>
 File: 4/figures/9V_test_results.png Graphic file (type png)
 
 <use 4/figures/9V_test_results.png>
@@ -1410,39 +1364,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--101
 
 ) [40
 
-] [41
-
-] (./thesis.lod)
-\tf@lod=\write10
-\openout10 = `thesis.lod'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
- [42
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+ [41
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./thesis.aux (./title_page/stardard_page.aux)
 (./0_frontmatter/abstract.aux) (./1_introduction/introduction.aux)
 (./2/stateofart.aux) (./3/researchquestion.aux) (./3/contributions.aux)
 (./5/conclusions.aux) (./6/relatedwork.aux) (./6/futureresearch.aux)
 (./7/eestiabstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8D105868B8E5F6209B5970EE2E8BE129;3162.
+(rerunfilecheck)             Checksum: DBB71090442643541E8A3B5DBC66C973;3162.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 3A098CB998577CC2D1598CFDFCF71FE1;1931.
+(rerunfilecheck)             Checksum: 383BE8C91F6A0ED7B64B0C681740A6B9;1931.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
  ) 
 Here is how much of TeX's memory you used:
- 19141 strings out of 495059
- 325628 string characters out of 3182030
- 415272 words of memory out of 3000000
- 21662 multiletter control sequences out of 15000+200000
+ 18838 strings out of 495059
+ 321093 string characters out of 3182030
+ 407957 words of memory out of 3000000
+ 21371 multiletter control sequences out of 15000+200000
  23748 words of font info for 60 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,12n,55p,1053b,1080s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1468,10 +1417,10 @@ onts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on thesis.pdf (49 pages, 5542845 bytes).
+Output written on thesis.pdf (48 pages, 5542570 bytes).
 PDF statistics:
- 1550 PDF objects out of 1728 (max. 8388607)
- 790 compressed objects within 8 object streams
- 175 named destinations out of 1000 (max. 500000)
+ 1544 PDF objects out of 1728 (max. 8388607)
+ 785 compressed objects within 8 object streams
+ 174 named destinations out of 1000 (max. 500000)
  487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

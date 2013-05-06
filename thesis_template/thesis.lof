@@ -1,26 +1,26 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Arduino Mega ADK\relax }}{5}{figure.caption.3}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Wireless SD Shield\relax }}{6}{figure.caption.4}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces RN-XV Wifly Module\relax }}{7}{figure.caption.5}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Complete Arduino Sensor Module\relax }}{8}{figure.caption.6}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Trapezoidal and Triangular Membership Functions\relax }}{10}{figure.caption.7}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Fuzzy Control Process \cite {fuzzy_logic_offloading}\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Least Squares Fitting Regression Line\relax }}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arduino Mega ADK\relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Wireless SD Shield\relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces RN-XV Wifly Module\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Complete Arduino Sensor Module\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Trapezoidal and Triangular Membership Functions\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Fuzzy Control Process \cite {fuzzy_logic_offloading}\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Least Squares Fitting Regression Line\relax }}{13}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP Session Lifecycle \cite [p. 40]{prev_thesis}\relax }}{16}{figure.caption.10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Server-side Data Model \cite [p. 46]{prev_thesis}\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces XMPP Session Lifecycle \cite [p. 40]{prev_thesis}\relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Server-side Data Model \cite [p. 46]{prev_thesis}\relax }}{17}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Power Consumption at 30 Second Interval\relax }}{23}{figure.caption.12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Final Solution Architecture\relax }}{24}{figure.caption.13}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Updated Server-side Data Model\relax }}{24}{figure.caption.14}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Regression Confidence Fuzzy Sets\relax }}{26}{figure.caption.15}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor Value Fuzzy Sets\relax }}{27}{figure.caption.16}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Idle Time Fuzzy Sets\relax }}{28}{figure.caption.18}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces PeakTech 1890\relax }}{30}{figure.caption.19}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Current Measurements Comparison\relax }}{32}{figure.caption.20}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Battery Lifetime and Idle Time Comparison\relax }}{32}{figure.caption.22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Power Consumption at 30 Second Interval\relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Final Solution Architecture\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Updated Server-side Data Model\relax }}{24}{figure.caption.15}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Regression Confidence Fuzzy Sets\relax }}{26}{figure.caption.16}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor Value Fuzzy Sets\relax }}{27}{figure.caption.17}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Idle Time Fuzzy Sets\relax }}{28}{figure.caption.19}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces PeakTech 1890\relax }}{30}{figure.caption.20}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Current Measurements Comparison\relax }}{32}{figure.caption.21}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Battery Lifetime and Idle Time Comparison\relax }}{32}{figure.caption.23}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
