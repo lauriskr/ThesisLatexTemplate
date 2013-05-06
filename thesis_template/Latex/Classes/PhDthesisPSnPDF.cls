@@ -182,8 +182,8 @@
 %: Uncomment this secion for one-sided printing
 % taken from the original file, but with the first two lanes modified
 % ------------------------------
-\setlength{\evensidemargin}{1.9cm} % was 1.96cm in original
-\setlength{\oddsidemargin}{-0.001cm} % was -0.54cm in original file
+\setlength{\evensidemargin}{0cm} % was 1.96cm in original
+\setlength{\oddsidemargin}{1.9cm} % was -0.54cm in original file
 \setlength{\topmargin}{1mm}
 \setlength{\headheight}{1.36cm}
 \setlength{\headsep}{1.00cm}

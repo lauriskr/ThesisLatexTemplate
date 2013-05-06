@@ -12,7 +12,7 @@
 %: Style file for Latex
 % Most style definitions are in the external file PhDthesisPSnPDF.
 % In this template package, it can be found in ./Latex/Classes/
-\documentclass[oneside,12pt]{Latex/Classes/PhDthesisPSnPDF}
+\documentclass[oneside,a4paper,12pt]{Latex/Classes/PhDthesisPSnPDF}
 \usepackage[utf8]{inputenc} %sisendfaili koodilehekylg UTF-8
 \usepackage[T1]{fontenc} %täpitäht ühe sümbolina
 \usepackage{easy-todo}
@@ -183,10 +183,10 @@ supervised by Huber Flores and Satish Narayana Srirama,
 
 3. I certify that granting the non-exclusive licence does not infringe the intellectual property rights or rights arising from the Personal Data Protection Act. 
 
-\centering
+\begin{center}
 \vspace{3cm}
 Tartu, 13.05.2013
-
+\end{center}
 \newpage
 
 % --------------------------------------------------------------
@@ -233,7 +233,13 @@ Tartu, 13.05.2013
 %\bibliographystyle{plainnat} % calls style file plainnat.bst
 % in-text refs: author (year) without brackets
 % (this works with package natbib)
+\chapter{Appendix A}
 
+The Arduino sensor module sketch and server-side client implementation code can be accessed from https://github.com/huberflores/ArduinoXMPP/. The $master$ branch contains the original prototype \cite{prev_thesis}. The current implementation is in the $dev$ branch. 
+
+The code, collected data and thesis $\LaTeX$ files are also available on a CD attached to the thesis.
+
+\newpage
 \listoftodos
 
 % --------------------------------------------------------------

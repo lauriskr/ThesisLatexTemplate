@@ -13,50 +13,50 @@ A level-1 auxiliary file: 6/futureresearch.aux
 A level-1 auxiliary file: 7/eestiabstract.aux
 The style file: elsarticle-num.bst
 Database file #1: thesis.bib
-Warning--empty publisher in prev_thesis
-Warning--empty year in prev_thesis
-Warning--empty publisher in fuzzy_control_introduction
-Warning--empty year in fuzzy_control_introduction
+Warning--entry type for "prev_thesis" isn't style-file defined
+--line 73 of file thesis.bib
+Warning--entry type for "wifly_manual" isn't style-file defined
+--line 112 of file thesis.bib
 Warning--empty publisher in fuzzy_sets
 You've used 19 entries,
             2937 wiz_defined-function locations,
-            759 strings with 7746 characters,
-and the built_in function-call counts, 3577 in all, are:
-= -- 294
+            760 strings with 7690 characters,
+and the built_in function-call counts, 3753 in all, are:
+= -- 329
 > -- 46
-< -- 0
+< -- 2
 + -- 28
 - -- 9
-* -- 150
-:= -- 402
+* -- 151
+:= -- 419
 add.period$ -- 20
 call.type$ -- 19
-change.case$ -- 17
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 147
-empty$ -- 563
+cite$ -- 20
+duplicate$ -- 169
+empty$ -- 558
 format.name$ -- 11
-if$ -- 1048
+if$ -- 1097
 int.to.chr$ -- 0
 int.to.str$ -- 19
-missing$ -- 7
+missing$ -- 3
 newline$ -- 79
 num.names$ -- 6
-pop$ -- 164
+pop$ -- 159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 300
+skip$ -- 326
 stack$ -- 0
-substring$ -- 27
-swap$ -- 18
-text.length$ -- 0
+substring$ -- 45
+swap$ -- 39
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 7
+warning$ -- 1
+while$ -- 8
 width$ -- 21
-write$ -- 145
-(There were 5 warnings)
+write$ -- 147
+(There were 3 warnings)

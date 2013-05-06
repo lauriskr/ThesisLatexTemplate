@@ -46,3 +46,4 @@
 \contentsline {chapter}{Res\IeC {\"u}mee}{38}{chapter*.24}
 \contentsline {chapter}{Licence}{39}{chapter*.25}
 \contentsline {chapter}{Bibliography}{40}{chapter*.26}
+\contentsline {chapter}{Appendix A}{41}{chapter*.27}

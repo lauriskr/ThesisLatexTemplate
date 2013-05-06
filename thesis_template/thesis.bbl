@@ -11,8 +11,8 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
   Institute of Computer Science, Mobile Cloud Lab, University of Tartu (2013).
 
 \bibitem{prev_thesis}
-{Kaarel Hanson}, Context Sensor Data on Demand for Mobile Users Supported by
-  XMPP, Tartu, Estonia.
+{Kaarel Hanson}, {Context Sensor Data on Demand for Mobile Users Supported by
+  XMPP} (2012).
 
 \bibitem{arduinoHome}
 \href{http://www.arduino.cc/}{Arduino - {HomePage}}, http://www.arduino.cc/.
@@ -39,12 +39,13 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
 \newline\urlprefix\url{http://www.tinkerkit.com/introduction/}
 
 \bibitem{thermistor_sensor}
-\href{http://www.tinkerkit.com/thermistor/}{Thermistor},
+\href{http://www.tinkerkit.com/thermistor/}{Thermistor sensor},
   http://www.tinkerkit.com/thermistor/.
 \newline\urlprefix\url{http://www.tinkerkit.com/thermistor/}
 
 \bibitem{hall_sensor}
-\href{http://www.tinkerkit.com/hall/}{Hall}, http://www.tinkerkit.com/hall/.
+\href{http://www.tinkerkit.com/hall/}{Hall sensor},
+  http://www.tinkerkit.com/hall/.
 \newline\urlprefix\url{http://www.tinkerkit.com/hall/}
 
 \bibitem{light_sensor}
@@ -53,11 +54,12 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
 \newline\urlprefix\url{http://www.tinkerkit.com/ldr/}
 
 \bibitem{fuzzy_control_introduction}
-{Marcelo Godoy Simoes}, Introduction to Fuzzy Control, 1610 Illinois Street
+{Marcelo Godoy Simoes}, {Introduction to Fuzzy Control}, 1610 Illinois Street
   Golden, Colorado 80401-1887 {USA}.
 
 \bibitem{fuzzy_sets}
-{Lotfi A. Zadeh}, Fuzzy Sets. Information and Control, 1965.
+{Lotfi A. Zadeh}, Information and Control, 1965, Ch. {Fuzzy Sets}, p.
+  338–353.
 
 \bibitem{least_squres}
 \href{http://mathworld.wolfram.com/LeastSquaresFitting.html}{Least squares
@@ -66,7 +68,7 @@ H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
 \newline\urlprefix\url{http://mathworld.wolfram.com/LeastSquaresFitting.html}
 
 \bibitem{watchdog_timer}
-{Jim Lamberson}, Single and multistage watchdog timers (2012).
+{Jim Lamberson}, {Single and Multistage Watchdog Timers} (2012).
 
 \bibitem{jeelib_general}
 \href{http://jeelabs.net/pub/docs/jeelib/}{{JeeLib:} introduction},
