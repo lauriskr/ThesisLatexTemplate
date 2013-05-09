@@ -9,18 +9,15 @@ Nowadays, mobile applications are becoming more context aware due to technologic
 achievements which enable the applications to anticipate users’ intentions. This is
 achieved through using the device’s own micromechanical artifacts that can be used to
 perceive the environment. However, this is constrained to the hardware limitations of
-devices.
+devices as not all devices provide the same options. Moreover, perceiving the environment strains the battery and therefore has its impact on devices' everyday usage.
 
-A proposed solution for this has been made in the thesis “Context Sensor Data on
-Demand for Mobile Users Supported by XMPP” by Kaarel Hanson. The solution is
-to use XMPP for transporting sensor data from Arduino microcontroller to the cloud.
-Arduino provides low-cost hardware, while the cloud offers the reliable and high-
-availability means for storing and processing sensor data.
+To remedy this, a proposed solution has been made in the thesis “Context Sensor Data on
+Demand for Mobile Users Supported by XMPP” by Kaarel Hanson. The solution is to gather the environmental data by specialized sensor modules and store it in a data server. Afterwards, devices can query the data from the server and thus gain access to information beyond the capabilities of their own hardware.
 
-This solution shows that running on a 9V battery the microcontroller lasts for 101
+The solution uses XMPP for transporting sensor data from Arduino microcontrollers (sensor modules) to the cloud. Arduino provides low-cost hardware, while the cloud offers the reliable and high-
+availability means for storing and processing sensor data. However, the developed prototype shows that running on a 9V battery the microcontroller lasts for 101
 minutes when using an Ethernet module for communications, and 161,5 minutes with a
-WiFi module. These results are not good enough for remote data collection with limited
-access to the microcontroller.
+WiFi module. These results are not good enough for remote data collection with limited access as the maintenance cost would be too high when the batteries need to be replaced frequently. 
 
 This thesis proposes an optimisation for the system so that instead of reading and
 sending sensor data every 10 seconds, the cloud server would notify the controller

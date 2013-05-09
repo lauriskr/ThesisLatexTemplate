@@ -27,13 +27,21 @@
 %    \subsubsection{} = level 4
 % note that everything after the percentage sign is hidden from output
 
-Mobile applications are becoming more context aware and depend on perceiving the surrounding environment to provide users with the best functionality possible. This is achieved due to technological advances that enable the device to sense the surroundings, however, these abilities are limited to each device's hardware configuration.
+To remedy this, a proposed solution has been made in the thesis “Context Sensor Data on
+Demand for Mobile Users Supported by XMPP” by Kaarel Hanson. The solution is to gather the environmental data by specialized sensor modules and store it in a data server. Afterwards, devices can query the data from the server and thus gain access to information beyond the capabilities of their own hardware.
 
-A proposed solution has been made in the thesis "Context Sensor Data on Demand for Mobile Users Supported by XMPP" by Kaarel Hanson \cite{prev_thesis}. The solution is to have special sensor modules perceive the environment and gather the measurements in a central data center, which can then be used to provide data to mobile users. 
+The solution uses XMPP for transporting sensor data from Arduino microcontrollers (sensor modules) to the cloud. Arduino provides low-cost hardware, while the cloud offers the reliable and high-
+availability means for storing and processing sensor data. However, the developed prototype shows that running on a 9V battery the microcontroller lasts for 101
+minutes when using an Ethernet module for communications, and 161,5 minutes with a
+WiFi module. These results are not good enough for remote data collection with limited access as the maintenance cost would be too high when the batteries need to be replaced frequently. 
 
-A prototype was developed based on Arduino for the sensors and XMPP for communication. This thesis proposes improvements to the existing prototype to enable sleep mode for the sensor modules and data prediction on the data server side. These improvements help prolong battery life on a 9V battery, which was measured to be 161,5 minutes with the existing prototype. 
+Mobile applications are becoming more context aware and depend on perceiving the surrounding environment to provide users with the best functionality possible. This is achieved due to technological advances that enable the device to sense the surroundings, however, these abilities are limited to each device's hardware configuration. 
 
-Without enough battery life, the overhead of using the modules to gather data makes the solution inefficient. Therefore, it is crucial to make the modules last longer, which is the main goal of this thesis.
+To give devices access to more elaborate data not constrained by their hardware and to save battery life, a solution was proposed in the thesis "Context Sensor Data on Demand for Mobile Users Supported by XMPP" by Kaarel Hanson \cite{prev_thesis}. The solution is to have special sensor modules perceive the environment and gather the measurements in a central data center, which can then be used to provide data to mobile users. Devices could just use their network connectivity to get access to data beyond the reach of their own hardware capabilities, thus giving applications to provide users with a richer environment.
+
+A prototype was developed based on Arduino for the sensors and XMPP for communication. This thesis proposes improvements to the existing prototype to enable sleep mode for the sensor modules and data prediction on the data server side. These improvements help prolong battery life on a 9V battery, which was measured to be 161,5 minutes with the existing prototype. However, 161,5 minutes is not enough to actually place a sensor module in a remote location and gather valuable data for as the batteries would need replacements too frequently. Therefore, it is crucial to make the modules last longer.
+
+The main goal of this thesis is to improve battery life by conserving power where possible. A more flexible data transmission system and optimized modules would provide a basis for a more energy-aware system, thus making it more usable.
 
 \section{Motivation}
 The developed prototype \cite{prev_thesis} works well when the general idea and goal is considered. However, the lack of flexibility of data transmission intervals and high power needs constrain the implementation usages. In order to take full advantage of the prototype, power usage should be reduced and more flexibility added to the communication between the server-side client and sensor modules.  
