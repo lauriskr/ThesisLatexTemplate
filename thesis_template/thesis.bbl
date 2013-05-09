@@ -7,8 +7,9 @@
 
 \bibitem{fuzzy_logic_offloading}
 H.~Flores, S.~N. Srirama, Adaptive code offloading for mobile cloud
-  applications: Exploiting fuzzy sets and evidence-based learning, Tech. rep.,
-  Institute of Computer Science, Mobile Cloud Lab, University of Tartu (2013).
+  applications: Exploiting fuzzy sets and evidence-based learning, in:
+  Proceedings of the 4th ACM Workshop on Mobile Cloud Computing and Services
+  (MCS 2013), ACM, 2013.
 
 \bibitem{prev_thesis}
 {Kaarel Hanson}, {Context Sensor Data on Demand for Mobile Users Supported by

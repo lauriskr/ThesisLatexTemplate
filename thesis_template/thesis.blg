@@ -17,46 +17,47 @@ Warning--entry type for "prev_thesis" isn't style-file defined
 --line 65 of file thesis.bib
 Warning--entry type for "wifly_manual" isn't style-file defined
 --line 94 of file thesis.bib
+Warning--empty pages in fuzzy_logic_offloading
 Warning--empty publisher in fuzzy_sets
 You've used 19 entries,
             2937 wiz_defined-function locations,
-            760 strings with 7438 characters,
-and the built_in function-call counts, 3636 in all, are:
-= -- 342
+            761 strings with 7460 characters,
+and the built_in function-call counts, 3673 in all, are:
+= -- 337
 > -- 46
 < -- 2
 + -- 28
 - -- 9
-* -- 99
-:= -- 380
+* -- 106
+:= -- 377
 add.period$ -- 20
 call.type$ -- 19
-change.case$ -- 32
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 156
-empty$ -- 519
+cite$ -- 21
+duplicate$ -- 159
+empty$ -- 535
 format.name$ -- 11
-if$ -- 1071
+if$ -- 1083
 int.to.chr$ -- 0
 int.to.str$ -- 19
-missing$ -- 3
+missing$ -- 4
 newline$ -- 66
 num.names$ -- 6
-pop$ -- 172
+pop$ -- 178
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 339
+skip$ -- 340
 stack$ -- 0
 substring$ -- 71
-swap$ -- 26
+swap$ -- 25
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 2
 while$ -- 8
 width$ -- 21
-write$ -- 147
-(There were 3 warnings)
+write$ -- 146
+(There were 4 warnings)

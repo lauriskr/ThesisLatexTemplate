@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  9 MAY 2013 20:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  9 MAY 2013 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,7 +1283,7 @@ s.png (PNG copy)>]) [33]
 \openout9 = `thesis.brf'.
 
 
-Overfull \hbox (16.91794pt too wide) in paragraph at lines 27--27
+Overfull \hbox (16.91794pt too wide) in paragraph at lines 28--28
 []\T1/cmr/m/n/10.95 Arduino - Ar-duinoWire-lessShield, http://arduino.cc/en/Mai
 n/ArduinoWirelessShield,
  []
@@ -1291,7 +1291,7 @@ n/ArduinoWirelessShield,
 [40
 
 ]
-Overfull \hbox (31.21944pt too wide) in paragraph at lines 70--70
+Overfull \hbox (31.21944pt too wide) in paragraph at lines 71--71
 []\T1/cmr/m/n/10.95 WiFly user guide - WiFly-RN-UM.pdf, http://dlnmh9ip6v2uc.cl
 oudfront.net/datasheets/
  []
@@ -1312,7 +1312,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 631259D23849870BB7575DD09645EEE6;3196.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 819B0898720208B0BD824605BA4F4E3F;1931.
+(rerunfilecheck)             Checksum: 427642847C4A443DBA8B3AC02B27662D;1931.
 
 
 LaTeX Warning: There were undefined references.
@@ -1348,10 +1348,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (49 pages, 5519328 bytes).
+Output written on thesis.pdf (49 pages, 5521792 bytes).
 PDF statistics:
- 1437 PDF objects out of 1440 (max. 8388607)
- 762 compressed objects within 8 object streams
+ 1436 PDF objects out of 1440 (max. 8388607)
+ 761 compressed objects within 8 object streams
  175 named destinations out of 1000 (max. 500000)
  487 words of extra memory for PDF output out of 10000 (max. 10000000)
 
