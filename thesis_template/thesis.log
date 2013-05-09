@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  6 MAY 2013 13:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.4.25)  9 MAY 2013 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1148,16 +1148,12 @@ Package pdftex.def Info: 4/figures/30s_xmpp_vs_http.pdf used on input line 68.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22] <4/figures/finalsolution.png, id=554, 910.40125pt x 554.07pt>
-File: 4/figures/finalsolution.png Graphic file (type png)
+[22] <4/figures/final_solution.pdf, id=554, 699.61375pt x 369.38pt>
+File: 4/figures/final_solution.pdf Graphic file (type pdf)
 
-<use 4/figures/finalsolution.png>
-Package pdftex.def Info: 4/figures/finalsolution.png used on input line 88.
-(pdftex.def)             Requested size: 418.78966pt x 254.87529pt.
-
-Overfull \hbox (6.2247pt too wide) in paragraph at lines 88--89
- [][] 
- []
+<use 4/figures/final_solution.pdf>
+Package pdftex.def Info: 4/figures/final_solution.pdf used on input line 88.
+(pdftex.def)             Requested size: 405.77626pt x 214.24054pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1169,8 +1165,8 @@ File: 4/figures/data_model_final.jpg Graphic file (type jpg)
 <use 4/figures/data_model_final.jpg>
 Package pdftex.def Info: 4/figures/data_model_final.jpg used on input line 97.
 (pdftex.def)             Requested size: 392.67003pt x 72.27054pt.
- [24 <./4/figures/finalsolution.png> <./4/figures/data_model_final.jpg>] [25]
-<4/figures/pred_sets.pdf, id=593, 756.8275pt x 392.46625pt>
+ [24 <./4/figures/final_solution.pdf> <./4/figures/data_model_final.jpg>] [25]
+<4/figures/pred_sets.pdf, id=598, 756.8275pt x 392.46625pt>
 File: 4/figures/pred_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/pred_sets.pdf>
@@ -1182,7 +1178,7 @@ Overfull \hbox (26.3953pt too wide) in paragraph at lines 135--136
  []
 
 [26 <./4/figures/pred_sets.pdf>]
-<4/figures/change_sets.pdf, id=608, 785.93625pt x 392.46625pt>
+<4/figures/change_sets.pdf, id=613, 785.93625pt x 392.46625pt>
 File: 4/figures/change_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/change_sets.pdf>
@@ -1196,7 +1192,7 @@ Overfull \hbox (19.70131pt too wide) in paragraph at lines 146--147
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<4/figures/result_sets.pdf, id=610, 756.8275pt x 392.46625pt>
+<4/figures/result_sets.pdf, id=615, 756.8275pt x 392.46625pt>
 File: 4/figures/result_sets.pdf Graphic file (type pdf)
 
 <use 4/figures/result_sets.pdf>
@@ -1211,14 +1207,14 @@ Overfull \hbox (26.3953pt too wide) in paragraph at lines 168--169
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [27 <./4/figures/change_sets.pdf>] [28 <./4/figures/result_sets.pdf>] [29]
-<4/figures/peaktech.pdf, id=637, 853.1875pt x 640.3925pt>
+<4/figures/peaktech.pdf, id=642, 853.1875pt x 640.3925pt>
 File: 4/figures/peaktech.pdf Graphic file (type pdf)
 
 <use 4/figures/peaktech.pdf>
 Package pdftex.def Info: 4/figures/peaktech.pdf used on input line 207.
 (pdftex.def)             Requested size: 409.52534pt x 307.3849pt.
  [30 <./4/figures/peaktech.pdf>]
-<4/figures/final_measurements.png, id=653, 730.73pt x 426.59375pt>
+<4/figures/final_measurements.png, id=658, 730.73pt x 426.59375pt>
 File: 4/figures/final_measurements.png Graphic file (type png)
 
 <use 4/figures/final_measurements.png>
@@ -1229,7 +1225,7 @@ Package pdftex.def Info: 4/figures/final_measurements.png used on input line 22
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] <4/figures/9V_test_results.png, id=658, 455.301pt x 255.95625pt>
+[31] <4/figures/9V_test_results.png, id=663, 455.301pt x 255.95625pt>
 File: 4/figures/9V_test_results.png Graphic file (type png)
 
 <use 4/figures/9V_test_results.png>
@@ -1287,129 +1283,51 @@ s.png (PNG copy)>]) [33]
 \openout9 = `thesis.brf'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]\T1/cmr/m/n/8 Arduino - Ar-duinoBoar-d-ADK,
+Overfull \hbox (16.91794pt too wide) in paragraph at lines 27--27
+[]\T1/cmr/m/n/10.95 Arduino - Ar-duinoWire-lessShield, http://arduino.cc/en/Mai
+n/ArduinoWirelessShield,
  []
 
-
-Overfull \hbox (2.89943pt too wide) in paragraph at lines 23--23
-\T1/cmr/m/n/8 http://arduino.cc/en/Main/ArduinoBoardADK,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]\T1/cmr/m/n/8 Arduino - Ar-duinoWire-lessShield,
- []
-
-
-Overfull \hbox (14.57713pt too wide) in paragraph at lines 27--27
-\T1/cmr/m/n/8 http://arduino.cc/en/Main/ArduinoWirelessShield,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-[]\T1/cmr/m/n/8 RN-XV Wi-Fly mod-ule - wire an-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/8 tenna - Spark-Fun elec-tron-ics,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
-\T1/cmr/m/n/8 https://www.sparkfun.com/products/10822,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[]\T1/cmr/m/n/8 Tinkerkit in-tro-duc-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-\T1/cmr/m/n/8 http://www.tinkerkit.com/introduction/,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/cmr/m/n/8 Thermistor sen-sor,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/cmr/m/n/8 http://www.tinkerkit.com/thermistor/, 2013-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]\T1/cmr/m/n/8 JeeLib: in-tro-duc-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/8 http://jeelabs.net/pub/docs/jeelib/, 2013-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
-[]\T1/cmr/m/n/8 JeeLib: port class ref-er-ence,
- []
-
-
-Overfull \hbox (11.01967pt too wide) in paragraph at lines 65--65
-\T1/cmr/m/n/8 http://jeelabs.net/pub/docs/jeelib/classPort.html,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]\T1/cmr/m/n/8 WiFly user guide - WiFly-RN-UM.pdf,
- []
-
-
-Overfull \hbox (7.50664pt too wide) in paragraph at lines 70--70
-\T1/cmr/m/n/8 http://dlnmh9ip6v2uc.cloudfront.net/datasheets/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
-\T1/cmr/m/n/8 http://mathworld.wolfram.com/Root-Mean-
- []
-
-) [40
+[40
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
- [41
+Overfull \hbox (31.21944pt too wide) in paragraph at lines 70--70
+[]\T1/cmr/m/n/10.95 WiFly user guide - WiFly-RN-UM.pdf, http://dlnmh9ip6v2uc.cl
+oudfront.net/datasheets/
+ []
+
+) [41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+ [42
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./thesis.aux (./title_page/stardard_page.aux)
 (./0_frontmatter/abstract.aux) (./1_introduction/introduction.aux)
 (./2/stateofart.aux) (./3/researchquestion.aux) (./3/contributions.aux)
 (./5/conclusions.aux) (./6/relatedwork.aux) (./6/futureresearch.aux)
 (./7/eestiabstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DBB71090442643541E8A3B5DBC66C973;3162.
+(rerunfilecheck)             Checksum: 631259D23849870BB7575DD09645EEE6;3196.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 383BE8C91F6A0ED7B64B0C681740A6B9;1931.
+(rerunfilecheck)             Checksum: 819B0898720208B0BD824605BA4F4E3F;1931.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 253.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
  ) 
 Here is how much of TeX's memory you used:
- 18836 strings out of 495059
- 321079 string characters out of 3182030
+ 18843 strings out of 495059
+ 321191 string characters out of 3182030
  403957 words of memory out of 3000000
- 21370 multiletter control sequences out of 15000+200000
- 22982 words of font info for 59 fonts, out of 3000000 for 9000
+ 21376 multiletter control sequences out of 15000+200000
+ 24531 words of font info for 65 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,12n,55p,1053b,1080s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </home/
+ </home/lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/
 lauris/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/lauris/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/lauris/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/lauris/.texmf-var/fonts/pk/ljf
@@ -1430,10 +1348,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (48 pages, 5535391 bytes).
+Output written on thesis.pdf (49 pages, 5518876 bytes).
 PDF statistics:
- 1477 PDF objects out of 1728 (max. 8388607)
- 753 compressed objects within 8 object streams
- 174 named destinations out of 1000 (max. 500000)
+ 1437 PDF objects out of 1440 (max. 8388607)
+ 762 compressed objects within 8 object streams
+ 175 named destinations out of 1000 (max. 500000)
  487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

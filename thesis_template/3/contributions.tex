@@ -2,7 +2,7 @@
 % content in this file will be fed into the main document
 
 %: ----------------------- name of chapter  -------------------------
-\chapter{Problem Solution} % top level followed by section, subsection
+\chapter{Towards an Energy-aware Solution} % top level followed by section, subsection
 
 In this chapter improvements to the existing implementation are discussed. First, changes to the Arduino sensor module are described. Secondly, an overview of changes in the communication between the module and data collection server. Lastly, an overview of the implemented fuzzy control and data prediction systems is given.
 
@@ -15,7 +15,7 @@ In this chapter improvements to the existing implementation are discussed. First
     \graphicspath{{X/figures/EPS/}{X/figures/}}
 \fi
 
-\section{Power Consumption}
+\section{Overcoming Power Consumption Issues}
 
 The first problem addressed is power consumption. There are two main ideas behind reducing it - put the sensor module to sleep mode when not transmitting data and reduce the need for data transmission. For this, the server-side client was improved to predict sensor data when possible and notify the sensor module of the next data transmission time. This enables the module to enter sleep mode for the given time period and thus reduce power consumption. 
 
@@ -85,7 +85,7 @@ Furthermore, to take full advantage of the newly developed sleep mode functional
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.46]{4/figures/finalsolution.png}
+\includegraphics[scale=0.58]{4/figures/final_solution.pdf}
 \caption{Final Solution Architecture}
 \label{final_solution}
 \end{figure}
@@ -111,7 +111,7 @@ To measure the accuracy of the model, an confidence level of 90\% was introduced
 $\alpha = 2\Phi \left ( \frac{\epsilon}{RMSE}  \right ) - 1$.
 \end{center}
 
-Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error (also known as standard error of estimate) of the regression model. The original equation used standard deviation of errors instead of RMSE, but RMSE is used here because of computational ease. RMSE is the square root of the mean squared deviation \cite{RMSE} which describes the same thing as standard deviation (deviations from the mean). 
+Here $\Phi$ is the CDF (Cumulative Distribution Function) of residuals, $\epsilon$ is the allowed error (in the database model named as $regression\_error$ and $RMSE$ is the root mean square error (also known as standard error of estimate) of the regression model. The original equation used standard deviation of errors instead of RMSE, but RMSE is used here because of computational ease. RMSE is the square root of the mean squared deviation \cite{RMSE} which is assumed to show the same thing as standard deviation (deviations from the mean). Furthermore, as the actual value received is the ratio of $\epsilon$ to the calculated RMSE value, the $\epsilon$ value is selected with respect to RMSE.
 
 Regression models are created separately for each sensor. Each model has a sample of previous measurements and the allowed error $\epsilon$ defined in the database. 
 The confidence level $\alpha$ is calculated for each model and has to be over $90\%$ which is the selected threshold. If all regression models satisfy the confidence level, then the fuzzy control system is initialized with data from previous measurements and calculated confidence levels. 

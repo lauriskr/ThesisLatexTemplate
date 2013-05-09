@@ -26,8 +26,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Hardware}{17}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Software}{18}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Power Consumption}{18}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Problem Solution}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Power Consumption}{19}{section.4.1}
+\contentsline {chapter}{\numberline {4}Towards an Energy-aware Solution}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Overcoming Power Consumption Issues}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Sleep}{19}{subsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.1.1}Watchdog Timer}{20}{subsubsection.4.1.1.1}
 \contentsline {subsubsection}{\numberline {4.1.1.2}Arduino Mega ADK}{20}{subsubsection.4.1.1.2}
@@ -46,4 +46,4 @@
 \contentsline {chapter}{Res\IeC {\"u}mee}{38}{chapter*.25}
 \contentsline {chapter}{Licence}{39}{chapter*.26}
 \contentsline {chapter}{Bibliography}{40}{chapter*.27}
-\contentsline {chapter}{Appendix A}{41}{chapter*.28}
+\contentsline {chapter}{Appendix A}{42}{chapter*.28}
